@@ -1,0 +1,1024 @@
+{
+  "images": [
+    {
+      "id": "carrot_001",
+      "metadata": {
+        "description": "Small green plants growing on dark soil surface Outdoor natural ground surface, appears to be soil Dark soil texture with small particles and lumps",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Soft, diffuse natural lighting",
+        "species": "carrot",
+        "original_filename": "007_image.png",
+        "original_id": "007_image.png",
+        "mcp_id": "carrot_001"
+      }
+    },
+    {
+      "id": "carrot_002",
+      "metadata": {
+        "description": "Close-up shot of soil surface with small plants and scattered rocks Natural outdoor environment, soil surface Mostly soil and partially visible small plants",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Even and moderate lighting without harsh shadows",
+        "species": "carrot",
+        "original_filename": "057_image.png",
+        "original_id": "057_image.png",
+        "mcp_id": "carrot_002"
+      }
+    },
+    {
+      "id": "carrot_003",
+      "metadata": {
+        "description": "Close-up image of soil and several small green leafy plants. Outdoor soil environment Mostly soil with scattered small plants and some tiny debris",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural lighting conditions, adequately illuminated",
+        "species": "carrot",
+        "original_filename": "026_image.png",
+        "original_id": "026_image.png",
+        "mcp_id": "carrot_003"
+      }
+    },
+    {
+      "id": "carrot_004",
+      "metadata": {
+        "description": "Close-up view of small green plants growing in soil Agricultural or garden soil surface Dark soil with small rocks and soil clumps",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural diffused lighting conditions",
+        "species": "carrot",
+        "original_filename": "054_image.png",
+        "original_id": "054_image.png",
+        "mcp_id": "carrot_004"
+      }
+    },
+    {
+      "id": "carrot_005",
+      "metadata": {
+        "description": "Young plants and leaves sprouting from soil Agricultural or garden soil environment with newly sprouted plants Dark soil with scattered small plants and leaves",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Uniform natural or artificial lighting",
+        "species": "carrot",
+        "original_filename": "015_image.png",
+        "original_id": "015_image.png",
+        "mcp_id": "carrot_005"
+      }
+    },
+    {
+      "id": "carrot_006",
+      "metadata": {
+        "description": "Close-up image focusing primarily on small green plants sprouting from dark, textured soil. Outdoor soil surface with apparent agricultural or gardening context. Textured soil surface with small plants and visible small stones or particles.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, diffuse lighting conditions.",
+        "species": "carrot",
+        "original_filename": "024_image.png",
+        "original_id": "024_image.png",
+        "mcp_id": "carrot_006"
+      }
+    },
+    {
+      "id": "carrot_007",
+      "metadata": {
+        "description": "Young green plants sprouting from dark-colored soil. An agricultural or gardening environment, soil rich environment. Dark, clumped soil dominating the background.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate natural lighting.",
+        "species": "carrot",
+        "original_filename": "005_image.png",
+        "original_id": "005_image.png",
+        "mcp_id": "carrot_007"
+      }
+    },
+    {
+      "id": "carrot_008",
+      "metadata": {
+        "description": "Close-up of soil surface with vegetation Outdoor soil surface Soil and sparse vegetation visible",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Diffuse, natural lighting",
+        "species": "carrot",
+        "original_filename": "028_image.png",
+        "original_id": "028_image.png",
+        "mcp_id": "carrot_008"
+      }
+    },
+    {
+      "id": "carrot_009",
+      "metadata": {
+        "description": "Close-up view of small green plants growing in soil Outdoor agricultural or garden environment Soil with small rocks and minimal plant debris",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, diffused lighting",
+        "species": "carrot",
+        "original_filename": "056_image.png",
+        "original_id": "056_image.png",
+        "mcp_id": "carrot_009"
+      }
+    },
+    {
+      "id": "carrot_010",
+      "metadata": {
+        "description": "Young green plants growing in soil, viewed from above Soil-covered ground, possibly agricultural or garden land Soil and small scattered plants",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural lighting conditions, evenly lit",
+        "species": "carrot",
+        "original_filename": "023_image.png",
+        "original_id": "023_image.png",
+        "mcp_id": "carrot_010"
+      }
+    },
+    {
+      "id": "carrot_011",
+      "metadata": {
+        "description": "Top-down view of small green seedlings growing in soil Outdoor, soil-covered ground Dark soil surface with visible small rocks or soil clumps",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Neutral, diffuse lighting",
+        "species": "carrot",
+        "original_filename": "033_image.png",
+        "original_id": "033_image.png",
+        "mcp_id": "carrot_011"
+      }
+    },
+    {
+      "id": "carrot_012",
+      "metadata": {
+        "description": "Small green plants sprouting from soil Natural outdoor environment, soil area Dark, textured soil with scattered pebbles or particles",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Even natural lighting conditions",
+        "species": "carrot",
+        "original_filename": "049_image.png",
+        "original_id": "049_image.png",
+        "mcp_id": "carrot_012"
+      }
+    },
+    {
+      "id": "carrot_013",
+      "metadata": {
+        "description": "Close-up view of green vegetation growing against a dark soil background Outdoor, natural soil environment Dark brownish-grey soil with small cracks and texture visible",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, even lighting",
+        "species": "carrot",
+        "original_filename": "051_image.png",
+        "original_id": "051_image.png",
+        "mcp_id": "carrot_013"
+      }
+    },
+    {
+      "id": "carrot_014",
+      "metadata": {
+        "description": "Close-up view of small plants growing from soil Agricultural or garden soil surface Soil with small rocks and soil texture",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural diffuse lighting",
+        "species": "carrot",
+        "original_filename": "045_image.png",
+        "original_id": "045_image.png",
+        "mcp_id": "carrot_014"
+      }
+    },
+    {
+      "id": "carrot_015",
+      "metadata": {
+        "description": "Close-up image of soil with multiple small green plants sprouting Outdoor natural environment with soil surface visible Primarily consisting of soil with small plants scattered throughout",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, evenly distributed lighting conditions",
+        "species": "carrot",
+        "original_filename": "042_image.png",
+        "original_id": "042_image.png",
+        "mcp_id": "carrot_015"
+      }
+    },
+    {
+      "id": "carrot_016",
+      "metadata": {
+        "description": "Close-up image of young green plants and soil Outdoor, ground-level soil environment Dark-colored soil with scattered small stones or particles",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, moderate lighting conditions",
+        "species": "carrot",
+        "original_filename": "004_image.png",
+        "original_id": "004_image.png",
+        "mcp_id": "carrot_016"
+      }
+    },
+    {
+      "id": "carrot_017",
+      "metadata": {
+        "description": "Close-up view of soil surface with sparse green plants emerging Soil surface, likely an agricultural or natural environment Primarily soil without distinct additional elements",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural lighting, evenly diffused",
+        "species": "carrot",
+        "original_filename": "014_image.png",
+        "original_id": "014_image.png",
+        "mcp_id": "carrot_017"
+      }
+    },
+    {
+      "id": "carrot_018",
+      "metadata": {
+        "description": "Close-up view of young plants growing in soil Outdoor soil surface with emerging vegetation Exposed dark soil with minimal debris or organic matter",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Diffuse and soft, likely shaded or overcast natural light",
+        "species": "carrot",
+        "original_filename": "001_image.png",
+        "original_id": "001_image.png",
+        "mcp_id": "carrot_018"
+      }
+    },
+    {
+      "id": "carrot_019",
+      "metadata": {
+        "description": "Close-up image of small green plants growing on soil Natural outdoor soil environment Dark, textured soil with small rocks and plant seedlings",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate and diffused lighting",
+        "species": "carrot",
+        "original_filename": "013_image.png",
+        "original_id": "013_image.png",
+        "mcp_id": "carrot_019"
+      }
+    },
+    {
+      "id": "carrot_020",
+      "metadata": {
+        "description": "Close-up image of young green plants growing from soil Natural soil environment, likely agricultural or garden setting Dark soil with small stones and organic debris",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Diffuse and evenly lit, natural outdoor lighting conditions",
+        "species": "carrot",
+        "original_filename": "052_image.png",
+        "original_id": "052_image.png",
+        "mcp_id": "carrot_020"
+      }
+    },
+    {
+      "id": "carrot_021",
+      "metadata": {
+        "description": "Close-up image of soil with sparse green plants and small stones Natural outdoor soil surface Soil with rough texture, some small stones and plants scattered around",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate and diffuse lighting",
+        "species": "carrot",
+        "original_filename": "050_image.png",
+        "original_id": "050_image.png",
+        "mcp_id": "carrot_021"
+      }
+    },
+    {
+      "id": "carrot_022",
+      "metadata": {
+        "description": "Young green plants growing from soil, viewed from above Outdoor field or garden with fertile soil Dark, fragmented soil with small particles and stones",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, diffused natural lighting",
+        "species": "carrot",
+        "original_filename": "031_image.png",
+        "original_id": "031_image.png",
+        "mcp_id": "carrot_022"
+      }
+    },
+    {
+      "id": "carrot_023",
+      "metadata": {
+        "description": "Close-up image of soil and small green plants emerging from the ground Outdoor soil/agricultural environment Dark brownish-gray soil with few small rocks and particles",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural moderate lighting conditions",
+        "species": "carrot",
+        "original_filename": "008_image.png",
+        "original_id": "008_image.png",
+        "mcp_id": "carrot_023"
+      }
+    },
+    {
+      "id": "carrot_024",
+      "metadata": {
+        "description": "Close-up view of soil surface featuring plants and earth clumps Outdoor, natural soil environment Soil with small rocks, small plants growing",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderately bright with soft, indirect lighting",
+        "species": "carrot",
+        "original_filename": "034_image.png",
+        "original_id": "034_image.png",
+        "mcp_id": "carrot_024"
+      }
+    },
+    {
+      "id": "carrot_025",
+      "metadata": {
+        "description": "Small green plants growing in dark, soil-rich ground Outdoor environment with soil Dark-colored soil with small clumps of dirt",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, natural daylight",
+        "species": "carrot",
+        "original_filename": "010_image.png",
+        "original_id": "010_image.png",
+        "mcp_id": "carrot_025"
+      }
+    },
+    {
+      "id": "carrot_026",
+      "metadata": {
+        "description": "Small green plants emerging from soil Outdoor environment with soil as background Dark, loose soil with small rocks",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Diffuse, natural lighting",
+        "species": "carrot",
+        "original_filename": "009_image.png",
+        "original_id": "009_image.png",
+        "mcp_id": "carrot_026"
+      }
+    },
+    {
+      "id": "carrot_027",
+      "metadata": {
+        "description": "Close-up view of young green plants growing in soil Outdoor soil/agricultural setting Dark, textured soil with small clumps and minimal debris",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural diffuse lighting",
+        "species": "carrot",
+        "original_filename": "038_image.png",
+        "original_id": "038_image.png",
+        "mcp_id": "carrot_027"
+      }
+    },
+    {
+      "id": "carrot_028",
+      "metadata": {
+        "description": "Small plants and sprouts growing in soil Outdoor environment with soil surface Dark, cracked soil surface",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, uniform ambient lighting",
+        "species": "carrot",
+        "original_filename": "032_image.png",
+        "original_id": "032_image.png",
+        "mcp_id": "carrot_028"
+      }
+    },
+    {
+      "id": "carrot_029",
+      "metadata": {
+        "description": "Small plants or seedlings growing in soil Agricultural or garden-like soil environment Dark soil showing texture, small stones, and dirt clumps",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Evenly lit, possibly daylight or artificial illumination",
+        "species": "carrot",
+        "original_filename": "044_image.png",
+        "original_id": "044_image.png",
+        "mcp_id": "carrot_029"
+      }
+    },
+    {
+      "id": "carrot_030",
+      "metadata": {
+        "description": "Close-up view of soil surface with small green plants emerging Outdoor, natural soil environment Soil with textured lumps and varied particle size",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, moderate illumination",
+        "species": "carrot",
+        "original_filename": "030_image.png",
+        "original_id": "030_image.png",
+        "mcp_id": "carrot_030"
+      }
+    },
+    {
+      "id": "carrot_031",
+      "metadata": {
+        "description": "Close-up of green plants growing in soil Natural outdoor environment with dark, loose soil Soil surface with scattered small rocks and plant debris",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, somewhat diffused lighting conditions",
+        "species": "carrot",
+        "original_filename": "027_image.png",
+        "original_id": "027_image.png",
+        "mcp_id": "carrot_031"
+      }
+    },
+    {
+      "id": "carrot_032",
+      "metadata": {
+        "description": "Close-up of soil surface with green young plants growing Natural outdoor soil area, possibly agricultural or garden Dark, textured soil with sparse vegetation",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Evenly distributed, natural lighting",
+        "species": "carrot",
+        "original_filename": "011_image.png",
+        "original_id": "011_image.png",
+        "mcp_id": "carrot_032"
+      }
+    },
+    {
+      "id": "carrot_033",
+      "metadata": {
+        "description": "Close-up of small plants and seedlings growing from soil Outdoor ground environment, soil surface Dark soil with partially scattered rocks and pebbles",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, moderate lighting conditions",
+        "species": "carrot",
+        "original_filename": "017_image.png",
+        "original_id": "017_image.png",
+        "mcp_id": "carrot_033"
+      }
+    },
+    {
+      "id": "carrot_034",
+      "metadata": {
+        "description": "Close-up of small green plants growing on dark, cracked soil. Outdoor garden or field environment. Dark, cracked soil with small clumps and patches of lighter-colored particulate matter.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "Not visible",
+        "date": "Unknown",
+        "lighting": "Moderately well-lit conditions, natural lighting.",
+        "species": "carrot",
+        "original_filename": "058_image.png",
+        "original_id": "058_image.png",
+        "mcp_id": "carrot_034"
+      }
+    },
+    {
+      "id": "carrot_035",
+      "metadata": {
+        "description": "Close-up view of small green plants sprouting from dark soil Soil surface with small plants and young seedlings Dark, crumbly soil and some scattered plant debris",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, diffused lighting with no distinct shadows",
+        "species": "carrot",
+        "original_filename": "021_image.png",
+        "original_id": "021_image.png",
+        "mcp_id": "carrot_035"
+      }
+    },
+    {
+      "id": "carrot_036",
+      "metadata": {
+        "description": "Close-up image of small green plants growing from dark-colored soil Outdoor soil surface, likely an agricultural or natural environment Dark-colored, textured soil with visible granules and clumps",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Even and diffused lighting",
+        "species": "carrot",
+        "original_filename": "016_image.png",
+        "original_id": "016_image.png",
+        "mcp_id": "carrot_036"
+      }
+    },
+    {
+      "id": "carrot_037",
+      "metadata": {
+        "description": "Close-up image of young plants and seedlings growing in soil Outdoor natural environment with bare soil Primarily dark, textured soil with small rocks or debris",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Diffuse, moderate lighting",
+        "species": "carrot",
+        "original_filename": "003_image.png",
+        "original_id": "003_image.png",
+        "mcp_id": "carrot_037"
+      }
+    },
+    {
+      "id": "carrot_038",
+      "metadata": {
+        "description": "Close-up image showing small green plants growing on soil Soil surface with emerging plant growth Bare dark-colored soil with small plants emerging",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural lighting, moderate brightness",
+        "species": "carrot",
+        "original_filename": "025_image.png",
+        "original_id": "025_image.png",
+        "mcp_id": "carrot_038"
+      }
+    },
+    {
+      "id": "carrot_039",
+      "metadata": {
+        "description": "Close-up image of soil with scattered small green plants and rocks Outdoor natural environment, appears to be soil surface Soil with small rocks and sparse vegetation",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Even, slightly dim lighting",
+        "species": "carrot",
+        "original_filename": "019_image.png",
+        "original_id": "019_image.png",
+        "mcp_id": "carrot_039"
+      }
+    },
+    {
+      "id": "carrot_040",
+      "metadata": {
+        "description": "Small green plants growing in soil with scattered rocks Outdoor, possibly natural environment with soil surface Dark, crumbly soil with visible small rocks and gravel",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate natural lighting",
+        "species": "carrot",
+        "original_filename": "012_image.png",
+        "original_id": "012_image.png",
+        "mcp_id": "carrot_040"
+      }
+    },
+    {
+      "id": "carrot_041",
+      "metadata": {
+        "description": "Small green plants growing in soil, showing early plant growth stages. Soil or agricultural field environment. Primarily composed of textured, dry soil with small plants.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, diffuse outdoor lighting conditions.",
+        "species": "carrot",
+        "original_filename": "018_image.png",
+        "original_id": "018_image.png",
+        "mcp_id": "carrot_041"
+      }
+    },
+    {
+      "id": "carrot_042",
+      "metadata": {
+        "description": "Close-up image depicting young green plants sprouting from soil Natural outdoor environment, presumably agricultural or garden setting Predominantly bare soil with visible small rough-textured soil clumps",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Soft natural lighting",
+        "species": "carrot",
+        "original_filename": "020_image.png",
+        "original_id": "020_image.png",
+        "mcp_id": "carrot_042"
+      }
+    },
+    {
+      "id": "carrot_043",
+      "metadata": {
+        "description": "Close-up view of soil surface with small green plants growing. Outdoor environment, likely garden or agricultural field with soil surface clearly visible. Dark soil with mixed texture containing small clumps and granular fragments.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, diffuse lighting, limited shadows indicating overcast or indirect lighting.",
+        "species": "carrot",
+        "original_filename": "037_image.png",
+        "original_id": "037_image.png",
+        "mcp_id": "carrot_043"
+      }
+    },
+    {
+      "id": "carrot_044",
+      "metadata": {
+        "description": "Close-up view of small green plants growing in soil Agricultural or garden soil environment Loose dark soil with small white particles scattered throughout",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Diffuse, even lighting with mild shadows",
+        "species": "carrot",
+        "original_filename": "048_image.png",
+        "original_id": "048_image.png",
+        "mcp_id": "carrot_044"
+      }
+    },
+    {
+      "id": "carrot_045",
+      "metadata": {
+        "description": "Close-up view of small plants or seedlings growing in soil. A patch of soil with young green plants emerging. Soil surface with scattered rocks or soil clumps.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate natural lighting, evenly distributed.",
+        "species": "carrot",
+        "original_filename": "029_image.png",
+        "original_id": "029_image.png",
+        "mcp_id": "carrot_045"
+      }
+    },
+    {
+      "id": "carrot_046",
+      "metadata": {
+        "description": "Close-up image showing plants at an early growth stage on soil Agricultural soil or garden environment Soil surface with small plants growing",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Evenly illuminated, natural or diffused lighting",
+        "species": "carrot",
+        "original_filename": "035_image.png",
+        "original_id": "035_image.png",
+        "mcp_id": "carrot_046"
+      }
+    },
+    {
+      "id": "carrot_047",
+      "metadata": {
+        "description": "Close-up image of soil surface featuring green plants and clumps of dirt. Outdoor natural environment, ground surface. Mostly soil with small plants and organic debris.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, natural lighting.",
+        "species": "carrot",
+        "original_filename": "055_image.png",
+        "original_id": "055_image.png",
+        "mcp_id": "carrot_047"
+      }
+    },
+    {
+      "id": "carrot_048",
+      "metadata": {
+        "description": "Close-up view of young green plants sprouting out of dark soil Outdoor agricultural environment with soil and small plants Mostly soil, with small patches of young plant growth",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural lighting, well-lit conditions",
+        "species": "carrot",
+        "original_filename": "022_image.png",
+        "original_id": "022_image.png",
+        "mcp_id": "carrot_048"
+      }
+    },
+    {
+      "id": "carrot_049",
+      "metadata": {
+        "description": "Young green plants sprouting from soil surface Outdoor soil or agricultural ground Dark-colored soil with clumps and small white particles scattered",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, diffused lighting",
+        "species": "carrot",
+        "original_filename": "047_image.png",
+        "original_id": "047_image.png",
+        "mcp_id": "carrot_049"
+      }
+    },
+    {
+      "id": "carrot_050",
+      "metadata": {
+        "description": "Close-up of small plants growing on soil Natural soil environment Textured grayish soil surface",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Indirect natural or artificial lighting conditions",
+        "species": "carrot",
+        "original_filename": "041_image.png",
+        "original_id": "041_image.png",
+        "mcp_id": "carrot_050"
+      }
+    },
+    {
+      "id": "carrot_051",
+      "metadata": {
+        "description": "Close-up of young green plants and sprouts growing on dark, loamy soil. An outdoor soil surface, possibly in a garden or agricultural area. Soil and partially visible small plants/sprouts extend into the background without distinctive features.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Soft, diffused lighting conditions.",
+        "species": "carrot",
+        "original_filename": "002_image.png",
+        "original_id": "002_image.png",
+        "mcp_id": "carrot_051"
+      }
+    },
+    {
+      "id": "carrot_052",
+      "metadata": {
+        "description": "Small green plants germinating in dark soil Outdoor soil-based environment, likely an agricultural field or garden Plain dark earth with sparse patches of lighter material",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Soft natural lighting",
+        "species": "carrot",
+        "original_filename": "039_image.png",
+        "original_id": "039_image.png",
+        "mcp_id": "carrot_052"
+      }
+    },
+    {
+      "id": "carrot_053",
+      "metadata": {
+        "description": "Close-up image focusing primarily on small green plants emerging from soil Agricultural or gardening area with soil exposed Dark and granular textured soil surrounding the plants",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, well-lit conditions",
+        "species": "carrot",
+        "original_filename": "053_image.png",
+        "original_id": "053_image.png",
+        "mcp_id": "carrot_053"
+      }
+    },
+    {
+      "id": "carrot_054",
+      "metadata": {
+        "description": "Image shows small green plants growing on soil, viewed from above Outdoor environment with fertile soil Brownish-black soil",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Soft natural lighting",
+        "species": "carrot",
+        "original_filename": "060_image.png",
+        "original_id": "060_image.png",
+        "mcp_id": "carrot_054"
+      }
+    },
+    {
+      "id": "carrot_055",
+      "metadata": {
+        "description": "Close-up view of young green plants emerging from soil Agricultural or garden soil environment Dark soil with some clumps and texture",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate natural lighting",
+        "species": "carrot",
+        "original_filename": "046_image.png",
+        "original_id": "046_image.png",
+        "mcp_id": "carrot_055"
+      }
+    },
+    {
+      "id": "carrot_056",
+      "metadata": {
+        "description": "Close-up view of young plants emerging from soil Outdoor natural environment, likely agricultural area Dark soil with loose texture and small particles, mixed with small stones",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Diffuse with moderate shadows",
+        "species": "carrot",
+        "original_filename": "043_image.png",
+        "original_id": "043_image.png",
+        "mcp_id": "carrot_056"
+      }
+    },
+    {
+      "id": "carrot_057",
+      "metadata": {
+        "description": "Close-up view of green plants sprouting from dark soil A ground surface covered in dark, loose soil Dark soil with scattered small particles",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate natural lighting conditions, diffused",
+        "species": "carrot",
+        "original_filename": "006_image.png",
+        "original_id": "006_image.png",
+        "mcp_id": "carrot_057"
+      }
+    },
+    {
+      "id": "carrot_058",
+      "metadata": {
+        "description": "Close-up view of small green plants seedlings growing on dark, loose soil. Outdoor soil surface, possibly a garden or agricultural area. Dark, textured soil surface with small stones and visible soil aggregates.",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate, diffused lighting conditions with no harsh shadows.",
+        "species": "carrot",
+        "original_filename": "036_image.png",
+        "original_id": "036_image.png",
+        "mcp_id": "carrot_058"
+      }
+    },
+    {
+      "id": "carrot_059",
+      "metadata": {
+        "description": "Close-up image of young green plants growing in soil Outdoor environment, earthy ground featuring young vegetation Soil surface with small plants and leaves",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Moderate natural lighting",
+        "species": "carrot",
+        "original_filename": "040_image.png",
+        "original_id": "040_image.png",
+        "mcp_id": "carrot_059"
+      }
+    },
+    {
+      "id": "carrot_060",
+      "metadata": {
+        "description": "Close-up view of young plants growing in soil Outdoor natural environment, likely agricultural or garden soil Dark brown, fertile soil with small pebbles and sticks",
+        "time": "day",
+        "season": "unknown",
+        "action": "growing",
+        "scene": "meadow",
+        "weather": "unknown",
+        "date": "unknown",
+        "lighting": "Natural, diffuse daylight",
+        "species": "carrot",
+        "original_filename": "059_image.png",
+        "original_id": "059_image.png",
+        "mcp_id": "carrot_060"
+      }
+    }
+  ]
+}
