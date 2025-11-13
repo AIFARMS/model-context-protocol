@@ -1,0 +1,54 @@
+{
+  "dataset_type": "custom",
+  "description": "Example custom dataset - Weather observations",
+  "schema": {
+    "type": "custom",
+    "filter_fields": ["station", "condition", "temperature_range"],
+    "metadata_fields": ["timestamp", "humidity", "pressure", "wind_speed"]
+  },
+  "images": [
+    {
+      "id": "weather_001",
+      "collection": "station_a",
+      "station": "station_a",
+      "condition": "sunny",
+      "temperature_range": "warm",
+      "metadata": {
+        "timestamp": "2024-01-01T12:00:00Z",
+        "humidity": 65,
+        "pressure": 1013.25,
+        "wind_speed": 15.5,
+        "description": "Clear sunny day with moderate wind"
+      }
+    },
+    {
+      "id": "weather_002",
+      "collection": "station_b",
+      "station": "station_b",
+      "condition": "cloudy",
+      "temperature_range": "cool",
+      "metadata": {
+        "timestamp": "2024-01-02T14:00:00Z",
+        "humidity": 80,
+        "pressure": 1008.50,
+        "wind_speed": 8.2,
+        "description": "Overcast conditions with light breeze"
+      }
+    },
+    {
+      "id": "weather_003",
+      "collection": "station_a",
+      "station": "station_a",
+      "condition": "rainy",
+      "temperature_range": "cold",
+      "metadata": {
+        "timestamp": "2024-01-03T10:00:00Z",
+        "humidity": 95,
+        "pressure": 998.75,
+        "wind_speed": 22.3,
+        "description": "Heavy rain with strong winds"
+      }
+    }
+  ]
+}
+

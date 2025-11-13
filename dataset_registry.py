@@ -9,6 +9,7 @@ from typing import Dict, List, Any, Optional
 from dataclasses import dataclass, field
 from models import DatasetInfo, FilterOptions, DatasetType
 from config import BASE_DIR, DATASETS_DIR
+from dataset_adapter import DatasetAdapterRegistry, DatasetAdapter
 
 @dataclass
 class Dataset:
@@ -25,9 +26,10 @@ class Dataset:
 class DatasetRegistry:
     """Registry for managing datasets"""
     
-    def __init__(self):
+    def __init__(self, adapter_registry: Optional[DatasetAdapterRegistry] = None):
         self.datasets: Dict[str, Dataset] = {}
         self.images_cache: Dict[str, List[Dict[str, Any]]] = {}
+        self.adapter_registry = adapter_registry or DatasetAdapterRegistry()
         self._discover_datasets()
     
     def _discover_datasets(self):
@@ -59,43 +61,49 @@ class DatasetRegistry:
             dataset_name = file_path.stem.replace('_mcp_data', '')
             print(f"📁 Dataset name: {dataset_name}")
             
-            # Determine dataset type
-            if any(term in dataset_name.lower() for term in ['bobcat', 'coyote', 'deer', 'wildlife', 'animal']):
-                dataset_type = DatasetType.WILDLIFE
-            elif any(term in dataset_name.lower() for term in ['plant', 'tree', 'flower', 'strawberry']):
-                dataset_type = DatasetType.PLANTS
-            elif any(term in dataset_name.lower() for term in ['pest', 'insect', 'disease']):
-                dataset_type = DatasetType.PESTS
-            else:
-                dataset_type = DatasetType.CUSTOM
+            # Determine dataset type - check metadata first, then fallback to filename
+            dataset_type = self._determine_dataset_type(data, dataset_name)
+            print(f"📁 Dataset type: {dataset_type.value}")
             
-            # Load images and extract metadata
-            images = data.get('images', [])
-            print(f"📁 Found {len(images)} images in dataset")
+            # Get appropriate adapter for this dataset type
+            adapter = self.adapter_registry.get_adapter(dataset_type)
             
-            collections = list(set(img.get('collection', dataset_name) for img in images))
+            # Load items (images or other data)
+            items = data.get('images', data.get('items', data.get('data', [])))
+            print(f"📁 Found {len(items)} items in dataset")
             
-            # Extract available filters
-            available_filters = self._extract_filters(images)
+            # Normalize items using adapter
+            normalized_items = [adapter.normalize_item(item) for item in items]
+            
+            # Extract collections using adapter
+            collections = adapter.get_collections(normalized_items)
+            
+            # Extract available filters using adapter
+            available_filters = adapter.extract_filters(normalized_items)
+            
+            # Get description from data or use default
+            description = data.get('description', data.get('dataset_description', f"Dataset from {file_path.name}"))
             
             dataset = Dataset(
                 name=dataset_name,
                 type=dataset_type,
-                description=f"Dataset from {file_path.name}",
+                description=description,
                 file_path=file_path,
                 collections=collections,
-                total_images=len(images),
+                total_images=len(normalized_items),
                 available_filters=available_filters,
                 metadata={
                     "source_file": str(file_path),
-                    "last_modified": file_path.stat().st_mtime
+                    "last_modified": file_path.stat().st_mtime,
+                    "schema": data.get('schema', {}),
+                    "adapter_type": type(adapter).__name__
                 }
             )
             
             self.datasets[dataset_name] = dataset
-            self.images_cache[dataset_name] = images
+            self.images_cache[dataset_name] = normalized_items
             
-            print(f"✅ Successfully loaded dataset: {dataset_name} ({len(images)} images, {len(collections)} collections)")
+            print(f"✅ Successfully loaded dataset: {dataset_name} ({len(normalized_items)} items, {len(collections)} collections)")
             
         except Exception as e:
             print(f"❌ Error loading dataset from {file_path}: {e}")
@@ -103,52 +111,42 @@ class DatasetRegistry:
             traceback.print_exc()
             raise
     
-    def _extract_filters(self, images: List[Dict[str, Any]]) -> FilterOptions:
-        """Extract available filters from images"""
-        categories = set()
-        species = set()
-        times = set()
-        seasons = set()
-        actions = set()
-        plant_states = set()
-        collections = set()
+    def _determine_dataset_type(self, data: Dict[str, Any], dataset_name: str) -> DatasetType:
+        """Determine dataset type from metadata or filename"""
+        # Check if dataset type is explicitly specified in the data
+        if 'dataset_type' in data:
+            type_str = data['dataset_type'].lower()
+            try:
+                return DatasetType(type_str)
+            except ValueError:
+                pass
         
-        for img in images:
-            metadata = img.get('metadata', {})
-            collections.add(img.get('collection', 'unknown'))
-            
-            # Extract category
-            if 'category' in img:
-                categories.add(img['category'])
-            
-            # Extract time information
-            time_info = metadata.get('time', '').lower()
-            if 'night' in time_info or 'dark' in time_info:
-                times.add('night')
-            elif 'day' in time_info or 'morning' in time_info or 'afternoon' in time_info:
-                times.add('day')
-            elif 'dawn' in time_info or 'sunrise' in time_info:
-                times.add('dawn')
-            elif 'dusk' in time_info or 'sunset' in time_info:
-                times.add('dusk')
-            
-            # Extract other filters
-            if 'action' in metadata:
-                actions.add(metadata['action'].lower())
-            if 'season' in metadata:
-                seasons.add(metadata['season'].lower())
-            if 'plant_state' in metadata:
-                plant_states.add(metadata['plant_state'].lower())
+        # Check schema metadata
+        schema = data.get('schema', {})
+        if 'type' in schema:
+            type_str = schema['type'].lower()
+            try:
+                return DatasetType(type_str)
+            except ValueError:
+                pass
         
-        return FilterOptions(
-            categories=sorted(list(categories)),
-            species=sorted(list(collections)),
-            times=sorted(list(times)),
-            seasons=sorted(list(seasons)),
-            actions=sorted(list(actions)),
-            plant_states=sorted(list(plant_states)),
-            collections=sorted(list(collections))
-        )
+        # Fallback to filename-based detection (legacy behavior)
+        name_lower = dataset_name.lower()
+        if any(term in name_lower for term in ['bobcat', 'coyote', 'deer', 'wildlife', 'animal']):
+            return DatasetType.WILDLIFE
+        elif any(term in name_lower for term in ['plant', 'tree', 'flower', 'strawberry']):
+            return DatasetType.PLANTS
+        elif any(term in name_lower for term in ['pest', 'insect', 'disease']):
+            return DatasetType.PESTS
+        else:
+            return DatasetType.CUSTOM
+    
+    def get_adapter_for_dataset(self, dataset_name: str) -> Optional[DatasetAdapter]:
+        """Get the adapter for a specific dataset"""
+        dataset = self.datasets.get(dataset_name)
+        if dataset:
+            return self.adapter_registry.get_adapter(dataset.type)
+        return None
     
     def get_dataset(self, name: str) -> Optional[Dataset]:
         """Get a dataset by name"""
@@ -174,25 +172,28 @@ class DatasetRegistry:
         return self.images_cache.get(dataset_name, [])
     
     def search_dataset(self, dataset_name: str, query: str = "", filters: Dict[str, Any] = None) -> List[Dict[str, Any]]:
-        """Search within a specific dataset"""
+        """Search within a specific dataset using the appropriate adapter"""
         if dataset_name not in self.images_cache:
             return []
         
-        images = self.images_cache[dataset_name]
+        items = self.images_cache[dataset_name]
+        dataset = self.datasets.get(dataset_name)
+        
+        if not dataset:
+            return []
+        
+        # Get adapter for this dataset type
+        adapter = self.adapter_registry.get_adapter(dataset.type)
         
         # Apply filters if provided
         if filters:
-            # Implementation of filtering logic
-            # This can be enhanced based on your specific needs
-            pass
+            items = [item for item in items if adapter.matches_filters(item, filters)]
         
         # Apply search query if provided
         if query.strip():
-            # Implementation of search logic
-            # This can be enhanced based on your specific needs
-            pass
+            items = [item for item in items if adapter.matches_query(item, query)]
         
-        return images
+        return items
     
     def add_dataset(self, name: str, file_path: Path, dataset_type: DatasetType = DatasetType.CUSTOM):
         """Add a new dataset"""

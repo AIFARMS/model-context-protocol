@@ -404,10 +404,11 @@ class MCPServer:
         print(f"🔍 Search request: query='{query}', dataset='{dataset}', filters={filters}")
         
         if dataset:
-            # Search in specific dataset
+            # Search in specific dataset using adapter
             print(f"🔍 Searching in specific dataset: {dataset}")
-            images = self.dataset_registry.get_images(dataset)
-            if not images:
+            filtered_results = self.dataset_registry.search_dataset(dataset, query, filters)
+            
+            if filtered_results is None:
                 return {
                     "dataset": dataset,
                     "query": query,
@@ -416,9 +417,6 @@ class MCPServer:
                     "error": f"Dataset {dataset} not found or has no images"
                 }
             
-            # Apply basic search filtering
-            filtered_results = self._apply_search_filters(images, query, filters)
-            
             return {
                 "dataset": dataset,
                 "query": query,
@@ -426,15 +424,14 @@ class MCPServer:
                 "total_count": len(filtered_results)
             }
         else:
-            # Search across all datasets
+            # Search across all datasets using adapters
             print(f"🔍 Searching across all datasets")
             all_results = []
             
             for dataset_name in self.dataset_registry.datasets:
                 print(f"🔍 Searching dataset: {dataset_name}")
-                images = self.dataset_registry.get_images(dataset_name)
-                if images:
-                    filtered_results = self._apply_search_filters(images, query, filters)
+                filtered_results = self.dataset_registry.search_dataset(dataset_name, query, filters)
+                if filtered_results:
                     # Add dataset info to each result
                     for result in filtered_results:
                         result['dataset'] = dataset_name
@@ -450,7 +447,9 @@ class MCPServer:
             }
     
     def _apply_search_filters(self, images: List[Dict[str, Any]], query: str, filters: Dict[str, Any]) -> List[Dict[str, Any]]:
-        """Apply search filters to images"""
+        """Apply search filters to images (legacy method - now uses adapters via search_dataset)"""
+        # This method is kept for backward compatibility but search_dataset now uses adapters
+        # The adapter-based search is handled in dataset_registry.search_dataset()
         filtered_images = images.copy()
         
         # Apply text search if query provided
@@ -534,21 +533,23 @@ class MCPServer:
             print(f"   Confidence: {query_understanding.confidence}")
             print(f"   Reasoning: {query_understanding.reasoning}")
             
-            # Perform search using the structured understanding
+            # Perform search using the structured understanding and adapters
             if dataset:
                 if dataset in self.dataset_registry.datasets:
-                    images = self.dataset_registry.get_images(dataset)
-                    if not images:
+                    # Use adapter-based search
+                    filtered_results = self.dataset_registry.search_dataset(
+                        dataset, query, query_understanding.filters
+                    )
+                    
+                    if not filtered_results:
                         return {
                             "dataset": dataset,
                             "query": query,
                             "llm_understanding": query_understanding,
                             "results": [],
                             "total_count": 0,
-                            "error": f"Dataset {dataset} has no images"
+                            "error": f"Dataset {dataset} has no matching results"
                         }
-                    
-                    filtered_results = self._apply_llm_filters(images, query_understanding.filters)
                     
                     # Add confidence scores to each result and sort by confidence
                     for result in filtered_results:
@@ -576,14 +577,15 @@ class MCPServer:
                         "error": f"Dataset {dataset} not found"
                     }
             else:
-                # Search across all datasets
+                # Search across all datasets using adapters
                 all_results = []
                 
                 for dataset_name in self.dataset_registry.datasets:
                     print(f"🧠 Searching dataset: {dataset_name}")
-                    images = self.dataset_registry.get_images(dataset_name)
-                    if images:
-                        filtered_results = self._apply_llm_filters(images, query_understanding.filters)
+                    filtered_results = self.dataset_registry.search_dataset(
+                        dataset_name, query, query_understanding.filters
+                    )
+                    if filtered_results:
                         for result in filtered_results:
                             result['dataset'] = dataset_name
                             result['llm_confidence'] = query_understanding.confidence
@@ -598,11 +600,11 @@ class MCPServer:
                 
                 return {
                     "query": query,
-                       "llm_understanding": query_understanding,
-                       "results": all_results[offset:offset + limit],
-                       "total_count": len(all_results),
-                       "searched_datasets": list(self.dataset_registry.datasets.keys())
-                   }
+                    "llm_understanding": query_understanding,
+                    "results": all_results[offset:offset + limit],
+                    "total_count": len(all_results),
+                    "searched_datasets": list(self.dataset_registry.datasets.keys())
+                }
                 
         except Exception as e:
             print(f"❌ LLM search error: {e}")
