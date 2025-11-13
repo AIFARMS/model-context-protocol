@@ -21,8 +21,22 @@ from models import SearchRequest, SearchResponse, InferenceRequest, InferenceRes
 from tool_registry import ToolRegistry
 from dataset_registry import DatasetRegistry, Dataset
 from model_registry import ModelRegistry
-from llm_service import LLMService
 from config import MCP_CONFIG, MCP_PROTOCOL_CONFIG, BASE_DIR, LLM_CONFIG
+
+# Optional imports
+try:
+    from llm_service import LLMService
+    LLM_AVAILABLE = True
+except ImportError:
+    LLM_AVAILABLE = False
+    LLMService = None
+
+try:
+    from croissant_crawler import CroissantCrawler
+    CROISSANT_CRAWLER_AVAILABLE = True
+except ImportError:
+    CROISSANT_CRAWLER_AVAILABLE = False
+    CroissantCrawler = None
 
 class MCPServer:
     """Core MCP Server that manages tools and provides MCP protocol endpoints"""
@@ -54,11 +68,15 @@ class MCPServer:
         
         # Initialize LLM service
         print("🧠 Initializing LLM service...")
-        self.llm_service = LLMService(
-            api_key=LLM_CONFIG.get("api_key"),
-            model=LLM_CONFIG.get("model")
-        )
-        print(f"🧠 LLM service: {'enabled' if self.llm_service.is_available() else 'disabled (fallback to rules)'}")
+        if LLM_AVAILABLE and LLMService:
+            self.llm_service = LLMService(
+                api_key=LLM_CONFIG.get("api_key"),
+                model=LLM_CONFIG.get("model")
+            )
+            print(f"🧠 LLM service: {'enabled' if self.llm_service.is_available() else 'disabled (fallback to rules)'}")
+        else:
+            self.llm_service = None
+            print("🧠 LLM service: not available (module not found)")
         
         # Setup FastAPI app
         print("🌐 Setting up FastAPI app...")
@@ -391,6 +409,19 @@ class MCPServer:
             handler=self._model_info_tool_handler,
             tags=["models", "info"]
         )
+        
+        # Croissant dataset crawler tool
+        if CROISSANT_CRAWLER_AVAILABLE:
+            self.tool_registry.register_tool(
+                name="crawl_croissant_datasets",
+                description="Crawl AI Institute portals for Croissant-formatted datasets",
+                input_schema={
+                    "type": "object",
+                    "properties": {}
+                },
+                handler=self._crawl_croissant_datasets_handler,
+                tags=["crawler", "datasets", "croissant"]
+            )
     
     # Tool handlers
     def _search_tool_handler(self, input_data: Dict[str, Any]) -> Dict[str, Any]:
@@ -859,6 +890,57 @@ class MCPServer:
             return {
                 "models": self.model_registry.get_all_models(),
                 "total": len(self.model_registry.get_all_models())
+            }
+    
+    async def _crawl_croissant_datasets_handler(self, input_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Handle Croissant dataset crawling"""
+        if not CROISSANT_CRAWLER_AVAILABLE:
+            return {
+                "error": "Croissant crawler not available. Ensure croissant_crawler.py is in the same directory.",
+                "datasets": [],
+                "total_count": 0
+            }
+        
+        try:
+            print(f"🔍 Starting Croissant dataset crawling...")
+            
+            crawler = CroissantCrawler()
+            datasets = await crawler.crawl_all_portals()
+            
+            # Convert to MCP format
+            results = []
+            for dataset in datasets:
+                results.append({
+                    'name': dataset.name,
+                    'description': dataset.description,
+                    'url': dataset.url,
+                    'source': dataset.source_portal,
+                    'fields': dataset.fields,
+                    'keywords': dataset.keywords or [],
+                    'license': dataset.license,
+                    'download_urls': dataset.download_urls or [],
+                    'created_date': dataset.created_date,
+                    'updated_date': dataset.updated_date
+                })
+            
+            print(f"✅ Found {len(results)} Croissant datasets")
+            
+            from datetime import datetime
+            return {
+                "datasets": results,
+                "total_count": len(results),
+                "sources": list(crawler.portals.keys()),
+                "crawl_timestamp": datetime.now().isoformat()
+            }
+            
+        except Exception as e:
+            print(f"❌ Croissant crawling error: {e}")
+            import traceback
+            traceback.print_exc()
+            return {
+                "error": f"Croissant crawling failed: {str(e)}",
+                "datasets": [],
+                "total_count": 0
             }
     
     def register_tool(self, name: str, description: str, input_schema: Dict[str, Any], 

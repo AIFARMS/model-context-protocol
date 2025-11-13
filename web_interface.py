@@ -349,6 +349,45 @@ class WebInterface:
             except Exception as e:
                 raise HTTPException(status_code=404, detail="Image not found")
         
+        @self.app.get("/croissant_datasets", response_class=HTMLResponse)
+        async def croissant_datasets(request: Request):
+            """Browse discovered Croissant datasets"""
+            try:
+                # Call MCP server to get Croissant datasets
+                async with httpx.AsyncClient() as client:
+                    response = await client.post(
+                        f"{self.mcp_server_url}/mcp/tools/crawl_croissant_datasets",
+                        json={}
+                    )
+                    mcp_response = response.json()
+                    
+                    # Extract datasets from MCP response
+                    datasets = []
+                    if "content" in mcp_response:
+                        for content_item in mcp_response["content"]:
+                            if content_item.get("type") == "result" and "data" in content_item:
+                                datasets = content_item["data"].get("datasets", [])
+                                break
+                    elif "datasets" in mcp_response:
+                        datasets = mcp_response["datasets"]
+                    
+                    return self.templates.TemplateResponse("croissant_datasets.html", {
+                        "request": request,
+                        "datasets": datasets,
+                        "total_count": len(datasets)
+                    })
+                    
+            except Exception as e:
+                print(f"❌ Error loading Croissant datasets: {e}")
+                import traceback
+                traceback.print_exc()
+                return self.templates.TemplateResponse("croissant_datasets.html", {
+                    "request": request,
+                    "datasets": [],
+                    "total_count": 0,
+                    "error": str(e)
+                })
+        
         @self.app.get("/debug/search")
         async def debug_search():
             """Debug endpoint to test search functionality"""
@@ -527,6 +566,12 @@ class WebInterface:
         if not llm_results_template.exists():
             with open(llm_results_template, "w") as f:
                 f.write(self._get_llm_results_template())
+        
+        # Croissant datasets template
+        croissant_template = templates_dir / "croissant_datasets.html"
+        if not croissant_template.exists():
+            with open(croissant_template, "w") as f:
+                f.write(self._get_croissant_datasets_template())
     
     def _extract_filters_from_datasets(self, datasets: List[Dict[str, Any]]) -> Dict[str, List[str]]:
         """Extract available filters from datasets"""
@@ -995,6 +1040,87 @@ class WebInterface:
 </body>
 </html>
 """
+    
+    def _get_croissant_datasets_template(self) -> str:
+        """Get the Croissant datasets HTML template"""
+        return """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Croissant Datasets - AIFARMS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .back-link { margin-bottom: 20px; }
+        .back-link a { color: #007bff; text-decoration: none; font-weight: bold; }
+        .dataset-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 20px; margin: 20px 0; }
+        .dataset-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: white; }
+        .dataset-card h3 { margin-top: 0; color: #333; }
+        .dataset-meta { font-size: 14px; color: #666; margin: 10px 0; }
+        .dataset-fields { margin: 15px 0; }
+        .field-tag { display: inline-block; background: #e9ecef; padding: 2px 8px; margin: 2px; border-radius: 12px; font-size: 12px; }
+        .source-badge { background: #28a745; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px; }
+        .no-results { text-align: center; padding: 40px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="/">← Back to Search</a>
+        </div>
+        
+        <h1>🔍 Croissant Datasets</h1>
+        <p>Discovered datasets from AI Institute portals with Croissant metadata</p>
+        
+        {% if datasets %}
+        <div class="dataset-grid">
+            {% for dataset in datasets %}
+            <div class="dataset-card">
+                <h3>{{ dataset.name }}</h3>
+                <div class="dataset-meta">
+                    <span class="source-badge">{{ dataset.source }}</span>
+                    {% if dataset.license %}
+                    <span style="margin-left: 10px;">License: {{ dataset.license }}</span>
+                    {% endif %}
+                </div>
+                <p>{{ dataset.description }}</p>
+                
+                {% if dataset.fields %}
+                <div class="dataset-fields">
+                    <strong>Fields:</strong><br>
+                    {% for field in dataset.fields[:5] %}
+                    <span class="field-tag">{{ field.name }} ({{ field.data_type }})</span>
+                    {% endfor %}
+                    {% if dataset.fields|length > 5 %}
+                    <span class="field-tag">... and {{ dataset.fields|length - 5 }} more</span>
+                    {% endif %}
+                </div>
+                {% endif %}
+                
+                {% if dataset.keywords %}
+                <div class="dataset-fields">
+                    <strong>Keywords:</strong><br>
+                    {% for keyword in dataset.keywords[:5] %}
+                    <span class="field-tag">{{ keyword }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <div style="margin-top: 15px;">
+                    <a href="{{ dataset.url }}" target="_blank" style="color: #007bff;">View Dataset →</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-results">
+            <h2>No Croissant datasets found</h2>
+            <p>Try running the crawler to discover datasets from AI Institute portals.</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>"""
     
     def run(self, host: str = None, port: int = None):
         """Run the web interface"""
