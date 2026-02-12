@@ -14,12 +14,13 @@ from fastapi import FastAPI, Request, Form, HTTPException, Query
 from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 import uvicorn
 import httpx
 import os
 
 # Import configuration
-from config import WEB_CONFIG, BASE_DIR
+from config import WEB_CONFIG, BASE_DIR, IMAGES_DIR, IMAGES_TRY_SPECIES_FIRST
 
 class WebInterface:
     """Web interface that consumes the MCP server"""
@@ -27,6 +28,11 @@ class WebInterface:
     def __init__(self):
         self.app = FastAPI(title="AIFARMS Web Interface", version="2.0.0")
         self.mcp_server_url = WEB_CONFIG["mcp_server_url"]
+        
+        # Serve static files (e.g. logo)
+        _static_dir = Path(__file__).resolve().parent / "static"
+        if _static_dir.exists():
+            self.app.mount("/static", StaticFiles(directory=str(_static_dir)), name="static")
         
         # Setup middleware and routes
         self._setup_middleware()
@@ -187,24 +193,26 @@ class WebInterface:
             query: str = Form(""),
             dataset: str = Form(""),
             limit: int = Form(50),
-            page: int = Form(1)
+            page: int = Form(1),
+            dataset_offset: int = Form(0)
         ):
             """Handle LLM-powered search with intelligent query understanding"""
             try:
-                print(f"🧠 LLM search request: query='{query}', dataset='{dataset}'")
+                print(f"🧠 LLM search request: query='{query}', dataset='{dataset}', dataset_offset={dataset_offset}")
                 
                 # Prepare LLM search request
                 search_data = {
                     "query": query,
                     "dataset": dataset if dataset else None,
                     "limit": limit,
-                    "offset": (page - 1) * limit
+                    "offset": (page - 1) * limit,
+                    "dataset_offset": dataset_offset
                 }
                 
                 print(f"🧠 Calling MCP server LLM search with: {search_data}")
                 
-                # Call MCP server LLM search tool
-                async with httpx.AsyncClient() as client:
+                # Call MCP server LLM search tool (long timeout: LLM + dataset search; server caps datasets for broad queries)
+                async with httpx.AsyncClient(timeout=180.0) as client:
                     response = await client.post(
                         f"{self.mcp_server_url}/mcp/tools/llm_search",
                         json=search_data
@@ -245,10 +253,15 @@ class WebInterface:
                     "request": request,
                     "results": search_results,
                     "query": query,
+                    "dataset": dataset,
                     "filters": all_filters,
                     "datasets": datasets_data["datasets"],
                     "current_page": page,
-                    "limit": limit
+                    "limit": limit,
+                    "dataset_offset": search_results.get("dataset_offset", 0),
+                    "next_dataset_offset": search_results.get("next_dataset_offset", 0),
+                    "total_datasets_matching": search_results.get("total_datasets_matching", 0),
+                    "has_more_datasets": search_results.get("has_more_datasets", False),
                 })
                 
             except Exception as e:
@@ -259,10 +272,15 @@ class WebInterface:
                     "request": request,
                     "results": {"error": str(e)},
                     "query": query,
+                    "dataset": dataset,
                     "filters": {},
                     "datasets": {},
                     "current_page": page,
-                    "limit": limit
+                    "limit": limit,
+                    "dataset_offset": 0,
+                    "next_dataset_offset": 0,
+                    "total_datasets_matching": 0,
+                    "has_more_datasets": False,
                 })
         
         @self.app.get("/api/search")
@@ -354,29 +372,83 @@ class WebInterface:
             """Browse discovered Croissant datasets"""
             try:
                 # Call MCP server to get Croissant datasets
-                async with httpx.AsyncClient() as client:
+                async with httpx.AsyncClient(timeout=300.0) as client:  # 5 minute timeout for crawling
                     response = await client.post(
                         f"{self.mcp_server_url}/mcp/tools/crawl_croissant_datasets",
                         json={}
                     )
+                    
+                    # Check response status
+                    if response.status_code != 200:
+                        error_detail = response.text
+                        try:
+                            error_json = response.json()
+                            error_detail = error_json.get("detail", error_detail)
+                        except:
+                            pass
+                        print(f"❌ MCP server returned error {response.status_code}: {error_detail}")
+                        return self.templates.TemplateResponse("croissant_datasets.html", {
+                            "request": request,
+                            "datasets": [],
+                            "total_count": 0,
+                            "error": f"MCP server error ({response.status_code}): {error_detail}"
+                        })
+                    
                     mcp_response = response.json()
                     
                     # Extract datasets from MCP response
                     datasets = []
+                    
+                    # Handle MCP format response (wrapped by tool registry)
                     if "content" in mcp_response:
                         for content_item in mcp_response["content"]:
                             if content_item.get("type") == "result" and "data" in content_item:
-                                datasets = content_item["data"].get("datasets", [])
-                                break
-                    elif "datasets" in mcp_response:
+                                data = content_item["data"]
+                                # Check for datasets in the data
+                                if "datasets" in data:
+                                    datasets = data["datasets"]
+                                    break
+                                # Also check if data itself is a dict with datasets at root
+                                elif isinstance(data, dict) and "datasets" in data:
+                                    datasets = data["datasets"]
+                                    break
+                    
+                    # Also check if datasets are in the response root (direct format)
+                    if not datasets and "datasets" in mcp_response:
                         datasets = mcp_response["datasets"]
+                    
+                    # Debug: log what we got
+                    if not datasets:
+                        print(f"⚠️  No datasets found in response. Response keys: {list(mcp_response.keys())}")
+                        if "detail" in mcp_response:
+                            print(f"⚠️  Error detail: {mcp_response['detail']}")
+                        if "content" in mcp_response:
+                            for i, item in enumerate(mcp_response["content"]):
+                                print(f"  Content item {i}: type={item.get('type')}, keys={list(item.keys())}")
+                                if "data" in item:
+                                    print(f"    Data keys: {list(item['data'].keys())}")
+                                    print(f"    Data: {item['data']}")
+                    
+                    error_msg = None
+                    if "detail" in mcp_response:
+                        error_msg = mcp_response["detail"]
                     
                     return self.templates.TemplateResponse("croissant_datasets.html", {
                         "request": request,
                         "datasets": datasets,
-                        "total_count": len(datasets)
+                        "total_count": len(datasets),
+                        "error": error_msg
                     })
                     
+            except httpx.TimeoutException:
+                error_msg = "Request timed out - the crawler may be taking too long. Try again later."
+                print(f"❌ Timeout loading Croissant datasets: {error_msg}")
+                return self.templates.TemplateResponse("croissant_datasets.html", {
+                    "request": request,
+                    "datasets": [],
+                    "total_count": 0,
+                    "error": error_msg
+                })
             except Exception as e:
                 print(f"❌ Error loading Croissant datasets: {e}")
                 import traceback
@@ -488,7 +560,7 @@ class WebInterface:
                 import os
                 from pathlib import Path
                 
-                images_dir = Path("/opt/mcp-data-server/images")
+                images_dir = Path(IMAGES_DIR)
                 test_files = []
                 
                 if images_dir.exists():
@@ -512,28 +584,301 @@ class WebInterface:
                     "traceback": traceback.format_exc()
                 }
         
-        @self.app.get("/images/{filename:path}")
-        async def serve_image(filename: str):
-            """Serve images from the flat images directory"""
+        @self.app.get("/debug/coyote-images")
+        async def debug_coyote_images():
+            """Debug endpoint to check coyote image file matching"""
             try:
-                # For the flat images folder structure, all images are in /opt/mcp-data-server/images/
-                image_path = f"/opt/mcp-data-server/images/{filename}"
+                import json
+                from pathlib import Path
                 
-                print(f"🖼️  Looking for image: {filename}")
-                print(f"🖼️  Full path: {image_path}")
+                # Load coyote dataset
+                coyote_file = BASE_DIR / "coyote_mcp_data.json"
+                if not coyote_file.exists():
+                    return {"error": f"Coyote dataset file not found: {coyote_file}"}
                 
-                if not os.path.exists(image_path):
-                    print(f"❌ Image not found: {image_path}")
-                    raise HTTPException(status_code=404, detail=f"Image not found: {filename}")
+                with open(coyote_file, 'r') as f:
+                    coyote_data = json.load(f)
                 
-                print(f"✅ Found image at: {image_path}")
+                images_dir = Path(IMAGES_DIR)
+                if not images_dir.exists():
+                    return {"error": f"Images directory not found: {images_dir}"}
                 
-                # Return the image file
-                from fastapi.responses import FileResponse
-                return FileResponse(image_path)
+                # Get all image files in directory (case-insensitive)
+                existing_files = {}
+                for item in images_dir.iterdir():
+                    if item.suffix.lower() in ['.jpg', '.jpeg', '.png', '.gif']:
+                        # Store both original and lowercase versions for matching
+                        existing_files[item.name.lower()] = item.name
+                        existing_files[item.name] = item.name
+                
+                # Check first 20 coyote images
+                coyote_images = coyote_data.get("images", [])[:20]
+                results = []
+                missing = []
+                found = []
+                
+                for img_entry in coyote_images:
+                    metadata = img_entry.get("metadata", {})
+                    original_filename = metadata.get("original_filename", "")
+                    img_id = img_entry.get("id", "")
+                    
+                    # Check if file exists (case-insensitive)
+                    found_file = None
+                    if original_filename:
+                        # Try exact match
+                        if original_filename in existing_files:
+                            found_file = existing_files[original_filename]
+                        # Try case-insensitive match
+                        elif original_filename.lower() in existing_files:
+                            found_file = existing_files[original_filename.lower()]
+                        # Try with different case
+                        else:
+                            # Try all variations
+                            for existing_lower, existing_orig in existing_files.items():
+                                if existing_lower == original_filename.lower():
+                                    found_file = existing_orig
+                                    break
+                    
+                    result = {
+                        "id": img_id,
+                        "original_filename": original_filename,
+                        "expected_path": f"{IMAGES_DIR}/{original_filename}",
+                        "file_exists": found_file is not None,
+                        "actual_filename": found_file
+                    }
+                    
+                    if found_file:
+                        found.append(result)
+                    else:
+                        missing.append(result)
+                    
+                    results.append(result)
+                
+                # Get sample of actual files that might be coyote images
+                sample_files = []
+                for item in list(images_dir.iterdir())[:50]:
+                    if item.suffix.lower() in ['.jpg', '.jpeg', '.png', '.gif']:
+                        sample_files.append(item.name)
+                
+                return {
+                    "coyote_dataset_file": str(coyote_file),
+                    "images_directory": str(images_dir),
+                    "total_coyote_entries_checked": len(coyote_images),
+                    "files_found": len(found),
+                    "files_missing": len(missing),
+                    "results": results,
+                    "missing_files": missing,
+                    "found_files": found,
+                    "sample_existing_files": sample_files[:20],
+                    "total_images_in_directory": len([f for f in images_dir.iterdir() if f.suffix.lower() in ['.jpg', '.jpeg', '.png', '.gif']])
+                }
                 
             except Exception as e:
+                import traceback
+                return {
+                    "error": str(e),
+                    "traceback": traceback.format_exc()
+                }
+        
+        @self.app.get("/images/{filename:path}")
+        async def serve_image(filename: str):
+            """Serve images: order depends on IMAGES_TRY_SPECIES_FIRST (Taiga = subdirs only → try species subdir first)."""
+            try:
+                from pathlib import Path
+                from fastapi.responses import FileResponse
+                
+                images_dir = Path(IMAGES_DIR)
+                filename_no_ext = Path(filename).stem
+                image_path_flat = images_dir / filename
+                try:
+                    images_dir_resolved = images_dir.resolve()
+                    image_path_flat_resolved = (images_dir_resolved / filename).resolve()
+                except OSError:
+                    images_dir_resolved = images_dir
+                    image_path_flat_resolved = image_path_flat
+                flat_to_try = image_path_flat_resolved if image_path_flat_resolved != image_path_flat else image_path_flat
+                
+                def try_species_subdir():
+                    if "_" not in filename_no_ext:
+                        return None
+                    subdir = filename_no_ext.split("_")[0]
+                    species_dir = images_dir / subdir
+                    sub_path = species_dir / filename
+                    if sub_path.exists() and sub_path.is_file():
+                        return FileResponse(str(sub_path))
+                    for ext in ['.jpg', '.jpeg', '.png', '.gif', '.JPG', '.JPEG', '.PNG', '.GIF']:
+                        sub_path = species_dir / f"{filename_no_ext}{ext}"
+                        if sub_path.exists() and sub_path.is_file():
+                            return FileResponse(str(sub_path))
+                    return None
+                
+                def try_flat():
+                    if flat_to_try.exists() and flat_to_try.is_file():
+                        return FileResponse(str(flat_to_try))
+                    return None
+                
+                print(f"🖼️  Looking for image: {filename}")
+                # Order: species subdir first when Taiga layout (subdirs only), else flat first
+                if IMAGES_TRY_SPECIES_FIRST:
+                    r = try_species_subdir()
+                    if r is not None:
+                        print(f"✅ Found image in species dir")
+                        return r
+                    print(f"🖼️  Trying species subdir then flat: {image_path_flat_resolved}")
+                    r = try_flat()
+                    if r is not None:
+                        print(f"✅ Found image at: {flat_to_try}")
+                        return r
+                else:
+                    print(f"🖼️  Full path (flat): {image_path_flat} -> resolved: {image_path_flat_resolved}")
+                    r = try_flat()
+                    if r is not None:
+                        print(f"✅ Found image at: {flat_to_try}")
+                        return r
+                    r = try_species_subdir()
+                    if r is not None:
+                        print(f"✅ Found image in species dir")
+                        return r
+                
+                # Case-insensitive in flat dir
+                filename_lower = filename.lower()
+                try:
+                    for item in images_dir.iterdir():
+                        if item.is_file() and item.name.lower() == filename_lower:
+                            print(f"✅ Found image (case-insensitive): {item.name}")
+                            return FileResponse(str(item))
+                except OSError:
+                    pass
+                
+                # 4) Different extensions in flat dir
+                for ext in ['.jpg', '.jpeg', '.png', '.gif', '.JPG', '.JPEG', '.PNG', '.GIF']:
+                    potential_file = images_dir / f"{filename_no_ext}{ext}"
+                    if potential_file.exists() and potential_file.is_file():
+                        print(f"✅ Found image (other ext): {potential_file.name}")
+                        return FileResponse(str(potential_file))
+                
+                # Not found – log why (directory missing vs wrong filenames)
+                subdir = filename_no_ext.split("_")[0] if "_" in filename_no_ext else None
+                species_dir = images_dir / subdir if subdir else None
+                print(f"❌ Image not found: {filename}")
+                print(f"   Flat path resolved: {image_path_flat_resolved} (exists={image_path_flat_resolved.exists()})")
+                print(f"   Tried species subdir: {species_dir}")
+                if species_dir is not None:
+                    exists = species_dir.exists() and species_dir.is_dir()
+                    print(f"   Species dir exists: {exists}")
+                    if exists:
+                        try:
+                            sample = list(species_dir.iterdir())[:5]
+                            names = [p.name for p in sample if p.is_file()]
+                            print(f"   Sample files in {subdir}/: {names}")
+                        except OSError as e:
+                            print(f"   (cannot list {subdir}/: {e})")
+                    else:
+                        try:
+                            resolved = species_dir.resolve()
+                            print(f"   Resolved path: {resolved}")
+                        except OSError as e:
+                            print(f"   Resolve failed (permissions?): {e}")
+                print(f"   Tried flat: {image_path_flat}")
+                print(f"   Tried case-insensitive and other extensions for: {filename}")
+                # List files with same prefix (e.g. grapes_*) to see if any exist
+                prefix = filename_no_ext.split("_")[0] if "_" in filename_no_ext else filename_no_ext
+                try:
+                    same_prefix = [p.name for p in images_dir.iterdir() if p.is_file() and p.name.lower().startswith(prefix.lower() + "_")]
+                    if same_prefix:
+                        print(f"   Files with prefix '{prefix}_' in images dir: {same_prefix[:10]}{'...' if len(same_prefix) > 10 else ''}")
+                    else:
+                        print(f"   No files with prefix '{prefix}_' in images dir.")
+                except OSError as e:
+                    print(f"   (could not list images dir: {e})")
+                
+                # List some similar files for debugging
+                similar_files = []
+                filename_lower_short = filename_lower[:10]
+                try:
+                    for item in images_dir.iterdir():
+                        if item.is_file() and item.suffix.lower() in ['.jpg', '.jpeg', '.png', '.gif']:
+                            if filename_lower_short in item.name.lower() or item.name.lower().startswith(filename_lower_short):
+                                similar_files.append(item.name)
+                                if len(similar_files) >= 5:
+                                    break
+                except OSError:
+                    pass
+                
+                error_detail = f"Image not found: {filename}"
+                if similar_files:
+                    error_detail += f". Similar files found: {', '.join(similar_files[:3])}"
+                
+                raise HTTPException(status_code=404, detail=error_detail)
+                
+            except HTTPException:
+                raise
+            except Exception as e:
                 print(f"❌ Error serving image {filename}: {e}")
+                import traceback
+                traceback.print_exc()
+                raise HTTPException(status_code=500, detail=str(e))
+        
+        @self.app.get("/download/{filename:path}")
+        async def download_image(filename: str):
+            """Download images from the web interface with proper download headers"""
+            try:
+                from pathlib import Path
+                from fastapi.responses import FileResponse
+                
+                images_dir = Path(IMAGES_DIR)
+                filename_no_ext = Path(filename).stem
+                image_path_flat = images_dir / filename
+                try:
+                    images_dir_resolved = images_dir.resolve()
+                    image_path_flat_resolved = (images_dir_resolved / filename).resolve()
+                except OSError:
+                    image_path_flat_resolved = image_path_flat
+                disp = lambda n: f'attachment; filename="{n}"'
+                
+                print(f"📥 Download request for image: {filename}")
+                flat_to_try = image_path_flat_resolved if image_path_flat_resolved != image_path_flat else image_path_flat
+                def _dl_species():
+                    if "_" not in filename_no_ext:
+                        return None
+                    subdir = filename_no_ext.split("_")[0]
+                    species_dir = images_dir / subdir
+                    for p in [species_dir / filename, *(species_dir / f"{filename_no_ext}{e}" for e in ['.jpg', '.jpeg', '.png', '.gif', '.JPG', '.JPEG', '.PNG', '.GIF'])]:
+                        if p.exists() and p.is_file():
+                            return FileResponse(str(p), media_type="application/octet-stream", filename=p.name, headers={"Content-Disposition": disp(p.name)})
+                    return None
+                if IMAGES_TRY_SPECIES_FIRST:
+                    r = _dl_species()
+                    if r is not None:
+                        return r
+                if flat_to_try.exists() and flat_to_try.is_file():
+                    return FileResponse(str(flat_to_try), media_type="application/octet-stream", filename=filename, headers={"Content-Disposition": disp(filename)})
+                if not IMAGES_TRY_SPECIES_FIRST:
+                    r = _dl_species()
+                    if r is not None:
+                        return r
+                # Case-insensitive, then other extensions in flat dir
+                filename_lower = filename.lower()
+                try:
+                    for item in images_dir.iterdir():
+                        if item.is_file() and item.name.lower() == filename_lower:
+                            return FileResponse(str(item), media_type="application/octet-stream", filename=item.name, headers={"Content-Disposition": disp(item.name)})
+                except OSError:
+                    pass
+                for ext in ['.jpg', '.jpeg', '.png', '.gif', '.JPG', '.JPEG', '.PNG', '.GIF']:
+                    potential_file = images_dir / f"{filename_no_ext}{ext}"
+                    if potential_file.exists() and potential_file.is_file():
+                        return FileResponse(str(potential_file), media_type="application/octet-stream", filename=potential_file.name, headers={"Content-Disposition": disp(potential_file.name)})
+                
+                print(f"❌ Image not found for download: {filename}")
+                raise HTTPException(status_code=404, detail=f"Image {filename} not found")
+                
+            except HTTPException:
+                raise
+            except Exception as e:
+                print(f"❌ Error downloading image {filename}: {e}")
+                import traceback
+                traceback.print_exc()
                 raise HTTPException(status_code=500, detail=str(e))
     
     def _setup_templates(self):
@@ -549,11 +894,10 @@ class WebInterface:
         """Create HTML templates"""
         templates_dir = BASE_DIR / "templates"
         
-        # Search interface template
+        # Search interface template (always regenerate to ensure latest version)
         search_template = templates_dir / "search_interface.html"
-        if not search_template.exists():
-            with open(search_template, "w") as f:
-                f.write(self._get_search_template())
+        with open(search_template, "w") as f:
+            f.write(self._get_search_template())
         
         # Search results template
         results_template = templates_dir / "search_results.html"
@@ -561,17 +905,15 @@ class WebInterface:
             with open(results_template, "w") as f:
                 f.write(self._get_results_template())
         
-        # LLM search results template
+        # LLM search results template (always regenerate to ensure latest version)
         llm_results_template = templates_dir / "llm_search_results.html"
-        if not llm_results_template.exists():
-            with open(llm_results_template, "w") as f:
-                f.write(self._get_llm_results_template())
+        with open(llm_results_template, "w") as f:
+            f.write(self._get_llm_results_template())
         
-        # Croissant datasets template
+        # Croissant datasets template (always regenerate to ensure latest version)
         croissant_template = templates_dir / "croissant_datasets.html"
-        if not croissant_template.exists():
-            with open(croissant_template, "w") as f:
-                f.write(self._get_croissant_datasets_template())
+        with open(croissant_template, "w") as f:
+            f.write(self._get_croissant_datasets_template())
     
     def _extract_filters_from_datasets(self, datasets: List[Dict[str, Any]]) -> Dict[str, List[str]]:
         """Extract available filters from datasets"""
@@ -599,21 +941,107 @@ class WebInterface:
     def _construct_image_url(self, result: Dict[str, Any]) -> str:
         """Construct image URL from result data"""
         try:
-            # Use the MCP ID directly - it should match the actual filename
-            if "id" in result:
-                # The id should be like "bobcat_008" which matches the actual filename
-                return f"/images/{result['id']}.jpg"
+            metadata = result.get("metadata", {})
+            result_id = result.get("id", "")
             
-            # Fallback to any existing image_url
-            elif "image_url" in result:
+            # Strategy: Try multiple filename patterns in order of likelihood
+            # For coyote: id is "coyote_001" and file is "coyote_001.jpg" (id matches filename)
+            # For red_leaf: id is "red_leaf_001" but actual file is "585652.jpg" (from original_filename)
+            # For raspberry: id is "raspberry_001" but actual file might be "raspberry_458.JPEG"
+            
+            # Priority 1: Check if image_url is explicitly set (most reliable)
+            if "image_url" in result:
                 return result["image_url"]
             
+            # Priority 2: Try id with common extensions FIRST (works for datasets like coyote where id matches filename)
+            # This should be checked before original_filename for datasets where files are named like "coyote_001.jpg"
+            if result_id:
+                images_dir = Path(IMAGES_DIR)
+                if images_dir.exists():
+                    # Try uppercase extensions first (JPEG is common for some datasets)
+                    for ext in [".JPEG", ".JPG", ".PNG", ".jpg", ".jpeg", ".png"]:
+                        potential_filename = f"{result_id}{ext}"
+                        potential_path = images_dir / potential_filename
+                        if potential_path.exists() and potential_path.is_file():
+                            print(f"✅ Found image using id: {potential_filename} (for {result_id})")
+                            return f"/images/{potential_filename}"
+                
+                # If file doesn't exist locally, still return the most likely extension
+                # (server might have it even if local check fails)
+                # But only if id looks like a filename pattern (contains underscore or matches common patterns)
+                if "_" in result_id or result_id.replace("_", "").replace("-", "").isalnum():
+                    print(f"⚠️  Image not found locally for id {result_id}, using .jpg (likely on server)")
+                    return f"/images/{result_id}.jpg"
+            
+            # Priority 3: Try original_filename from metadata (for datasets like red_leaf where id doesn't match filename)
+            # original_filename contains the actual filename from the source dataset
+            if "original_filename" in metadata:
+                original_filename = metadata["original_filename"]
+                filename = Path(original_filename).name
+                # Try to verify file exists locally if possible, but still use it even if check fails
+                # (file might exist on server even if not locally accessible)
+                images_dir = Path(IMAGES_DIR)
+                if images_dir.exists():
+                    potential_path = images_dir / filename
+                    if potential_path.exists() and potential_path.is_file():
+                        print(f"✅ Found image using original_filename: {filename} (for {result_id})")
+                        return f"/images/{filename}"
+                    else:
+                        # Try case-insensitive match
+                        filename_lower = filename.lower()
+                        for item in images_dir.iterdir():
+                            if item.is_file() and item.name.lower() == filename_lower:
+                                print(f"✅ Found image using original_filename (case-insensitive): {item.name} (requested: {filename}, for {result_id})")
+                                return f"/images/{item.name}"
+                
+                # Still use original_filename even if local check fails - it's the source filename
+                # The file likely exists on the server even if not locally accessible
+                print(f"⚠️  original_filename '{filename}' not found locally for {result_id}, but using it anyway (likely on server)")
+                return f"/images/{filename}"
+            
+            # Priority 4: For raspberry and similar datasets, try to find files by searching
+            # Extract species name and try to find matching files
+            species = metadata.get("species", "").lower()
+            if species and result_id:
+                # Try to extract number from id (e.g., "raspberry_001" -> 1)
+                import re
+                id_match = re.search(r'_(\d+)$', result_id)
+                if id_match:
+                    id_num = int(id_match.group(1))
+                    # Try different offsets (some datasets have offset numbering)
+                    # For raspberry: id_001 might map to file_458, so try id_num + 457
+                    # But this is fragile, so we'll try a range
+                    for offset in [0, 457, 458, 459]:  # Common offsets
+                        for ext in [".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG"]:
+                            potential_filename = f"{species}_{id_num + offset}{ext}"
+                            potential_path = f"{IMAGES_DIR}/{potential_filename}"
+                            if os.path.exists(potential_path):
+                                print(f"✅ Found image using offset pattern: {potential_filename}")
+                                return f"/images/{potential_filename}"
+            
+            # Priority 5: Try mcp_id from metadata
+            if "mcp_id" in metadata:
+                mcp_id = metadata["mcp_id"]
+                for ext in [".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG"]:
+                    potential_filename = f"{mcp_id}{ext}"
+                    potential_path = f"{IMAGES_DIR}/{potential_filename}"
+                    if os.path.exists(potential_path):
+                        print(f"✅ Found image using mcp_id: {potential_filename}")
+                        return f"/images/{potential_filename}"
+            
+            # Priority 6: Fallback to id with .jpg (most common extension)
+            if result_id:
+                print(f"⚠️  Using id as fallback: {result_id}.jpg")
+                return f"/images/{result_id}.jpg"
+            
             # If no image info, return placeholder
-            else:
-                return "/images/placeholder.jpg"
+            print(f"❌ No image identifier found for result: {result.get('id', 'unknown')}")
+            return "/images/placeholder.jpg"
                 
         except Exception as e:
-            print(f"❌ Error constructing image URL for result {result}: {e}")
+            print(f"❌ Error constructing image URL for result {result.get('id', 'unknown')}: {e}")
+            import traceback
+            traceback.print_exc()
             return "/images/placeholder.jpg"
     
     def _get_search_template(self) -> str:
@@ -651,8 +1079,9 @@ class WebInterface:
 <body>
     <div class="container">
         <div class="header">
+            <img src="/static/aifarms_logo.png" alt="AIFARMS" style="max-width: 320px; height: auto; margin-bottom: 15px;">
             <h1>🌿 AIFARMS Species Observation Search</h1>
-            <p>Search across multiple datasets using natural language queries and advanced filters</p>
+            <p>Search across multiple datasets using AI-powered natural language queries</p>
         </div>
         
         {% if error %}
@@ -665,113 +1094,19 @@ class WebInterface:
             <h3>🤖 MCP Server Integration</h3>
             <p>This interface connects to the AIFARMS MCP Server at <code>{{ mcp_server_url }}</code></p>
             <p><strong>Available Datasets:</strong> {{ datasets|length }} datasets loaded</p>
-            <p><strong>Features:</strong> Multi-dataset search, ML model inference, extensible tools</p>
+            <p><strong>Features:</strong> AI-powered semantic search, ML model inference, extensible tools</p>
         </div>
-        
-        <form method="POST" action="/search" class="search-form">
-            <div class="dataset-selector">
-                <label for="dataset">Dataset (Optional - leave empty to search all):</label>
-                <select id="dataset" name="dataset">
-                    <option value="">All Datasets</option>
-                    {% for name, info in datasets.items() %}
-                    <option value="{{ name }}">{{ name|title }} ({{ info.total_images }} images)</option>
-                    {% endfor %}
-                </select>
-            </div>
             
-            <div class="form-group">
-                <label for="query">Search Query:</label>
-                <input type="text" id="query" name="query" placeholder="e.g., bobcat at night, coyote hunting, blooming flowers" value="{{ request.query_params.get('query', '') }}">
-            </div>
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="category">Category:</label>
-                    <select id="category" name="category" multiple>
-                        {% for category in filters.categories %}
-                        <option value="{{ category }}">{{ category|title }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="species">Species/Type:</label>
-                    <select id="species" name="species" multiple>
-                        {% for species in filters.species %}
-                        <option value="{{ species }}">{{ species|title }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-            </div>
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="time">Time of Day:</label>
-                    <select id="time" name="time" multiple>
-                        {% for time in filters.times %}
-                        <option value="{{ time }}">{{ time|title }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="season">Season:</label>
-                    <select id="season" name="season" multiple>
-                        {% for season in filters.seasons %}
-                        <option value="{{ season }}">{{ season|title }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-            </div>
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="action">Actions (Animals):</label>
-                    <select id="action" name="action" multiple>
-                        {% for action in filters.actions %}
-                        <option value="{{ action }}">{{ action|title }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="plant_state">Plant States:</label>
-                    <select id="plant_state" name="plant_state" multiple>
-                        {% for state in filters.plant_states %}
-                        <option value="{{ state }}">{{ state|title }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-            </div>
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="limit">Results per page:</label>
-                    <select id="limit" name="limit">
-                        <option value="10">10</option>
-                        <option value="20" selected>20</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label>&nbsp;</label>
-                    <button type="submit" class="search-button">🔍 Search</button>
-                </div>
-            </div>
-        </form>
-            
-        <!-- LLM-Powered Search Section -->
+        <!-- AI-Powered Search Section -->
         <div class="llm-search-section">
-            <h3>🧠 AI-Powered Search <span style="background: #28a745; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px; margin-left: 10px;">CONFIDENCE SCORING</span></h3>
-            <p>Use natural language to find exactly what you're looking for. Results are ranked by AI confidence scores for optimal relevance:</p>
+            <h3>🧠 AI-Powered Search <span style="background: #28a745; color: white; padding: 2px 8px; border-radius: 12px; font-size: 12px; margin-left: 10px;">AI + FILTER MATCHING</span></h3>
+            <p>Use natural language to find exactly what you're looking for. Results are ranked by filter match scores for optimal relevance:</p>
             
             <form action="/llm_search" method="post" class="llm-search-form">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="llm_query">Natural Language Query:</label>
-                        <input type="text" id="llm_query" name="query" placeholder="e.g., 'bobcats hunting at dawn in summer forest'" required>
+                        <input type="text" id="llm_query" name="query" placeholder="e.g., 'coyote at night' or 'unripe raspberries'" required>
                     </div>
                 </div>
                 
@@ -806,16 +1141,16 @@ class WebInterface:
             <div class="llm-examples">
                 <h4>Example Queries:</h4>
                 <ul>
-                    <li><strong>"predators hunting at dawn"</strong> - Find hunting animals in early morning</li>
-                    <li><strong>"animals in summer forest"</strong> - Wildlife in warm forest environments</li>
-                    <li><strong>"coyotes walking in winter"</strong> - Coyotes moving in cold weather</li>
-                    <li><strong>"plants growing in garden"</strong> - Vegetation in cultivated areas</li>
+                    <li><strong>"coyote at night"</strong> - Find coyote images taken at night</li>
+                    <li><strong>"goats in the field"</strong> - Goats in field or pasture settings</li>
+                    <li><strong>"unripe raspberries"</strong> - Raspberry plants with unripe fruit</li>
+                    <li><strong>"Painted Lady"</strong> - Painted Lady butterfly (or moth) images</li>
                 </ul>
                 
                 <div style="margin-top: 15px; padding: 10px; background: #e8f5e8; border-radius: 6px; border-left: 4px solid #28a745;">
-                    <h5 style="margin: 0 0 8px 0; color: #155724;">🎯 Confidence-Based Ranking</h5>
+                    <h5 style="margin: 0 0 8px 0; color: #155724;">🎯 Score-Based Ranking</h5>
                     <p style="margin: 0; font-size: 14px; color: #155724;">
-                        Results are automatically ranked by AI confidence scores. Higher confidence means better query understanding and more relevant results.
+                        Results are automatically ranked by filter match scores. The AI confidence score shows how well the query was understood, while filter match scores show how well each image matches the search criteria.
                     </p>
                 </div>
             </div>
@@ -843,6 +1178,8 @@ class WebInterface:
         .image-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; background: white; }
         .image-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
         .metadata { margin-top: 10px; font-size: 14px; }
+        .download-button { display: inline-block; margin-top: 10px; padding: 8px 16px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; font-size: 14px; }
+        .download-button:hover { background: #0056b3; }
         .no-results { text-align: center; padding: 40px; color: #666; }
     </style>
 </head>
@@ -870,24 +1207,44 @@ class WebInterface:
             <div class="image-card">
                 <img src="{{ result.image_url }}" alt="{{ result.metadata.species|title if result.metadata and result.metadata.species else 'Image' }}">
                 <div class="metadata">
+                    {% if result.image_url %}
+                        {% set image_filename = result.image_url.split('/')[-1] %}
+                        {% if image_filename %}
+                            <a href="/download/{{ image_filename }}" class="download-button" download>📥 Download Image</a>
+                        {% endif %}
+                    {% endif %}
                     {% if result.metadata %}
                         {% if result.metadata.species %}
                         <div><strong>Species:</strong> {{ result.metadata.species|title }}</div>
                         {% endif %}
+                        {% if result.scientific_name %}
+                        <div><strong>Scientific name:</strong> <em>{{ result.scientific_name }}</em></div>
+                        {% endif %}
+                        {% if result.common_names %}
+                        <div><strong>Common names:</strong> {{ result.common_names|join(', ')|title }}</div>
+                        {% endif %}
+                        {% if result.background %}
+                        <div><strong>Background:</strong> {{ result.background }}</div>
+                        {% elif result.metadata.scene %}
+                        <div><strong>Scene:</strong> {{ result.metadata.scene }}</div>
+                        {% endif %}
                         {% if result.metadata.action %}
-                        <div><strong>Action:</strong> {{ result.metadata.action|title }}</div>
+                        <div><strong>Action:</strong> {{ result.metadata.action }}</div>
+                        {% endif %}
+                        {% if result.metadata.plant_state %}
+                        <div><strong>Plant State:</strong> {{ result.metadata.plant_state }}</div>
                         {% endif %}
                         {% if result.metadata.time %}
-                        <div><strong>Time:</strong> {{ result.metadata.time|title }}</div>
+                        <div><strong>Time:</strong> {{ result.metadata.time }}</div>
                         {% endif %}
                         {% if result.metadata.season %}
-                        <div><strong>Season:</strong> {{ result.metadata.season|title }}</div>
-                        {% endif %}
-                        {% if result.metadata.scene %}
-                        <div><strong>Scene:</strong> {{ result.metadata.scene|title }}</div>
+                        <div><strong>Season:</strong> {{ result.metadata.season }}</div>
                         {% endif %}
                         {% if result.metadata.weather %}
                         <div><strong>Weather:</strong> {{ result.metadata.weather|title }}</div>
+                        {% endif %}
+                        {% if result.metadata.lighting %}
+                        <div><strong>Lighting:</strong> {{ result.metadata.lighting }}</div>
                         {% endif %}
                         {% if result.metadata.date %}
                         <div><strong>Date:</strong> {{ result.metadata.date }}</div>
@@ -956,8 +1313,11 @@ class WebInterface:
         {% elif results.results %}
         <div class="results-info">
             <p><strong>Query:</strong> {{ query or "All images" }}</p>
-            <p><strong>Total results:</strong> {{ results.total_count or results.results|length }}</p>
+            <p><strong>Total results in this batch:</strong> {{ results.total_count or results.results|length }}</p>
             <p><strong>Page:</strong> {{ current_page }} of {{ (results.total_count / limit)|round(0, 'ceil')|int if results.total_count else 1 }}</p>
+            {% if total_datasets_matching and total_datasets_matching > 100 %}
+            <p><strong>Datasets:</strong> Batch (datasets {{ dataset_offset + 1 }}–{{ dataset_offset + (results.searched_datasets|length) }} of {{ total_datasets_matching }} matching)</p>
+            {% endif %}
         </div>
         
         {% if results.llm_understanding %}
@@ -969,6 +1329,7 @@ class WebInterface:
                 <div class="confidence-fill" style="width: {{ "%.0f"|format(results.llm_understanding.confidence * 100) }}%"></div>
             </div>
             <div class="confidence-details">
+                <p><strong>Query Understanding:</strong> This score reflects how confident the AI is that it correctly transformed your natural language query into structured search filters.</p>
                 <p><strong>Intent:</strong> {{ results.llm_understanding.intent }}</p>
                 <p><strong>Reasoning:</strong> {{ results.llm_understanding.reasoning }}</p>
                 <p><strong>Applied Filters:</strong> 
@@ -986,7 +1347,7 @@ class WebInterface:
             {% for result in results.results %}
             <div class="image-card">
                 {% if result.llm_confidence %}
-                <div class="confidence-badge">
+                <div class="confidence-badge" title="Filter Match Score: How well this image matches the search criteria">
                     {{ "%.0f"|format(result.llm_confidence * 100) }}%
                 </div>
                 {% endif %}
@@ -996,20 +1357,35 @@ class WebInterface:
                         {% if result.metadata.species %}
                         <div><strong>Species:</strong> {{ result.metadata.species|title }}</div>
                         {% endif %}
+                        {% if result.scientific_name %}
+                        <div><strong>Scientific name:</strong> <em>{{ result.scientific_name }}</em></div>
+                        {% endif %}
+                        {% if result.common_names %}
+                        <div><strong>Common names:</strong> {{ result.common_names|join(', ')|title }}</div>
+                        {% endif %}
+                        {% if result.background %}
+                        <div><strong>Background:</strong> {{ result.background }}</div>
+                        {% endif %}
                         {% if result.metadata.action %}
-                        <div><strong>Action:</strong> {{ result.metadata.action|title }}</div>
+                        <div><strong>Action:</strong> {{ result.metadata.action }}</div>
+                        {% endif %}
+                        {% if result.metadata.plant_state %}
+                        <div><strong>Plant State:</strong> {{ result.metadata.plant_state }}</div>
                         {% endif %}
                         {% if result.metadata.time %}
-                        <div><strong>Time:</strong> {{ result.metadata.time|title }}</div>
+                        <div><strong>Time:</strong> {{ result.metadata.time }}</div>
                         {% endif %}
                         {% if result.metadata.season %}
-                        <div><strong>Season:</strong> {{ result.metadata.season|title }}</div>
+                        <div><strong>Season:</strong> {{ result.metadata.season }}</div>
                         {% endif %}
-                        {% if result.metadata.scene %}
-                        <div><strong>Scene:</strong> {{ result.metadata.scene|title }}</div>
+                        {% if result.metadata.scene and not result.background %}
+                        <div><strong>Scene:</strong> {{ result.metadata.scene }}</div>
                         {% endif %}
                         {% if result.metadata.weather %}
                         <div><strong>Weather:</strong> {{ result.metadata.weather|title }}</div>
+                        {% endif %}
+                        {% if result.metadata.lighting %}
+                        <div><strong>Lighting:</strong> {{ result.metadata.lighting }}</div>
                         {% endif %}
                         {% if result.metadata.date %}
                         <div><strong>Date:</strong> {{ result.metadata.date }}</div>
@@ -1020,13 +1396,76 @@ class WebInterface:
                     {% endif %}
                     {% if result.llm_confidence %}
                     <div style="margin-top: 10px; padding: 5px; background: #f8f9fa; border-radius: 4px;">
-                        <small><strong>AI Confidence:</strong> {{ "%.0f"|format(result.llm_confidence * 100) }}%</small>
+                        <small><strong>Filter Match Score:</strong> {{ "%.0f"|format(result.llm_confidence * 100) }}%</small>
+                        <br><small style="color: #666;">How well this image matches the search filters</small>
                     </div>
                     {% endif %}
                 </div>
             </div>
             {% endfor %}
         </div>
+        
+        {% if has_more_datasets %}
+        <div style="margin-top: 20px; padding: 15px; background: #e7f3ff; border-radius: 8px; border: 1px solid #b3d9ff;">
+            <p style="margin: 0 0 10px 0;">There are more matching datasets. Load the next batch of up to 100 results.</p>
+            <form method="post" action="/llm_search" style="display: inline;">
+                <input type="hidden" name="query" value="{{ query }}">
+                <input type="hidden" name="dataset" value="{{ dataset or '' }}">
+                <input type="hidden" name="limit" value="{{ limit }}">
+                <input type="hidden" name="page" value="1">
+                <input type="hidden" name="dataset_offset" value="{{ next_dataset_offset }}">
+                <button type="submit" style="padding: 12px 24px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Load next 100 results</button>
+            </form>
+            <span style="margin-left: 10px; color: #666;">(datasets {{ next_dataset_offset + 1 }}–{{ [next_dataset_offset + 100, total_datasets_matching]|min }} of {{ total_datasets_matching }})</span>
+        </div>
+        {% endif %}
+        
+        {% if results.total_count and results.total_count > limit %}
+        <div class="pagination" style="margin-top: 30px; text-align: center; padding: 20px;">
+            {% set total_pages = (results.total_count / limit)|round(0, 'ceil')|int %}
+            <p style="margin-bottom: 15px;">Page {{ current_page }} of {{ total_pages }} ({{ results.total_count }} total results in this batch)</p>
+            <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                {% if current_page > 1 %}
+                <form method="post" action="/llm_search" style="display: inline;">
+                    <input type="hidden" name="query" value="{{ query }}">
+                    <input type="hidden" name="dataset" value="{{ dataset or '' }}">
+                    <input type="hidden" name="limit" value="{{ limit }}">
+                    <input type="hidden" name="page" value="{{ current_page - 1 }}">
+                    <input type="hidden" name="dataset_offset" value="{{ dataset_offset }}">
+                    <button type="submit" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">← Previous</button>
+                </form>
+                {% endif %}
+                
+                {% for page_num in range(1, total_pages + 1) %}
+                    {% if page_num == current_page %}
+                    <span style="padding: 10px 15px; background: #007bff; color: white; border-radius: 4px; font-weight: bold;">{{ page_num }}</span>
+                    {% elif page_num <= 3 or page_num > total_pages - 3 or (page_num >= current_page - 1 and page_num <= current_page + 1) %}
+                    <form method="post" action="/llm_search" style="display: inline;">
+                        <input type="hidden" name="query" value="{{ query }}">
+                        <input type="hidden" name="dataset" value="{{ dataset or '' }}">
+                        <input type="hidden" name="limit" value="{{ limit }}">
+                        <input type="hidden" name="page" value="{{ page_num }}">
+                        <input type="hidden" name="dataset_offset" value="{{ dataset_offset }}">
+                        <button type="submit" style="padding: 10px 15px; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px; cursor: pointer;">{{ page_num }}</button>
+                    </form>
+                    {% elif page_num == 4 or page_num == total_pages - 3 %}
+                    <span style="padding: 10px 5px;">...</span>
+                    {% endif %}
+                {% endfor %}
+                
+                {% if current_page < total_pages %}
+                <form method="post" action="/llm_search" style="display: inline;">
+                    <input type="hidden" name="query" value="{{ query }}">
+                    <input type="hidden" name="dataset" value="{{ dataset or '' }}">
+                    <input type="hidden" name="limit" value="{{ limit }}">
+                    <input type="hidden" name="page" value="{{ current_page + 1 }}">
+                    <input type="hidden" name="dataset_offset" value="{{ dataset_offset }}">
+                    <button type="submit" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Next →</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
         {% else %}
         <div class="no-results">
             <h2>No results found</h2>
@@ -1071,8 +1510,8 @@ class WebInterface:
         
         <h1>🔍 Croissant Datasets</h1>
         <p>Discovered datasets from AI Institute portals with Croissant metadata</p>
-        
-        {% if datasets %}
+        <p><strong>Total found: {{ total_count }}</strong></p>
+        {% if datasets and datasets|length > 0 %}
         <div class="dataset-grid">
             {% for dataset in datasets %}
             <div class="dataset-card">
@@ -1116,6 +1555,10 @@ class WebInterface:
         <div class="no-results">
             <h2>No Croissant datasets found</h2>
             <p>Try running the crawler to discover datasets from AI Institute portals.</p>
+            {% if error %}
+            <p style="color: red;"><strong>Error:</strong> {{ error }}</p>
+            {% endif %}
+            <p><strong>Debug:</strong> datasets variable is {{ datasets }}, length is {{ datasets|length if datasets else 0 }}</p>
         </div>
         {% endif %}
     </div>

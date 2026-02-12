@@ -28,7 +28,8 @@ class ModelRegistry:
     def __init__(self):
         self.models: Dict[str, Model] = {}
         self.inference_history: List[Dict[str, Any]] = []
-        self._register_default_models()
+        # Note: Default placeholder models are disabled - register real models when available
+        # self._register_default_models()
     
     def _register_default_models(self):
         """Register default models"""

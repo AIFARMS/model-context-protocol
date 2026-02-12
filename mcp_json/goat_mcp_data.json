@@ -5032,5 +5032,30 @@
         "mcp_id": "goat_296"
       }
     }
-  ]
+  ],
+  "provenance": {
+    "dataset_name": "CherryCh\u00e8vre: A Fine-Grained Dataset for Goat Detection in Natural Environments",
+    "dataset_url": "https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/QEZBNA",
+    "source_organization": "INRAE (Experimental - Observation - Simulation)",
+    "license": "Etalab Open License 2.0",
+    "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf",
+    "citation": "Vayssade, J.-A. (2023). CherryCh\u00e8vre: A fine-grained dataset for goat detection in natural environments. Nature Scientific Data, 10(1). https://doi.org/10.1038/s41597-023-02555-8",
+    "description": "A fine-grained dataset for goat detection containing 6160 annotated images captured under varying environmental conditions. The dataset is intended for developing machine learning algorithms for goat detection, with applications in precision agriculture, animal welfare, behaviour analysis, and animal husbandry.",
+    "geographic_location": "Natural environments (France)",
+    "data_collection_period": "2023",
+    "image_types": [
+      "Daylight",
+      "Natural environments"
+    ],
+    "acknowledgment": "We acknowledge the use of images provided by Jehan-Antoine Vayssade and INRAE"
+  },
+  "citation": "Vayssade, J.-A. (2023). CherryCh\u00e8vre: A fine-grained dataset for goat detection in natural environments. Nature Scientific Data, 10(1). https://doi.org/10.1038/s41597-023-02555-8",
+  "acknowledgment": "We acknowledge the use of images provided by Jehan-Antoine Vayssade and INRAE",
+  "dataset_metadata": {
+    "source_url": "https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi:10.57745/QEZBNA",
+    "license": "Etalab Open License 2.0",
+    "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf",
+    "geographic_location": "Natural environments (France)",
+    "collection_period": "2023"
+  }
 }
