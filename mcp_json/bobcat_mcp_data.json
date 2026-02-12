@@ -3,7 +3,7 @@
     {
       "id": "bobcat_001",
       "metadata": {
-        "description": "Animal, likely a cat species, investigating a tree stump in forest area Outdoor forest environment with trees and fallen leaves Forest trees, part of wooded terrain",
+        "description": "Bobcat, investigating a tree stump in forest area Outdoor forest environment with trees and fallen leaves Forest trees, part of wooded terrain",
         "time": "dawn",
         "season": "unknown",
         "action": "moving",
@@ -20,7 +20,7 @@
     {
       "id": "bobcat_002",
       "metadata": {
-        "description": "A section of forest floor with leaves and a partially visible small animal or object in lower left corner Forested area with trees and leaves covering the ground Dense greenery, trees, bushes, and forest foliage",
+        "description": "Bobcat. A section of forest floor with leaves and a partially visible small Bobcat in lower left corner Forested area with trees and leaves covering the ground Dense greenery, trees, bushes, and forest foliage",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
@@ -37,7 +37,7 @@
     {
       "id": "bobcat_003",
       "metadata": {
-        "description": "Animal with reflective eyes captured by night vision trail camera Outdoor forest area with trees and leaf-covered ground Dense forest with leafless trees",
+        "description": "Bobcat, with reflective eyes captured by night vision trail camera Outdoor forest area with trees and leaf-covered ground Dense forest with leafless trees",
         "time": "night",
         "season": "unknown",
         "action": "moving",
@@ -54,11 +54,11 @@
     {
       "id": "bobcat_004",
       "metadata": {
-        "description": "A blurred animal with glowing eyes moving through a natural, wooded area at night. An outdoor woodland area with trees and ground vegetation. Dense vegetation and trees in a natural setting.",
+        "description": "Bobcat. A blurred animal with glowing eyes moving through a natural, wooded area at night. An outdoor woodland area with trees and ground vegetation. Dense vegetation and trees in a natural setting.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-27-2014",
         "lighting": "Low lighting, likely from infrared or night-vision camera.",
@@ -71,7 +71,7 @@
     {
       "id": "bobcat_005",
       "metadata": {
-        "description": "An animal, likely a medium-sized mammal, appearing partially within the frame in a nighttime forest environment Natural forested environment with trees and ground cover Trees and vegetation visible within a dense forest environment",
+        "description": "Bobcat, appearing partially within the frame in a nighttime forest environment Natural forested environment with trees and ground cover Trees and vegetation visible within a dense forest environment",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -88,7 +88,7 @@
     {
       "id": "bobcat_006",
       "metadata": {
-        "description": "Animal (possibly raccoon) moving across a nighttime outdoor setting Forest or wooded natural environment Dark forest with sparse vegetation and trees in the distance",
+        "description": "Bobcat moving across a nighttime outdoor setting Bobcat natural environment Dark forest with sparse vegetation and trees in the distance",
         "time": "dawn",
         "season": "winter",
         "action": "walking",
@@ -105,7 +105,7 @@
     {
       "id": "bobcat_007",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, walking through a forested area Wooded forest environment with a leafy forest floor Dense greenery, plants, leaves, and part of a large tree trunk",
+        "description": "A Bobcat, walking through a forested area Wooded forest environment with a leafy forest floor Dense greenery, plants, leaves, and part of a large tree trunk",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
@@ -122,11 +122,11 @@
     {
       "id": "bobcat_008",
       "metadata": {
-        "description": "Animal appears on the right side within a wooded area. Outdoor, wooded environment. Trees and dense vegetation visible in background.",
+        "description": "Bobcat, appears on the right side within a wooded area. Outdoor, wooded environment. Trees and dense vegetation visible in background.",
         "time": "night",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "April 28, 2015",
         "lighting": "Low light, infrared or night vision.",
@@ -139,11 +139,11 @@
     {
       "id": "bobcat_009",
       "metadata": {
-        "description": "Animal partially visible moving through foliage. Wooded natural environment with dense foliage. Dense vegetation and trees.",
+        "description": "Bobcat, partially visible moving through foliage. Wooded natural environment with dense foliage. Dense vegetation and trees.",
         "time": "night",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-10-02 (timestamp visible)",
         "lighting": "Low-light nighttime infrared illumination.",
@@ -156,7 +156,7 @@
     {
       "id": "bobcat_010",
       "metadata": {
-        "description": "A wild animal, likely a fox or similar mammal with reflective eyes, captured by a wildlife camera at night. Forested area with leaf-covered ground. Various trees, branches, and forest vegetation are present.",
+        "description": "A Bobcat, captured by a wildlife camera at night. Forested area with leaf-covered ground. Various trees, branches, and forest vegetation are present.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -173,7 +173,7 @@
     {
       "id": "bobcat_011",
       "metadata": {
-        "description": "Small animal captured moving across a forest trail Wooded forest area with dense vegetation Trees, foliage, and a forest pathway",
+        "description": "Bobcat, captured moving across a forest trail Wooded forest area with dense vegetation Trees, foliage, and a forest pathway",
         "time": "dusk",
         "season": "summer",
         "action": "walking",
@@ -190,7 +190,7 @@
     {
       "id": "bobcat_012",
       "metadata": {
-        "description": "Wild animal, possibly a bobcat, carrying prey in wooded area Dense forest environment with leafy ground Forest floor, trees, leaves, underbrush",
+        "description": "Bobcat, carrying prey in wooded area Dense forest environment with leafy ground Forest floor, trees, leaves, underbrush",
         "time": "day",
         "season": "unknown",
         "action": "walking",
@@ -207,7 +207,7 @@
     {
       "id": "bobcat_013",
       "metadata": {
-        "description": "Small animal, likely wildlife, walking in a forest environment Dense forest with trees and foliage covering the ground Multiple trees, branches, leaves covering the forest floor",
+        "description": "Bobcat, walking in a forest environment Dense forest with trees and foliage covering the ground Multiple trees, branches, leaves covering the forest floor",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -224,7 +224,7 @@
     {
       "id": "bobcat_014",
       "metadata": {
-        "description": "A wild animal, possibly a fox or coyote, clearly captured walking through vegetation at night. Natural outdoor environment, likely forest or wooded area with grassy ground. Dense shrubs and thick vegetation.",
+        "description": "A Bobcat, clearly captured walking through vegetation at night. Natural outdoor environment, Bobcat. Dense shrubs and thick vegetation.",
         "time": "night",
         "season": "summer",
         "action": "walking",
@@ -241,11 +241,11 @@
     {
       "id": "bobcat_015",
       "metadata": {
-        "description": "Partial view of an animal, likely a mammal, moving out of frame in a forest environment Wooded area with scattered trees and ground cover Forest with numerous trees, bare branches and patches of snow cover",
+        "description": "Partial view of an animal, Bobcat, moving out of frame in a forest environment Wooded area with scattered trees and ground cover Forest with numerous trees, bare branches and patches of snow cover",
         "time": "dawn",
         "season": "winter",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2016-01-24",
         "lighting": "Low, natural lighting indicating early morning or late evening",
@@ -258,7 +258,7 @@
     {
       "id": "bobcat_016",
       "metadata": {
-        "description": "Animal, likely a fox or coyote, partially obscured by vegetation Natural outdoor environment, forested area Dense vegetation, trees, and bushes",
+        "description": "Bobcat, partially obscured by vegetation Natural outdoor environment, forested area Dense vegetation, trees, and bushes",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -275,7 +275,7 @@
     {
       "id": "bobcat_017",
       "metadata": {
-        "description": "A wild cat (likely a bobcat) walking through a forested area Forest environment with trees and leaf-covered ground Numerous trees, branches, leaves and forest vegetation",
+        "description": "A wild cat (Bobcat) walking through a forested area Forest environment with trees and leaf-covered ground Numerous trees, branches, leaves and forest vegetation",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -292,11 +292,11 @@
     {
       "id": "bobcat_018",
       "metadata": {
-        "description": "A small animal, appearing to be a mammal, positioned centrally and facing away from camera, walking forward in a natural outdoor setting. Wooded outdoor environment with visible vegetation in foreground and trees in background. Dense and dark woodland area with bare branches and sparse vegetation visible due to low-light conditions.",
+        "description": "Bobcat. A small animal, appearing to be a mammal, positioned centrally and facing away from camera, walking forward in a natural outdoor setting. Wooded outdoor environment with visible vegetation in foreground and trees in background. Dense and dark woodland area with bare branches and sparse vegetation visible due to low-light conditions.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "January 19, 2016 indicated by timestamp.",
         "lighting": "Infrared or night-vision illumination with artificial bright lighting in limited range surrounding the animal.",
@@ -309,7 +309,7 @@
     {
       "id": "bobcat_019",
       "metadata": {
-        "description": "A small animal, possibly a deer, standing in a wooded area Natural forest environment with trees and dry leaves on the ground Dense woodland with multiple trees and leaf-covered ground",
+        "description": "A small animal, Bobcat, standing in a wooded area Natural forest environment with trees and dry leaves on the ground Dense woodland with multiple trees and leaf-covered ground",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -326,7 +326,7 @@
     {
       "id": "bobcat_020",
       "metadata": {
-        "description": "A close-up rear view of a wild feline, likely a bobcat, walking through a forested area. Natural forest environment with dense trees and leaf-covered ground Trees, branches, leaf litter, and forest understory vegetation",
+        "description": "A close-up rear view of a wild feline, Bobcat, walking through a forested area. Natural forest environment with dense trees and leaf-covered ground Trees, branches, leaf litter, and forest understory vegetation",
         "time": "day",
         "season": "unknown",
         "action": "walking",
@@ -343,7 +343,7 @@
     {
       "id": "bobcat_021",
       "metadata": {
-        "description": "Wild animal, possibly a fox or similar creature, visible in dense vegetation Natural wooded area, forest environment Dense forest vegetation, trees and bushes",
+        "description": "Bobcat, visible in dense vegetation Natural wooded area, forest environment Dense forest vegetation, trees and bushes",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -360,7 +360,7 @@
     {
       "id": "bobcat_022",
       "metadata": {
-        "description": "Small animal with glowing eyes partially obscured behind branches Forest environment with tall trees and leaf-covered ground Distant tree trunks and shadowed wooded area",
+        "description": "Bobcat, with glowing eyes partially obscured behind branches Forest environment with tall trees and leaf-covered ground Distant tree trunks and shadowed wooded area",
         "time": "night",
         "season": "unknown",
         "action": "moving",
@@ -377,7 +377,7 @@
     {
       "id": "bobcat_023",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat or similar feline, walking on a forest path away from the camera Forest environment with trees and a dirt path Dense trees with leaves, sunlight filtering through",
+        "description": "A Bobcat, walking on a forest path away from the camera Forest environment with trees and a dirt path Dense trees with leaves, sunlight filtering through",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -394,11 +394,11 @@
     {
       "id": "bobcat_024",
       "metadata": {
-        "description": "Partial view of an animal walking on a forest trail Woodland trail surrounded by trees Dense trees, foliage, and a dirt path",
+        "description": "Bobcat. Partial view of an animal walking on a forest trail Woodland trail surrounded by trees Dense trees, foliage, and a dirt path",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "07-21-2015",
         "lighting": "Natural daylight, well-lit",
@@ -411,7 +411,7 @@
     {
       "id": "bobcat_025",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, partially visible at the right edge of the image. Dense forested or wooded area with leafy vegetation and moss-covered ground. Trees and dense greenery, moss-covered ground with scattered rocks and plants; structure or building partially obscured by vegetation.",
+        "description": "A Bobcat, partially visible at the right edge of the image. Dense Bobcat area with leafy vegetation and moss-covered ground. Trees and dense greenery, moss-covered ground with scattered rocks and plants; Bobcat partially obscured by vegetation.",
         "time": "day",
         "season": "summer",
         "action": "walking",
@@ -428,7 +428,7 @@
     {
       "id": "bobcat_026",
       "metadata": {
-        "description": "Animal walking along a forest path Dense forest with tall trees and leafy foliage Trees, bushes, vegetation and a visible winding path",
+        "description": "Bobcat, walking along a forest path Dense forest with tall trees and leafy foliage Trees, bushes, vegetation and a visible winding path",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -445,11 +445,11 @@
     {
       "id": "bobcat_027",
       "metadata": {
-        "description": "A small blurry animal, likely wildlife, walking through the forest. Dense woodland area with trees, fallen logs, and leaf-covered ground. Numerous trees, branches, and dense foliage.",
+        "description": "A small blurry animal, Bobcat, walking through the forest. Dense woodland area with trees, fallen logs, and leaf-covered ground. Numerous trees, branches, and dense foliage.",
         "time": "day",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "07-05-2015",
         "lighting": "Natural daylight filtering through the tree canopy.",
@@ -462,7 +462,7 @@
     {
       "id": "bobcat_028",
       "metadata": {
-        "description": "A wild animal, probably a bobcat, at night in a forested area Forested natural woodland environment Dense forest with trees and bushes",
+        "description": "A Bobcat, at night in a forested area Forested natural woodland environment Dense forest with trees and bushes",
         "time": "night",
         "season": "fall",
         "action": "alert",
@@ -479,11 +479,11 @@
     {
       "id": "bobcat_029",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, captured in motion by a night-time wildlife camera Outdoor natural environment with vegetation Trees and dense vegetation are visible in the backdrop",
+        "description": "A Bobcat, captured in motion by a night-time wildlife camera Outdoor natural environment with vegetation Trees and dense vegetation are visible in the backdrop",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-21-2014",
         "lighting": "Low-light conditions typically seen in wildlife infrared photography",
@@ -496,11 +496,11 @@
     {
       "id": "bobcat_030",
       "metadata": {
-        "description": "Small animal, probably wildlife, partially obscured by vegetation Outdoor natural environment, grassy field with bushes and trees Trees, bushes, and tall grasses dominate the background",
+        "description": "Bobcat, partially obscured by vegetation Outdoor natural environment, grassy field with bushes and trees Trees, bushes, and tall grasses dominate the background",
         "time": "night",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "June 13th, 2014 (from timestamp)",
         "lighting": "Nighttime image captured using infrared camera lighting",
@@ -513,11 +513,11 @@
     {
       "id": "bobcat_031",
       "metadata": {
-        "description": "Animal, likely a wild mammal, partially visible moving through outdoor area at night Outdoor wooded area with scattered vegetation Vegetation, bushes, and trees",
+        "description": "Bobcat, partially visible moving through outdoor area at night Outdoor wooded area with scattered vegetation Vegetation, bushes, and trees",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-28-2014",
         "lighting": "Low visibility, artificial infrared or night camera illumination",
@@ -530,7 +530,7 @@
     {
       "id": "bobcat_032",
       "metadata": {
-        "description": "The primary focus is a wild animal, likely a bobcat, positioned on the forest floor. A natural forest environment with numerous trees and leaf litter. Mostly dense trees and vegetation with leaves visible on the forest floor.",
+        "description": "The primary focus is A Bobcat, positioned on the forest floor. A natural forest environment with numerous trees and leaf litter. Mostly dense trees and vegetation with leaves visible on the forest floor.",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -547,7 +547,7 @@
     {
       "id": "bobcat_033",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, captured at night in a natural environment Natural, woodland or forested environment Trees, shrubs, and ground foliage",
+        "description": "A Bobcat, captured at night in a natural environment Natural, Bobcat environment Trees, shrubs, and ground foliage",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -564,11 +564,11 @@
     {
       "id": "bobcat_034",
       "metadata": {
-        "description": "Close-up blurred view of animal's fur/body captured by wildlife camera Outdoor, natural wooded environment Dense trees, vegetation and leaf-covered ground",
+        "description": "Bobcat. Close-up blurred view of animal's fur/body captured by wildlife camera Outdoor, natural wooded environment Dense trees, vegetation and leaf-covered ground",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "November 25, 2014",
         "lighting": "Low illumination, infrared night vision camera",
@@ -581,11 +581,11 @@
     {
       "id": "bobcat_035",
       "metadata": {
-        "description": "Animal partially visible at the lower-left corner moving through natural outdoor area Natural outdoor environment, surrounded by vegetation and ground covered in dry grass Bushes, dry grass, dark wooded area",
+        "description": "Bobcat, partially visible at the lower-left corner moving through natural outdoor area Natural outdoor environment, surrounded by vegetation and ground covered in dry grass Bushes, dry grass, dark wooded area",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-21-2014",
         "lighting": "Dark setting, illuminated by infrared or night-vision technology",
@@ -598,7 +598,7 @@
     {
       "id": "bobcat_036",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, walking along a dirt path in a forested area. Forested area with dense trees and underbrush Woodland terrain with leaf-covered ground and numerous trees",
+        "description": "A Bobcat, walking along a dirt path in a forested area. Forested area with dense trees and underbrush Woodland terrain with leaf-covered ground and numerous trees",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -615,7 +615,7 @@
     {
       "id": "bobcat_037",
       "metadata": {
-        "description": "Small animal, possibly a rodent or squirrel, on the forest floor amid leaf litter. Natural forest environment with dense trees and leafy ground cover. Multiple dense tree trunks and leaf-covered ground, dense vegetation.",
+        "description": "Bobcat, on the forest floor amid leaf litter. Natural forest environment with dense trees and leafy ground cover. Multiple dense tree trunks and leaf-covered ground, dense vegetation.",
         "time": "dawn",
         "season": "unknown",
         "action": "foraging",
@@ -632,7 +632,7 @@
     {
       "id": "bobcat_038",
       "metadata": {
-        "description": "Wild animal, likely a raccoon, detected from behind in a forest environment Forested area with trees and leaf-covered ground Trees and foliage in a wooded space",
+        "description": "Bobcat, detected from behind in a forest environment Forested area with trees and leaf-covered ground Trees and foliage in a wooded space",
         "time": "dawn",
         "season": "unknown",
         "action": "foraging",
@@ -649,7 +649,7 @@
     {
       "id": "bobcat_039",
       "metadata": {
-        "description": "A small animal, possibly a bobcat or a cat, sitting on the forest floor. A wooded forest area with many trees and leaf litter on the ground. Dense forest with trees, foliage, and leafy ground cover.",
+        "description": "A small animal, Bobcat, sitting on the forest floor. A wooded forest area with many trees and leaf litter on the ground. Dense forest with trees, foliage, and leafy ground cover.",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -666,7 +666,7 @@
     {
       "id": "bobcat_040",
       "metadata": {
-        "description": "Close-up image of an animal, possibly a cat or small mammal, in a forested area at night. Forested natural environment with ground covered in leaves and sparse vegetation. Dark forest area with trees clearly visible but not prominently detailed.",
+        "description": "Close-up image of an animal, Bobcat, in a forested area at night. Forested natural environment with ground covered in leaves and sparse vegetation. Dark forest area with trees clearly visible but not prominently detailed.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -683,7 +683,7 @@
     {
       "id": "bobcat_041",
       "metadata": {
-        "description": "Animal, likely a feline, walking through a forested area at night Dense forest with trees and ground vegetation Trees and forest understory",
+        "description": "Bobcat, walking through a forested area at night Dense forest with trees and ground vegetation Trees and forest understory",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -700,7 +700,7 @@
     {
       "id": "bobcat_042",
       "metadata": {
-        "description": "An animal with reflective eyes detected in a natural, wooded environment at night Forest or wooded area, natural vegetation Dense trees, bushes, and forest vegetation illuminated by infrared",
+        "description": "Bobcat, with reflective eyes detected in a natural, wooded environment at night Bobcat area, natural vegetation Dense trees, bushes, and forest vegetation illuminated by infrared",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -717,7 +717,7 @@
     {
       "id": "bobcat_043",
       "metadata": {
-        "description": "Wildlife animal visible from behind in a natural, wooded area Dense natural forest area with ground vegetation Dark woods with trees and sparse vegetation",
+        "description": "Bobcat. Wildlife animal visible from behind in a natural, wooded area Dense natural forest area with ground vegetation Dark woods with trees and sparse vegetation",
         "time": "night",
         "season": "winter",
         "action": "alert",
@@ -734,11 +734,11 @@
     {
       "id": "bobcat_044",
       "metadata": {
-        "description": "Blurred image of an animal moving through a forest Dense wooded area with fallen leaves and tree trunks Trees, branches, and leaf litter on a forest floor",
+        "description": "Bobcat. Blurred image of an animal moving through a forest Dense wooded area with fallen leaves and tree trunks Trees, branches, and leaf litter on a forest floor",
         "time": "dawn",
         "season": "unknown",
         "action": "moving",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "April 10, 2015",
         "lighting": "Natural daylight with moderate diffuse lighting",
@@ -751,11 +751,11 @@
     {
       "id": "bobcat_045",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, walking through a forest. Wooded area with trees, dry leaves, and scattered branches. Dense woods with leafless or minimally foliaged trees, fallen branches and leaves covering the forest floor.",
+        "description": "A Bobcat, walking through a forest. Wooded area with trees, dry leaves, and scattered branches. Dense woods with Bobcat foliaged trees, fallen branches and leaves covering the forest floor.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "Not visible",
         "date": "December 8, 2014 (as indicated on the image timestamp)",
         "lighting": "Natural outdoor daylight, fairly clear illumination.",
@@ -768,7 +768,7 @@
     {
       "id": "bobcat_046",
       "metadata": {
-        "description": "A wild feline, possibly a bobcat, walking away into a dark forest environment Forest area with leaf-covered terrain Dense forest area with trees and dark vegetation",
+        "description": "A wild feline, Bobcat, walking away into a dark forest environment Forest area with leaf-covered terrain Dense forest area with trees and dark vegetation",
         "time": "night",
         "season": "winter",
         "action": "walking",
@@ -785,11 +785,11 @@
     {
       "id": "bobcat_047",
       "metadata": {
-        "description": "A wild animal with glowing eyes stands in natural woodland surroundings Outdoor woodland area with dense vegetation Trees, bushes, and woodland vegetation with darkness beyond immediate foreground",
+        "description": "A Bobcat with glowing eyes stands in natural woodland surroundings Outdoor woodland area with dense vegetation Trees, bushes, and woodland vegetation with darkness beyond immediate foreground",
         "time": "night",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "07-25-2015",
         "lighting": "Low-light, infrared/night vision illuminated scene",
@@ -802,11 +802,11 @@
     {
       "id": "bobcat_048",
       "metadata": {
-        "description": "An animal with reflective eyes walking through a natural setting at night A natural, outdoor environment with ground vegetation and sparse trees Dense vegetation, branches, and trees",
+        "description": "Bobcat, with reflective eyes walking through a natural setting at night A natural, outdoor environment with ground vegetation and sparse trees Dense vegetation, branches, and trees",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-27-2014",
         "lighting": "Low-light conditions, nighttime illumination likely from infrared camera",
@@ -819,7 +819,7 @@
     {
       "id": "bobcat_049",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat or lynx, clearly visible and facing forward, captured by a wildlife camera. Natural forest environment, densely wooded area Tall trees, leaf litter on forest ground, branches and typical forest vegetation visible",
+        "description": "A Bobcat, clearly visible and facing forward, captured by a wildlife camera. Natural forest environment, densely wooded area Tall trees, leaf litter on forest ground, branches and typical forest vegetation visible",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -836,7 +836,7 @@
     {
       "id": "bobcat_050",
       "metadata": {
-        "description": "Animal walking through a forested area at night Forested area, outdoors, dark environment Numerous trees, forest floor covered with leaves and debris, some branches and a tree stump",
+        "description": "Bobcat, walking through a forested area at night Forested area, outdoors, dark environment Numerous trees, forest floor covered with leaves and debris, some branches and a tree stump",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -853,7 +853,7 @@
     {
       "id": "bobcat_051",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, walking away from the camera in a forested area Forest or wooded area with dense trees and leaf-covered ground Several tall trees and branches with limited visibility due to darkness",
+        "description": "A Bobcat, walking away from the camera in a forested area Bobcat area with dense trees and leaf-covered ground Several tall trees and branches with limited visibility due to darkness",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -870,11 +870,11 @@
     {
       "id": "bobcat_052",
       "metadata": {
-        "description": "Animal captured by wildlife/trail camera at edge of wooded area Natural outdoor environment, wooded and grassy terrain Dense trees, low vegetation and dark wooded area",
+        "description": "Bobcat, captured by wildlife/trail camera at edge of wooded area Natural outdoor environment, wooded and grassy terrain Dense trees, low vegetation and dark wooded area",
         "time": "night",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "12-05-2014",
         "lighting": "Low-light night scene, illuminated by camera's infrared flash",
@@ -887,7 +887,7 @@
     {
       "id": "bobcat_053",
       "metadata": {
-        "description": "Animal with spotted fur partially visible behind a bright branch or object in foreground Natural forest environment Dense dark wooded area with thin trees and low vegetation",
+        "description": "Bobcat, with spotted fur partially visible behind a bright Bobcat in foreground Natural forest environment Dense dark wooded area with thin trees and low vegetation",
         "time": "night",
         "season": "fall",
         "action": "moving",
@@ -904,11 +904,11 @@
     {
       "id": "bobcat_054",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, walking across a wooded area. A wooded area with natural vegetation and rocks, likely near a residential structure. Trees, bushes, rocks, and a building structure partially visible.",
+        "description": "A Bobcat, walking across a wooded area. A wooded area with natural vegetation and rocks, Bobcat. Trees, bushes, rocks, and a building structure partially visible.",
         "time": "day",
         "season": "summer",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "Clear and sunny conditions, no precipitation visible.",
         "date": "2015-08-14, clearly indicated from metadata timestamp",
         "lighting": "Bright sunlight with shade from surrounding trees.",
@@ -921,7 +921,7 @@
     {
       "id": "bobcat_055",
       "metadata": {
-        "description": "Animal, likely a wild cat, detected by a trail camera at night Wooded area, forest Trees and forest vegetation",
+        "description": "Bobcat, detected by a trail camera at night Wooded area, forest Trees and forest vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -938,7 +938,7 @@
     {
       "id": "bobcat_056",
       "metadata": {
-        "description": "Animal, possibly a fox or small mammal, moving across forest ground Natural outdoor forest environment Dense trees, forest ground, and foliage",
+        "description": "Bobcat, moving across forest ground Natural outdoor forest environment Dense trees, forest ground, and foliage",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -955,7 +955,7 @@
     {
       "id": "bobcat_057",
       "metadata": {
-        "description": "Nighttime image capturing dense foliage and vegetation Outdoor natural environment, densely vegetated area Dense vegetation with various plants and leafy foliage",
+        "description": "Bobcat. Nighttime image capturing dense foliage and vegetation Outdoor natural environment, densely vegetated area Dense vegetation with various plants and leafy foliage",
         "time": "dawn",
         "season": "unknown",
         "action": "moving",
@@ -972,11 +972,11 @@
     {
       "id": "bobcat_058",
       "metadata": {
-        "description": "Animal walking across a field during low light conditions Open agricultural field with wooded areas in background Open agricultural field bordered by distant trees",
+        "description": "Bobcat, walking across a field during low light conditions Open agricultural field with wooded areas in background Open agricultural field bordered by distant trees",
         "time": "dusk",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-11-25",
         "lighting": "Low natural lighting, likely dusk",
@@ -989,7 +989,7 @@
     {
       "id": "bobcat_059",
       "metadata": {
-        "description": "Animal moving quickly through a forested area, illuminated eyes visible Woodland or forest environment Trees, leaf litter-covered forest floor and undergrowth",
+        "description": "Bobcat, moving quickly through a forested area, illuminated eyes visible Bobcat environment Trees, leaf litter-covered forest floor and undergrowth",
         "time": "night",
         "season": "unknown",
         "action": "moving",
@@ -1006,7 +1006,7 @@
     {
       "id": "bobcat_060",
       "metadata": {
-        "description": "A wild cat, likely a bobcat, walking through dense vegetation Forest setting with dense greenery and foliage Trees, dense bushes, and leaves",
+        "description": "A wild cat, Bobcat, walking through dense vegetation Forest setting with dense greenery and foliage Trees, dense bushes, and leaves",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -1023,7 +1023,7 @@
     {
       "id": "bobcat_061",
       "metadata": {
-        "description": "A medium-sized animal foraging or roaming in dense vegetation Dense forested area with lush vegetation Thick bushes and trees forming dense forest cover",
+        "description": "A medium-sized animal Bobcat in dense vegetation Dense forested area with lush vegetation Thick bushes and trees forming dense forest cover",
         "time": "dawn",
         "season": "fall",
         "action": "foraging",
@@ -1040,7 +1040,7 @@
     {
       "id": "bobcat_062",
       "metadata": {
-        "description": "Animal with glowing eyes in a wooded area at night Wooded or forest environment Trees, leaves, and dense vegetation",
+        "description": "Bobcat, with glowing eyes in a wooded area at night Bobcat environment Trees, leaves, and dense vegetation",
         "time": "night",
         "season": "unknown",
         "action": "moving",
@@ -1057,7 +1057,7 @@
     {
       "id": "bobcat_063",
       "metadata": {
-        "description": "A small animal, possibly a bobcat, walking through a forested area Forested area with dense trees, leafy ground, and a dirt pathway Thick trees, shrubs, and greenery",
+        "description": "A small animal, Bobcat, walking through a forested area Forested area with dense trees, leafy ground, and a dirt pathway Thick trees, shrubs, and greenery",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -1074,7 +1074,7 @@
     {
       "id": "bobcat_064",
       "metadata": {
-        "description": "Three animals visible, with glowing eyes illuminated by camera flash in a nighttime wooded environment Forested outdoor area with dense vegetation and trees Dark woods, trees and bushes",
+        "description": "Bobcat. Three animals visible, with glowing eyes illuminated by camera flash in a nighttime wooded environment Forested outdoor area with dense vegetation and trees Dark woods, trees and bushes",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -1091,7 +1091,7 @@
     {
       "id": "bobcat_065",
       "metadata": {
-        "description": "A wild animal (possibly a bobcat) moving through a forest environment. Natural forest environment with dense trees and vegetation. Dense foliage and trees, forest floor covered with fallen leaves.",
+        "description": "A Bobcat (Bobcat) moving through a forest environment. Natural forest environment with dense trees and vegetation. Dense foliage and trees, forest floor covered with fallen leaves.",
         "time": "day",
         "season": "unknown",
         "action": "moving",
@@ -1108,7 +1108,7 @@
     {
       "id": "bobcat_066",
       "metadata": {
-        "description": "Nocturnal image capturing a small animal, possibly a fox or coyote, in a wooded area Natural setting in a wooded area or forest Dark trees, forest floor vegetation and natural terrain; dense woods visible in the background",
+        "description": "Nocturnal image capturing a small animal, Bobcat, in a wooded area Natural setting in a wooded Bobcat Dark trees, forest floor vegetation and natural terrain; dense woods visible in the background",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -1125,11 +1125,11 @@
     {
       "id": "bobcat_067",
       "metadata": {
-        "description": "A nocturnal wildlife image capturing an animal partially visible on the right side. Outdoor, wooded natural environment Trees, bushes, and foliage typical of a forest environment",
+        "description": "Bobcat. A nocturnal wildlife image capturing an animal partially visible on the right side. Outdoor, wooded natural environment Trees, bushes, and foliage typical of a forest environment",
         "time": "night",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "07-25-2015",
         "lighting": "Infrared or night-vision camera illumination, providing grayscale brightness",
@@ -1146,7 +1146,7 @@
         "time": "dawn",
         "season": "summer",
         "action": "moving",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-08-25, indicated by timestamp",
         "lighting": "Natural outdoors lighting, bright and clear",
@@ -1159,7 +1159,7 @@
     {
       "id": "bobcat_069",
       "metadata": {
-        "description": "A wild feline animal, possibly a bobcat, walking uphill through a lush, moss-covered woodland area. Forested woodland with mossy ground cover, surrounded by trees and dense vegetation Dense trees, green foliage, and understory vegetation",
+        "description": "A wild feline animal, Bobcat, walking uphill through a lush, moss-covered woodland area. Forested woodland with mossy ground cover, surrounded by trees and dense vegetation Dense trees, green foliage, and understory vegetation",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -1176,7 +1176,7 @@
     {
       "id": "bobcat_070",
       "metadata": {
-        "description": "Animal (possibly a coyote or fox) walking away from camera in a wooded area Forest or woodland environment with trees and ground foliage Numerous thin trees and some sparse vegetation visible",
+        "description": "Bobcat walking away from camera in a wooded area Bobcat environment with trees and ground foliage Numerous thin trees and some sparse vegetation visible",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -1193,7 +1193,7 @@
     {
       "id": "bobcat_071",
       "metadata": {
-        "description": "Close-up of an animal, likely a feline, captured from behind, looking into a wooded area Natural forest environment with dense trees and fallen foliage Trees, branches, and leafy forest floor",
+        "description": "Close-up of an animal, Bobcat, captured from behind, looking into a wooded area Natural forest environment with dense trees and fallen foliage Trees, branches, and leafy forest floor",
         "time": "dusk",
         "season": "unknown",
         "action": "alert",
@@ -1210,7 +1210,7 @@
     {
       "id": "bobcat_072",
       "metadata": {
-        "description": "Close-up view of an unclear object, possibly an animal, in a forest area. Forest area with trees and leaf-covered ground Trees and dense forest vegetation",
+        "description": "Close-up view of an unclear object, Bobcat, in a forest area. Forest area with trees and leaf-covered ground Trees and dense forest vegetation",
         "time": "dusk",
         "season": "unknown",
         "action": "moving",
@@ -1227,7 +1227,7 @@
     {
       "id": "bobcat_073",
       "metadata": {
-        "description": "Close-up, partially blurred animal captured by night trail camera Natural outdoors environment, forested area Trees, leaf litter, and forest undergrowth",
+        "description": "Bobcat. Close-up, partially blurred animal captured by night trail camera Natural outdoors environment, forested area Trees, leaf litter, and forest undergrowth",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -1244,7 +1244,7 @@
     {
       "id": "bobcat_074",
       "metadata": {
-        "description": "Animal walking along a wooded path at night Wooded or forest area with trees and leaves Dense tree coverage with dark vegetation",
+        "description": "Bobcat, walking along a wooded path at night Bobcat area with trees and leaves Dense tree coverage with dark vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -1261,7 +1261,7 @@
     {
       "id": "bobcat_075",
       "metadata": {
-        "description": "An animal, likely a raccoon or similar small mammal, captured in a forest environment. A forested, woodland area with dense leaf litter on the ground and many trees. Trees, fallen leaves, branches and natural debris covering forest floor.",
+        "description": "Bobcat, captured in a forest environment. A forested, woodland area with dense leaf litter on the ground and many trees. Trees, fallen leaves, branches and natural debris covering forest floor.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -1295,7 +1295,7 @@
     {
       "id": "bobcat_077",
       "metadata": {
-        "description": "Small animal walking on a forest trail Wooded forest environment Trees, dry leaves on ground, and distant hills visible",
+        "description": "Bobcat, walking on a forest trail Wooded forest environment Trees, dry leaves on ground, and distant hills visible",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -1312,7 +1312,7 @@
     {
       "id": "bobcat_078",
       "metadata": {
-        "description": "Animal visible within a nighttime forest setting Forested area, likely wilderness or rural locale Numerous trees, bushes, ground vegetation and forest terrain",
+        "description": "Bobcat, visible within a nighttime forest setting Forested area, Bobcat, bushes, ground vegetation and forest terrain",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -1329,7 +1329,7 @@
     {
       "id": "bobcat_079",
       "metadata": {
-        "description": "Animal standing in dark wooded area Wooded outdoor forest environment Trees, branches, leaf litter covering forest floor",
+        "description": "Bobcat, standing in dark wooded area Wooded outdoor forest environment Trees, branches, leaf litter covering forest floor",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -1346,11 +1346,11 @@
     {
       "id": "bobcat_080",
       "metadata": {
-        "description": "A wild feline animal clearly visible in a night vision trail camera image taken in a forest area. A wooded outdoor area with scattered trees and foliage Trees and forest vegetation",
+        "description": "Bobcat. A wild feline animal clearly visible in a night vision trail camera image taken in a forest area. A wooded outdoor area with scattered trees and foliage Trees and forest vegetation",
         "time": "night",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "02-02-2015 (according to image timestamp)",
         "lighting": "Low-light conditions, illuminated by infrared nighttime camera",
@@ -1363,7 +1363,7 @@
     {
       "id": "bobcat_081",
       "metadata": {
-        "description": "A wild feline, likely a bobcat, carrying prey through a forested area. Dense natural forest area with trees, fallen branches, and leaf-covered ground. Forested area with multiple large trees, fallen branches, and leafy ground cover.",
+        "description": "A wild feline, Bobcat, carrying prey through a forested area. Dense natural forest area with trees, fallen branches, and leaf-covered ground. Forested area with multiple large trees, fallen branches, and leafy ground cover.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -1380,7 +1380,7 @@
     {
       "id": "bobcat_082",
       "metadata": {
-        "description": "Animal with glowing eyes captured by wildlife camera at night Wooded forest environment Dense forest with trees and foliage",
+        "description": "Bobcat, with glowing eyes captured by wildlife camera at night Wooded forest environment Dense forest with trees and foliage",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -1397,11 +1397,11 @@
     {
       "id": "bobcat_083",
       "metadata": {
-        "description": "A wild feline animal, likely a bobcat or mountain lion, passing through a natural area. Outdoor natural environment with vegetation Large bushes or small trees and darkness",
+        "description": "A wild feline animal, Bobcat, passing through a natural area. Outdoor natural environment with vegetation Large Bobcat trees and darkness",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-16-2014",
         "lighting": "Low-light/night conditions, illuminated by infrared camera flash",
@@ -1414,11 +1414,11 @@
     {
       "id": "bobcat_084",
       "metadata": {
-        "description": "A wild feline animal, likely a bobcat, partially visible in a forest setting. Outdoor natural environment, wooded area with leaf-covered ground. Forest floor with leaves, branches, and sparse vegetation.",
+        "description": "A wild feline animal, Bobcat, partially visible in a forest setting. Outdoor natural environment, wooded area with leaf-covered ground. Forest floor with leaves, branches, and sparse vegetation.",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-09-17",
         "lighting": "Soft, muted natural lighting.",
@@ -1448,7 +1448,7 @@
     {
       "id": "bobcat_086",
       "metadata": {
-        "description": "Animal with glowing eyes standing on forest ground Wooded forest environment Trees, branches, and forest floor with leaf litter",
+        "description": "Bobcat, with glowing eyes standing on forest ground Wooded forest environment Trees, branches, and forest floor with leaf litter",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -1465,7 +1465,7 @@
     {
       "id": "bobcat_087",
       "metadata": {
-        "description": "A blurred animal appears moving swiftly through a forest area Woodland forest with dense trees and leaf-covered ground Thick forest vegetation, trees, branches, and leaves covering the floor",
+        "description": "Bobcat. A blurred animal appears moving swiftly through a forest area Woodland forest with dense trees and leaf-covered ground Thick forest vegetation, trees, branches, and leaves covering the floor",
         "time": "dusk",
         "season": "unknown",
         "action": "moving",
@@ -1482,7 +1482,7 @@
     {
       "id": "bobcat_088",
       "metadata": {
-        "description": "A wild animal, possibly a cougar or similar-sized mammal, is walking away from the camera into a wooded area Natural forest environment with dense trees and ground cover Tall trees, forest underbrush and darkness in the distance",
+        "description": "A Bobcat, is walking away from the camera into a wooded area Natural forest environment with dense trees and ground cover Tall trees, forest underbrush and darkness in the distance",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -1499,11 +1499,11 @@
     {
       "id": "bobcat_089",
       "metadata": {
-        "description": "A wild animal, possibly a fox or coyote, standing on grassy terrain at night Natural wooded environment Bare trees and dense woods",
+        "description": "A Bobcat, standing on grassy terrain at night Natural wooded environment Bare trees and dense woods",
         "time": "night",
         "season": "winter",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2016-01-19 (according to timestamp)",
         "lighting": "Low, artificial night-time infrared illumination",
@@ -1516,11 +1516,11 @@
     {
       "id": "bobcat_090",
       "metadata": {
-        "description": "Wild animal (appears to be a bobcat) clearly visible in a woodland area Natural woodland environment with leafy ground cover and trees Wooded area, scattered leaves, branches and trees",
+        "description": "Bobcat (Bobcat) clearly visible in a woodland area Natural woodland environment with leafy ground cover and trees Wooded area, scattered leaves, branches and trees",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-09-17",
         "lighting": "Low natural lighting, possibly shaded or cloudy",
@@ -1533,11 +1533,11 @@
     {
       "id": "bobcat_091",
       "metadata": {
-        "description": "Focus region shows part of a forest floor with fallen branches and foliage. Dense woodland area with trees and natural ground cover Many trees, bushes, shrubs, and natural woodland vegetation",
+        "description": "Bobcat. Focus region shows part of a forest floor with fallen branches and foliage. Dense woodland area with trees and natural ground cover Many trees, bushes, shrubs, and natural woodland vegetation",
         "time": "dawn",
         "season": "unknown",
         "action": "moving",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "08-22-2015",
         "lighting": "Dim, low natural lighting conditions, possibly early morning or evening",
@@ -1550,7 +1550,7 @@
     {
       "id": "bobcat_092",
       "metadata": {
-        "description": "A nocturnal wildlife capture primarily focusing on a solitary small-sized mammal, possibly a fox or coyote, with reflective eyes glowing in night vision. Outdoor natural environment, likely a wooded area or forest edge. Dense vegetation and trees provide the background, limited visibility due to darkness.",
+        "description": "Bobcat. A nocturnal wildlife capture primarily focusing on a solitary small-sized mammal, Bobcat, with reflective eyes glowing in night vision. Outdoor natural environment, Bobcat. Dense vegetation and trees provide the background, limited visibility due to darkness.",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -1567,7 +1567,7 @@
     {
       "id": "bobcat_093",
       "metadata": {
-        "description": "Animal, identified as possibly a bobcat or feline, seen walking through natural wooded area Forest or woodland setting with leaf-covered ground Trees, fallen branches and foliage on the ground",
+        "description": "Animal, identified as Bobcat, seen walking through natural wooded area Bobcat setting with leaf-covered ground Trees, fallen branches and foliage on the ground",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -1584,7 +1584,7 @@
     {
       "id": "bobcat_094",
       "metadata": {
-        "description": "A wild animal (possibly a bobcat or similar-sized mammal) is prominently visible standing on the forest floor. A dense forest with numerous trees and thick foliage covering the ground. Numerous trees, fallen leaves, branches, and dense foliage dominate the background.",
+        "description": "A Bobcat (Bobcat) is prominently visible standing on the forest floor. A dense forest with numerous trees and thick foliage covering the ground. Numerous trees, fallen leaves, branches, and dense foliage dominate the background.",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -1601,7 +1601,7 @@
     {
       "id": "bobcat_095",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, standing in a wooded area at night, with bright reflective eyes. Natural forest environment with trees and wooded underbrush Dense trees, foliage, and natural forest debris",
+        "description": "A Bobcat, standing in a wooded area at night, with bright reflective eyes. Natural forest environment with trees and wooded underbrush Dense trees, foliage, and natural forest debris",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -1618,7 +1618,7 @@
     {
       "id": "bobcat_096",
       "metadata": {
-        "description": "The image shows a small mammal (likely a raccoon or similar animal) moving through a wooded area. Forested area with trees, fallen leaves, and natural vegetation. Dense trees and natural forest vegetation visible in the background.",
+        "description": "The image shows a small mammal (Bobcat) moving through a wooded area. Forested area with trees, fallen leaves, and natural vegetation. Dense trees and natural forest vegetation visible in the background.",
         "time": "dawn",
         "season": "winter",
         "action": "walking",
@@ -1635,7 +1635,7 @@
     {
       "id": "bobcat_097",
       "metadata": {
-        "description": "Small animal with reflective eyes visible in low light, surrounded by leaves and trees. Wooded forest area with fallen leaves on the ground. Dense trees and bushes, indistinct due to low lighting.",
+        "description": "Bobcat, with reflective eyes visible in low light, surrounded by leaves and trees. Wooded forest area with fallen leaves on the ground. Dense trees and bushes, indistinct due to low lighting.",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -1652,11 +1652,11 @@
     {
       "id": "bobcat_098",
       "metadata": {
-        "description": "Animal, possibly wild cat or bobcat, walking or standing in a woodland area. Wooded area with trees and leaves on the ground Trees, leaves and natural vegetation",
+        "description": "Bobcat, Bobcat in a woodland area. Wooded area with trees and leaves on the ground Trees, leaves and natural vegetation",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "Not visible",
         "date": "2015-09-19",
         "lighting": "Soft, diffused natural lighting",
@@ -1669,7 +1669,7 @@
     {
       "id": "bobcat_099",
       "metadata": {
-        "description": "Animal, likely a small mammal, moving uphill over rocks and moss Dense natural environment with vegetation and forest floor Forest area with lush greenery and a building partially visible",
+        "description": "Bobcat, moving uphill over rocks and moss Dense natural environment with vegetation and forest floor Forest area with lush greenery and a building partially visible",
         "time": "dawn",
         "season": "summer",
         "action": "running",
@@ -1703,7 +1703,7 @@
     {
       "id": "bobcat_101",
       "metadata": {
-        "description": "A wild cat, likely a bobcat, seen from behind, walking through a forest area. Dense woodland forest area with many trees and fallen leaves. Large trees and thick foliage covering forest floor.",
+        "description": "A wild cat, Bobcat, seen from behind, walking through a forest area. Dense woodland forest area with many trees and fallen leaves. Large trees and thick foliage covering forest floor.",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -1720,7 +1720,7 @@
     {
       "id": "bobcat_102",
       "metadata": {
-        "description": "Small animal, likely a raccoon, in a forest area Natural wooded forest area Dense grouping of trees and branches",
+        "description": "Bobcat, in a forest area Natural wooded forest area Dense grouping of trees and branches",
         "time": "dawn",
         "season": "unknown",
         "action": "foraging",
@@ -1737,7 +1737,7 @@
     {
       "id": "bobcat_103",
       "metadata": {
-        "description": "An animal, possibly a bobcat, is the primary focus of the image amidst a forested setting. Forested area with trees and fallen leaves on the ground. Dense foliage and trees, with rocks to the left side providing a natural forest environment.",
+        "description": "Bobcat, is the primary focus of the image amidst a forested setting. Forested area with trees and fallen leaves on the ground. Dense foliage and trees, with rocks to the left side providing a natural forest environment.",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -1754,11 +1754,11 @@
     {
       "id": "bobcat_104",
       "metadata": {
-        "description": "Animals at night captured by a trail camera Outdoor natural environment, wooded area Forest area with trees and vegetation",
+        "description": "Bobcat. Animals at night captured by a trail camera Outdoor natural environment, wooded area Forest area with trees and vegetation",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "09-06-2015",
         "lighting": "Low lighting conditions, image illuminated by infrared and night vision mode",
@@ -1771,11 +1771,11 @@
     {
       "id": "bobcat_105",
       "metadata": {
-        "description": "Close-up of an animal's ear and a blurry, bright object possibly due to camera reflection Outdoor wooded area, nighttime Dark forest environment, visible trees and foliage",
+        "description": "Bobcat. Close-up of an animal's ear and a blurry, bright object Bobcat, nighttime Dark forest environment, visible trees and foliage",
         "time": "night",
         "season": "fall",
         "action": "moving",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2014-10-01",
         "lighting": "Dark scene with bright camera flash illuminating nearby objects",
@@ -1788,7 +1788,7 @@
     {
       "id": "bobcat_106",
       "metadata": {
-        "description": "A small animal, possibly a bobcat, walking in a forest environment. Dense forest with trees, foliage, and rocky terrain. Forest surroundings primarily comprised of trees, rocks, dense foliage, and woodland vegetation.",
+        "description": "A small animal, Bobcat, walking in a forest environment. Dense forest with trees, foliage, and rocky terrain. Forest surroundings primarily comprised of trees, rocks, dense foliage, and woodland vegetation.",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -1805,7 +1805,7 @@
     {
       "id": "bobcat_107",
       "metadata": {
-        "description": "Blurred animal, possibly feline, moving rapidly through a forested area Dense forest with leafy ground Trees, foliage, leafy ground cover",
+        "description": "Blurred animal, Bobcat, moving rapidly through a forested area Dense forest with leafy ground Trees, foliage, leafy ground cover",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -1822,7 +1822,7 @@
     {
       "id": "bobcat_108",
       "metadata": {
-        "description": "Lower part of an animal's leg or paw partially visible in wooded area Dense forest or woodland with leafy ground cover Trees, dense foliage and forest ground covered with fallen leaves",
+        "description": "Lower part of an animal's Bobcat partially visible in wooded area Dense Bobcat with leafy ground cover Trees, dense foliage and forest ground covered with fallen leaves",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
@@ -1839,7 +1839,7 @@
     {
       "id": "bobcat_109",
       "metadata": {
-        "description": "Small animal with reflective eyes standing on forest ground at night Forest environment with trees, presumably wild area Trees, branches, and forest floor covered with vegetation and leaves",
+        "description": "Bobcat, with reflective eyes standing on forest ground at night Forest environment with trees, presumably wild area Trees, branches, and forest floor covered with vegetation and leaves",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -1856,7 +1856,7 @@
     {
       "id": "bobcat_110",
       "metadata": {
-        "description": "Primary focus is an animal, likely a wild cat, walking through a forested area at night. Wooded forest area with small shrubs and trees. Trees and woodland vegetation, clearly a forested setting.",
+        "description": "Primary focus is an animal, Bobcat, walking through a forested area at night. Wooded forest area with small shrubs and trees. Trees and woodland vegetation, clearly a forested setting.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -1873,11 +1873,11 @@
     {
       "id": "bobcat_111",
       "metadata": {
-        "description": "A blurred image of an animal moving across the camera's view Natural, outdoor environment, possibly wooded or grassy area Area includes sparse vegetation, trees and grass",
+        "description": "Bobcat. A blurred image of an animal moving across the camera's view Natural, outdoor environment, Bobcat, trees and grass",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-16-2014",
         "lighting": "Low visibility, dim lighting conditions typical of nighttime",
@@ -1890,7 +1890,7 @@
     {
       "id": "bobcat_112",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, captured on a trail camera at night in a wooded area. Forested area, dense trees and natural ground surface Trees and foliage forming dense woodland",
+        "description": "A Bobcat, captured on a trail camera at night in a wooded area. Forested area, dense trees and natural ground surface Trees and foliage forming dense woodland",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -1907,7 +1907,7 @@
     {
       "id": "bobcat_113",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, walking through a woodland area. Forest environment with lush greenery, moss-covered ground, and dense foliage. Numerous trees, dense forest canopy, and leafy vegetation.",
+        "description": "A Bobcat, walking through a woodland area. Forest environment with lush greenery, moss-covered ground, and dense foliage. Numerous trees, dense forest canopy, and leafy vegetation.",
         "time": "day",
         "season": "fall",
         "action": "walking",
@@ -1924,7 +1924,7 @@
     {
       "id": "bobcat_114",
       "metadata": {
-        "description": "A wild animal, likely a fox or a small canine, clearly visible with illuminated eyes in a nighttime setting. An outdoor, forested or natural environment with sparse vegetation and snow or frost-covered ground. Trees, bushes, and thick vegetation obscuring distant view.",
+        "description": "A Bobcat, clearly visible with illuminated eyes in a nighttime setting. An outdoor, Bobcat environment with sparse vegetation and Bobcat-covered ground. Trees, bushes, and thick vegetation obscuring distant view.",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -1941,7 +1941,7 @@
     {
       "id": "bobcat_115",
       "metadata": {
-        "description": "Animal, likely a small wild mammal, standing alert in vegetation at night Forest or wooded area with abundant vegetation Numerous trees and dense foliage typical of a forest environment",
+        "description": "Bobcat, standing alert in vegetation at night Bobcat area with abundant vegetation Numerous trees and dense foliage typical of a forest environment",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -1958,11 +1958,11 @@
     {
       "id": "bobcat_116",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, walking along a fallen log in a forest Wooded natural environment with leaf-covered ground Trees, foliage, and dense vegetation",
+        "description": "A Bobcat, walking along a fallen log in a forest Wooded natural environment with leaf-covered ground Trees, foliage, and dense vegetation",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "01-21-2015",
         "lighting": "Dim, likely dusk or dawn with limited natural lighting",
@@ -1975,7 +1975,7 @@
     {
       "id": "bobcat_117",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, walking through a wooded area, captured using a night-time wildlife camera. Forest or wooded environment with dense vegetation and trees. Dense trees, bushes, and undergrowth visible in the background.",
+        "description": "A Bobcat, walking through a wooded area, captured using a night-time wildlife camera. Bobcat environment with dense vegetation and trees. Dense trees, bushes, and undergrowth visible in the background.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -1992,7 +1992,7 @@
     {
       "id": "bobcat_118",
       "metadata": {
-        "description": "Blurred animal in motion across snowy forest floor Forest environment with trees and snow-covered ground Forested scene with multiple bare trees and snowy terrain",
+        "description": "Bobcat. Blurred animal in motion across snowy forest floor Forest environment with trees and snow-covered ground Forested scene with multiple bare trees and snowy terrain",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -2009,11 +2009,11 @@
     {
       "id": "bobcat_119",
       "metadata": {
-        "description": "Small animal, likely a squirrel or chipmunk, partially concealed by foliage Outdoor, wooded environment with dense foliage Dense greenery, shrubs, leaves, and trees",
+        "description": "Bobcat, partially concealed by foliage Outdoor, wooded environment with dense foliage Dense greenery, shrubs, leaves, and trees",
         "time": "day",
         "season": "summer",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-08-25 (timestamp confirmed)",
         "lighting": "Natural lighting, shaded with patches of sunlight",
@@ -2026,7 +2026,7 @@
     {
       "id": "bobcat_120",
       "metadata": {
-        "description": "Partially visible animal, likely a wild cat, in a forest environment Forested area with dense vegetation, fallen branches, and leaves. Wooded area with trees, fallen logs, branches, and leaf-covered ground.",
+        "description": "Partially visible animal, Bobcat, in a forest environment Forested area with dense vegetation, fallen branches, and leaves. Wooded area with trees, fallen logs, branches, and leaf-covered ground.",
         "time": "day",
         "season": "unknown",
         "action": "walking",
@@ -2043,11 +2043,11 @@
     {
       "id": "bobcat_121",
       "metadata": {
-        "description": "A wild feline animal, likely a bobcat, clearly focused in the foreground A natural wooded area with abundant leaves and branches Forested vegetation, leaf litter, and fallen branches",
+        "description": "A wild feline animal, Bobcat, clearly focused in the foreground A natural wooded area with abundant leaves and branches Forested vegetation, leaf litter, and fallen branches",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-09-17 (clearly visible)",
         "lighting": "Low-contrast and infrared-type subdued lighting",
@@ -2060,7 +2060,7 @@
     {
       "id": "bobcat_122",
       "metadata": {
-        "description": "Animal, likely a bobcat, standing in a forested area at night Forested environment with trees, plants, and leaves on the ground Trees, shrubs, ground vegetation",
+        "description": "Bobcat, standing in a forested area at night Forested environment with trees, plants, and leaves on the ground Trees, shrubs, ground vegetation",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -2077,7 +2077,7 @@
     {
       "id": "bobcat_123",
       "metadata": {
-        "description": "Partially visible small animal located at the bottom-left corner in a woodland area Dense forest with trees, foliage, and leafy ground Numerous green trees and bushes, forest floor covered in leaf litter",
+        "description": "Bobcat. Partially visible small animal located at the bottom-left corner in a woodland area Dense forest with trees, foliage, and leafy ground Numerous green trees and bushes, forest floor covered in leaf litter",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
@@ -2094,7 +2094,7 @@
     {
       "id": "bobcat_124",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, captured in a natural wooded environment. Dense forested area with abundant greenery and foliage. Tall trees, dense shrubs, and green vegetation.",
+        "description": "A Bobcat, captured in a natural wooded environment. Dense forested area with abundant greenery and foliage. Tall trees, dense shrubs, and green vegetation.",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -2111,7 +2111,7 @@
     {
       "id": "bobcat_125",
       "metadata": {
-        "description": "Partial view of a wild animal, likely a bobcat, walking through a forest Outdoor forested area with leafy ground and trees Forest floor, vegetation, fallen leaves, branches and trees",
+        "description": "Partial view of A Bobcat, walking through a forest Outdoor forested area with leafy ground and trees Forest floor, vegetation, fallen leaves, branches and trees",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -2128,11 +2128,11 @@
     {
       "id": "bobcat_126",
       "metadata": {
-        "description": "Wild animal, possibly a bobcat, captured clearly and centered in frame Natural woodland area Dense forest with sparse trees and foliage",
+        "description": "Bobcat, captured clearly and centered in frame Natural woodland area Dense forest with sparse trees and foliage",
         "time": "night",
         "season": "unknown",
         "action": "moving",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "02-21-2016, explicitly stated in image timestamp",
         "lighting": "Low visibility, illuminated by infrared or night-vision camera",
@@ -2145,7 +2145,7 @@
     {
       "id": "bobcat_127",
       "metadata": {
-        "description": "A small wild animal, possibly a fox or another similar mammal, is the primary focus, standing amongst foliage. Forest area with dense vegetation and undergrowth Forest vegetation including ferns, grasses, and trees",
+        "description": "A small Bobcat, is the primary focus, standing amongst foliage. Forest area with dense vegetation and undergrowth Forest vegetation including ferns, grasses, and trees",
         "time": "night",
         "season": "fall",
         "action": "alert",
@@ -2162,7 +2162,7 @@
     {
       "id": "bobcat_128",
       "metadata": {
-        "description": "Partial view of animal appearing close to wildlife camera, outdoor wooded setting Forest or woodland area with sparse ground vegetation and trees Trees, leaf-covered forest floor, sparse vegetation",
+        "description": "Bobcat. Partial view of animal appearing close to wildlife camera, outdoor wooded setting Bobcat area with sparse ground vegetation and trees Trees, leaf-covered forest floor, sparse vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2179,7 +2179,7 @@
     {
       "id": "bobcat_129",
       "metadata": {
-        "description": "A wildlife image capturing a medium-sized animal, likely a fox or coyote, walking away through a wooded area. A natural forest environment with dense trees and bushes, floor covered in dry leaves. Numerous tall trees and dense green foliage.",
+        "description": "Bobcat. A wildlife image capturing a medium-sized animal, Bobcat, walking away through a wooded area. A natural forest environment with dense trees and bushes, floor covered in dry leaves. Numerous tall trees and dense green foliage.",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -2196,7 +2196,7 @@
     {
       "id": "bobcat_130",
       "metadata": {
-        "description": "A wildlife animal, possibly a fox or coyote, seen from behind walking in a wooded environment. Forested environment with trees and soil covered with leaves and occasional branches. Dense forest with trees and bushes in low visibility conditions.",
+        "description": "A wildlife animal, Bobcat, seen from behind walking in a wooded environment. Forested environment with trees and soil covered with leaves and occasional branches. Dense forest with trees and bushes in low visibility conditions.",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -2213,11 +2213,11 @@
     {
       "id": "bobcat_131",
       "metadata": {
-        "description": "Wild animal (likely a bobcat or similar feline) walking through forest undergrowth Dense natural woodland environment Tall trees, bushes, branches, and leaves",
+        "description": "Bobcat (Bobcat) walking through forest undergrowth Dense natural woodland environment Tall trees, bushes, branches, and leaves",
         "time": "night",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2014-11-02",
         "lighting": "Infrared nighttime illumination, artificial night camera lighting",
@@ -2230,11 +2230,11 @@
     {
       "id": "bobcat_132",
       "metadata": {
-        "description": "A wildlife night-capture image showing an animal, possibly a wild pig or similar mammal, moving through a natural environment Wooded area with dry vegetation and scattered trees Sparse vegetation, small trees, brush, and dried grass",
+        "description": "Bobcat. A wildlife night-capture image showing an animal, Bobcat, moving through a natural environment Wooded area with dry vegetation and scattered trees Sparse vegetation, small trees, brush, and dried grass",
         "time": "night",
         "season": "unknown",
         "action": "foraging",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "01-10-2016",
         "lighting": "Low-light conditions, night-time infrared image illumination",
@@ -2247,7 +2247,7 @@
     {
       "id": "bobcat_133",
       "metadata": {
-        "description": "Close up, partial view of an animal's body against a woodland floor background Woodland or forest environment with fallen leaves and scattered branches Numerous trees, leaf-covered ground and branches scattered on the forest floor",
+        "description": "Bobcat. Close up, partial view of an animal's body against a woodland floor background Bobcat environment with fallen leaves and scattered branches Numerous trees, leaf-covered ground and branches scattered on the forest floor",
         "time": "dusk",
         "season": "unknown",
         "action": "alert",
@@ -2264,7 +2264,7 @@
     {
       "id": "bobcat_134",
       "metadata": {
-        "description": "Animal, possibly wildlife, captured partially behind an illuminated branch in the foreground Dense natural woodland or forest environment Dark forest with trees and sparse vegetation",
+        "description": "Bobcat, captured partially behind an illuminated branch in the foreground Dense natural Bobcat environment Dark forest with trees and sparse vegetation",
         "time": "night",
         "season": "fall",
         "action": "alert",
@@ -2281,7 +2281,7 @@
     {
       "id": "bobcat_135",
       "metadata": {
-        "description": "Wild animal appearing to be a feline (likely a bobcat or similar species) moving through natural terrain Wooded outdoor environment, possibly a forest or natural reserve Thin trees, bushes, tall grasses, branches and natural debris",
+        "description": "Bobcat appearing to be a feline (Bobcat) moving through natural terrain Wooded outdoor environment, Bobcat, bushes, tall grasses, branches and natural debris",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2298,7 +2298,7 @@
     {
       "id": "bobcat_136",
       "metadata": {
-        "description": "Close-up of an animal appearing at the bottom of the frame, likely a wild animal in a forest environment Dense forested natural environment with foliage and trees Trees, branches, fallen leaves and dense vegetation",
+        "description": "Bobcat. Close-up of an animal appearing at the bottom of the frame, Bobcat, branches, fallen leaves and dense vegetation",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -2315,7 +2315,7 @@
     {
       "id": "bobcat_137",
       "metadata": {
-        "description": "Partial animal captured at the right edge of the frame in night-time nature setting Dense vegetation, outdoor natural environment Thick foliage and dense bushes",
+        "description": "Bobcat. Partial animal captured at the right edge of the frame in night-time nature setting Dense vegetation, outdoor natural environment Thick foliage and dense bushes",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
@@ -2332,7 +2332,7 @@
     {
       "id": "bobcat_138",
       "metadata": {
-        "description": "Ground-level view of a wooded area with a small animal visible Natural forest environment with dense trees and foliage Dense forest with trees, underbrush, and fallen branches",
+        "description": "Bobcat. Ground-level view of a wooded area with a small animal visible Natural forest environment with dense trees and foliage Dense forest with trees, underbrush, and fallen branches",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -2349,7 +2349,7 @@
     {
       "id": "bobcat_139",
       "metadata": {
-        "description": "Partial animal presence in foreground with fallen leaves on forest floor Forested environment with dense trees and leaf litter Dense trees, branches, and leaf-covered forest floor",
+        "description": "Bobcat. Partial animal presence in foreground with fallen leaves on forest floor Forested environment with dense trees and leaf litter Dense trees, branches, and leaf-covered forest floor",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -2366,7 +2366,7 @@
     {
       "id": "bobcat_140",
       "metadata": {
-        "description": "Animal (deer-like) in the forest at night Natural woodland or forest area Sparse trees, bushes, and natural forest vegetation",
+        "description": "Bobcat, (deer-like) in the forest at night Natural Bobcat area Sparse trees, bushes, and natural forest vegetation",
         "time": "dusk",
         "season": "unknown",
         "action": "alert",
@@ -2383,7 +2383,7 @@
     {
       "id": "bobcat_141",
       "metadata": {
-        "description": "Animal with glowing reflective eyes captured by a wildlife camera in a wooded area at night Outdoor forest or wooded area Densely wooded area with trees and bushes",
+        "description": "Bobcat, with glowing reflective eyes captured by a wildlife camera in a wooded area at night Outdoor Bobcat area Densely wooded area with trees and bushes",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2400,7 +2400,7 @@
     {
       "id": "bobcat_142",
       "metadata": {
-        "description": "Partially visible animal moving at night, unclear species Open field or grassland Distant scattered lights, possibly indicating buildings or distant structures",
+        "description": "Bobcat. Partially visible animal moving at night, unclear species Open Bobcat Distant scattered lights, Bobcat",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2417,7 +2417,7 @@
     {
       "id": "bobcat_143",
       "metadata": {
-        "description": "An animal with reflective eyes standing directly facing the camera lens Outdoor natural forest environment Dense forest, tall trees, sparse vegetation",
+        "description": "Bobcat, with reflective eyes standing directly facing the camera lens Outdoor natural forest environment Dense forest, tall trees, sparse vegetation",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -2434,7 +2434,7 @@
     {
       "id": "bobcat_144",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, walking along a forest trail Forested environment with dense trees Tall trees, dense foliage, dirt trail curving through forest",
+        "description": "A Bobcat, walking along a forest trail Forested environment with dense trees Tall trees, dense foliage, dirt trail curving through forest",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -2451,7 +2451,7 @@
     {
       "id": "bobcat_145",
       "metadata": {
-        "description": "An animal, presumably a mammal with fur, positioned at the lower right corner within the bounding box, partially visible Wooded or forested area with dense vegetation and scattered plants Trees, plants, moss-covered ground, and part of a structure or building in the distant background",
+        "description": "Bobcat, presumably a mammal with fur, positioned at the lower right corner within the bounding box, partially visible Bobcat area with dense vegetation and scattered plants Trees, plants, moss-covered ground, and part of a Bobcat in the distant background",
         "time": "day",
         "season": "summer",
         "action": "walking",
@@ -2468,7 +2468,7 @@
     {
       "id": "bobcat_146",
       "metadata": {
-        "description": "Animal moving through a wooded forest Forested natural area with trees and leaf-covered ground Dense woodland with trees, fallen branches, and leaves",
+        "description": "Bobcat, moving through a wooded forest Forested natural area with trees and leaf-covered ground Dense woodland with trees, fallen branches, and leaves",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -2485,7 +2485,7 @@
     {
       "id": "bobcat_147",
       "metadata": {
-        "description": "A wild animal, resembling a bobcat, walking through dense vegetation A lush, dense forested area Dense greenery and trees, with thick undergrowth",
+        "description": "A Bobcat, resembling A Bobcat, walking through dense vegetation A lush, dense forested area Dense greenery and trees, with thick undergrowth",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -2502,11 +2502,11 @@
     {
       "id": "bobcat_148",
       "metadata": {
-        "description": "A lone feline animal, likely a bobcat, captured from behind, walking away from the camera into a wooded area. Natural wooded environment with sparse underbrush. Trees, foliage, and brush in a forested area, fading into darkness.",
+        "description": "A lone feline animal, Bobcat, captured from behind, walking away from the camera into a wooded area. Natural wooded environment with sparse underbrush. Trees, foliage, and brush in a forested area, fading into darkness.",
         "time": "dawn",
         "season": "winter",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2016-01-19",
         "lighting": "Low-light, infrared or night vision lighting conditions typical of wildlife camera traps.",
@@ -2519,7 +2519,7 @@
     {
       "id": "bobcat_149",
       "metadata": {
-        "description": "A wild animal partially visible in a forested area Dense forest with fallen branches and leaf litter Thick vegetation, fallen logs, and dense tree cover",
+        "description": "A Bobcat partially visible in a forested area Dense forest with fallen branches and leaf litter Thick vegetation, fallen logs, and dense tree cover",
         "time": "day",
         "season": "unknown",
         "action": "moving",
@@ -2536,7 +2536,7 @@
     {
       "id": "bobcat_150",
       "metadata": {
-        "description": "An animal (likely a fox or a coyote) is visible, looking toward the camera, with glowing eyes indicating reflection from night vision or flash photography. Outdoor environment, wooded or forested area Trees, brush, and natural wooded landscape",
+        "description": "Bobcat is visible, looking toward the camera, with glowing eyes indicating reflection from night Bobcat photography. Outdoor environment, Bobcat area Trees, brush, and natural wooded landscape",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -2553,7 +2553,7 @@
     {
       "id": "bobcat_151",
       "metadata": {
-        "description": "A wild feline, possibly a bobcat, walking through a forest area at night Forested area with sparse underbrush Trees, branches, and dark forest canopy",
+        "description": "A wild feline, Bobcat, walking through a forest area at night Forested area with sparse underbrush Trees, branches, and dark forest canopy",
         "time": "night",
         "season": "winter",
         "action": "alert",
@@ -2570,7 +2570,7 @@
     {
       "id": "bobcat_152",
       "metadata": {
-        "description": "A wild animal, possibly a feline or a fox, captured from behind, walking into a dark forest area Forest or wooded natural area, at night Dark, forested trees and thick vegetation",
+        "description": "A Bobcat, captured from behind, walking into a dark forest area Bobcat natural area, at night Dark, forested trees and thick vegetation",
         "time": "night",
         "season": "winter",
         "action": "walking",
@@ -2587,7 +2587,7 @@
     {
       "id": "bobcat_153",
       "metadata": {
-        "description": "An animal, likely a wildcat or bobcat, moving across a field Agricultural field with woods in the background Open field bordered by treeline silhouettes, sky partially cloudy",
+        "description": "An animal, Bobcat, moving across a field Agricultural field with woods in the background Open field bordered by treeline silhouettes, sky partially cloudy",
         "time": "dusk",
         "season": "fall",
         "action": "walking",
@@ -2604,7 +2604,7 @@
     {
       "id": "bobcat_154",
       "metadata": {
-        "description": "Animal (possibly a wild feline) moving through a forest Dense forest environment with numerous trees and forest floor covered by leaves Trees of various sizes and greenery composing the forest environment",
+        "description": "Bobcat moving through a forest Dense forest environment with numerous trees and forest floor covered by leaves Trees of various sizes and greenery composing the forest environment",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -2621,7 +2621,7 @@
     {
       "id": "bobcat_155",
       "metadata": {
-        "description": "Blurred animal moving across grassy terrain during night time Natural environment with dense vegetation and grassy terrain Dense foliage and silhouette of possibly a building with illuminated windows",
+        "description": "Bobcat. Blurred animal moving across grassy terrain during night time Natural environment with dense vegetation and grassy terrain Dense foliage and silhouette of Bobcat",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2638,7 +2638,7 @@
     {
       "id": "bobcat_156",
       "metadata": {
-        "description": "An animal, possibly a small mammal, moving through a wooded forest area Dense woodland environment with fallen trees and leaf-covered forest floor Forested setting with trees, dense foliage, fallen branches, and natural debris",
+        "description": "Bobcat, moving through a wooded forest area Dense woodland environment with fallen trees and leaf-covered forest floor Forested setting with trees, dense foliage, fallen branches, and natural debris",
         "time": "day",
         "season": "unknown",
         "action": "walking",
@@ -2655,7 +2655,7 @@
     {
       "id": "bobcat_157",
       "metadata": {
-        "description": "Small animal, possibly a bobcat, standing on the forest floor facing away from camera Forested environment with dense tree growth Numerous trees, branches, and forest foliage",
+        "description": "Bobcat, standing on the forest floor facing away from camera Forested environment with dense tree growth Numerous trees, branches, and forest foliage",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -2672,7 +2672,7 @@
     {
       "id": "bobcat_158",
       "metadata": {
-        "description": "Animal, likely a bobcat or lynx, walking through a dense wooded area. Dense forest environment with green vegetation and trees. Dense trees and lush vegetation.",
+        "description": "Animal, Bobcat, walking through a dense wooded area. Dense forest environment with green vegetation and trees. Dense trees and lush vegetation.",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -2689,7 +2689,7 @@
     {
       "id": "bobcat_159",
       "metadata": {
-        "description": "A wildlife image capturing an animal, likely a wildcat or similar species, walking towards the camera at night Forest or natural outdoor environment Leafless branches, sparse forest vegetation, trees",
+        "description": "A wildlife image capturing an animal, Bobcat, walking towards the camera at night Bobcat outdoor environment Leafless branches, sparse forest vegetation, trees",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -2706,7 +2706,7 @@
     {
       "id": "bobcat_160",
       "metadata": {
-        "description": "An animal (likely a wild cat or bobcat) walking through a forested area covered in leaves Wooded environment with forest floor covered by fallen leaves Trees, branches, and leaf-covered ground",
+        "description": "Bobcat walking through a forested area covered in leaves Wooded environment with forest floor covered by fallen leaves Trees, branches, and leaf-covered ground",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -2723,7 +2723,7 @@
     {
       "id": "bobcat_161",
       "metadata": {
-        "description": "A fox standing on a ground surface at night, with eyes reflecting the camera flash Outdoor, natural environment likely wooded or forested Trees, vegetation and darkness",
+        "description": "Bobcat. A fox standing on a ground surface at night, with eyes reflecting the camera flash Outdoor, natural environment Bobcat, vegetation and darkness",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -2740,7 +2740,7 @@
     {
       "id": "bobcat_162",
       "metadata": {
-        "description": "Animal with reflective eyes moving through grassy vegetation Natural outdoor environment, dense foliage and grasses Dense foliage, grasses and low-lying plants",
+        "description": "Bobcat, with reflective eyes moving through grassy vegetation Natural outdoor environment, dense foliage and grasses Dense foliage, grasses and low-lying plants",
         "time": "dawn",
         "season": "summer",
         "action": "alert",
@@ -2774,7 +2774,7 @@
     {
       "id": "bobcat_164",
       "metadata": {
-        "description": "Animal partially visible in close foreground, head and upper body obscured by proximity and bright infrared flash, surrounding terrain covered in leaves and sparse vegetation Outdoor forested area Trees, leaf-covered ground and sparse undergrowth",
+        "description": "Bobcat, partially visible in close foreground, head and upper body obscured by proximity and bright infrared flash, surrounding terrain covered in leaves and sparse vegetation Outdoor forested area Trees, leaf-covered ground and sparse undergrowth",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2791,7 +2791,7 @@
     {
       "id": "bobcat_165",
       "metadata": {
-        "description": "Wild animal (possibly a bobcat or lynx) moving across a natural wooded environment Forested area, natural habitat, outdoor Trees, forest ground, and natural vegetation",
+        "description": "Bobcat (Bobcat) moving across a natural wooded environment Forested area, natural habitat, outdoor Trees, forest ground, and natural vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2808,7 +2808,7 @@
     {
       "id": "bobcat_166",
       "metadata": {
-        "description": "Rear view of an animal, likely a mammal, walking on a forest trail at night Forested area with a woodland trail Trees, leaf-covered forest floor, and a clear woodland path",
+        "description": "Rear view of an animal, Bobcat, walking on a forest trail at night Forested area with a woodland trail Trees, leaf-covered forest floor, and a clear woodland path",
         "time": "night",
         "season": "unknown",
         "action": "foraging",
@@ -2825,7 +2825,7 @@
     {
       "id": "bobcat_167",
       "metadata": {
-        "description": "A close-up partial view of an animal's fur-covered body, likely a wildlife creature, in a leafy forest area. Wooded forest area with fallen leaves and trees. Trees, fallen branches, leaves on the forest floor.",
+        "description": "Bobcat. A close-up partial view of an animal's fur-covered body, Bobcat, in a leafy forest area. Wooded forest area with fallen leaves and trees. Trees, fallen branches, leaves on the forest floor.",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -2842,7 +2842,7 @@
     {
       "id": "bobcat_168",
       "metadata": {
-        "description": "Sunlit forest clearing with unclear objects in the highlighted area A wooded environment with numerous trees and leaf litter Dense trees with sunlight filtering through branches",
+        "description": "Bobcat. Sunlit forest clearing with unclear objects in the highlighted area A wooded environment with numerous trees and leaf litter Dense trees with sunlight filtering through branches",
         "time": "day",
         "season": "unknown",
         "action": "moving",
@@ -2859,7 +2859,7 @@
     {
       "id": "bobcat_169",
       "metadata": {
-        "description": "A small animal with reflective eyes in a forested area at night Forested outdoor environment Trees, leaves, and underbrush in a forest setting",
+        "description": "Bobcat. A small animal with reflective eyes in a forested area at night Forested outdoor environment Trees, leaves, and underbrush in a forest setting",
         "time": "night",
         "season": "unknown",
         "action": "moving",
@@ -2876,11 +2876,11 @@
     {
       "id": "bobcat_170",
       "metadata": {
-        "description": "Animal, possibly a wild cat or similar mammal, walking away from camera Outdoor, natural area with vegetation and dead branches Trees, tall grasses, branches, natural forested area",
+        "description": "Bobcat, walking away from camera Outdoor, natural area with vegetation and dead branches Trees, tall grasses, branches, natural forested area",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "01-10-2016",
         "lighting": "Low light conditions, likely infrared night camera illumination",
@@ -2893,7 +2893,7 @@
     {
       "id": "bobcat_171",
       "metadata": {
-        "description": "A small animal, possibly part of a squirrel or a similar mammal, partially visible at the edge of the frame surrounded by forest floor vegetation. Dense forest with leafy ground cover. Lush green foliage, leafy ground litter, tree trunks and dense undergrowth.",
+        "description": "A small animal, Bobcat, partially visible at the edge of the frame surrounded by forest floor vegetation. Dense forest with leafy ground cover. Lush green foliage, leafy ground litter, tree trunks and dense undergrowth.",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
@@ -2910,7 +2910,7 @@
     {
       "id": "bobcat_172",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, walking away in a forest setting A forested area with tall trees and sparse undergrowth Numerous trees and vegetation typical of a forest",
+        "description": "A Bobcat, walking away in a forest setting A forested area with tall trees and sparse undergrowth Numerous trees and vegetation typical of a forest",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2927,7 +2927,7 @@
     {
       "id": "bobcat_173",
       "metadata": {
-        "description": "A blurred animal with reflective eyes moving through a wooded area at night Forest or wooded natural environment Dense trees, shrubs, and forest floor with fallen leaves and branches",
+        "description": "Bobcat. A blurred animal with reflective eyes moving through a wooded area at night Bobcat natural environment Dense trees, shrubs, and forest floor with fallen leaves and branches",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2944,7 +2944,7 @@
     {
       "id": "bobcat_174",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, walking away through dense forest foliage. Woodland or forest area with dense foliage and trees. Thick tree trunks, leafy vegetation, bushes, and forest debris.",
+        "description": "A Bobcat, walking away through dense forest foliage. Bobcat area with dense foliage and trees. Thick tree trunks, leafy vegetation, bushes, and forest debris.",
         "time": "day",
         "season": "unknown",
         "action": "walking",
@@ -2961,11 +2961,11 @@
     {
       "id": "bobcat_175",
       "metadata": {
-        "description": "Animal, likely a wild cat or fox species, moving through a forested area Wooded environment with dense trees and leafy ground Dense forest consisting of tall trees, thick branches, and leaf-littered ground",
+        "description": "Bobcat, moving through a forested area Wooded environment with dense trees and leafy ground Dense forest consisting of tall trees, thick branches, and leaf-littered ground",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "Clearly labeled as 06-06-2015",
         "lighting": "Natural daylight, shaded atmosphere without direct sunlight",
@@ -2978,7 +2978,7 @@
     {
       "id": "bobcat_176",
       "metadata": {
-        "description": "A wild animal, likely a feline or canine species, captured by a trail camera in a wooded area A forest environment with trees and leaves scattered on the ground Tall trees and dense foliage with leaf-littered forest floor",
+        "description": "A Bobcat, captured by a trail camera in a wooded area A forest environment with trees and leaves scattered on the ground Tall trees and dense foliage with leaf-littered forest floor",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -2995,7 +2995,7 @@
     {
       "id": "bobcat_177",
       "metadata": {
-        "description": "Wild animal (likely a bobcat) walking through a forested area at night Forested natural outdoor environment Trees, forest floor vegetation with dense undergrowth",
+        "description": "Bobcat (Bobcat) walking through a forested area at night Forested natural outdoor environment Trees, forest floor vegetation with dense undergrowth",
         "time": "night",
         "season": "fall",
         "action": "walking",
@@ -3012,7 +3012,7 @@
     {
       "id": "bobcat_178",
       "metadata": {
-        "description": "A small animal in a wooded area at night Forested area, outdoors with trees and ground vegetation Dense forest with several bare tree trunks and low vegetation",
+        "description": "Bobcat. A small animal in a wooded area at night Forested area, outdoors with trees and ground vegetation Dense forest with several bare tree trunks and low vegetation",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -3029,7 +3029,7 @@
     {
       "id": "bobcat_179",
       "metadata": {
-        "description": "Wild animal, possibly a bobcat, walking through a forest environment Forest with leaf-covered ground, trees, and scattered branches Dense forest with bare trees, some evergreen shrubs, and underbrush",
+        "description": "Bobcat, walking through a forest environment Forest with leaf-covered ground, trees, and scattered branches Dense forest with bare trees, some evergreen shrubs, and underbrush",
         "time": "day",
         "season": "unknown",
         "action": "walking",
@@ -3046,7 +3046,7 @@
     {
       "id": "bobcat_180",
       "metadata": {
-        "description": "Wild animal, possibly a hyena or similar mammal, walking across a grassy field Open grassy field area at night Distant lights visible, indicating possible distant settlements or structures",
+        "description": "Bobcat, walking across a grassy field Open grassy field area at night Distant lights visible, indicating possible distant Bobcat",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -3063,11 +3063,11 @@
     {
       "id": "bobcat_181",
       "metadata": {
-        "description": "A deer is visible walking through a forested area. Natural wilderness, densely wooded with dry leaves and trees Trees, branches, underbrush, forest floor covered with dry leaves",
+        "description": "Bobcat. A deer is visible walking through a forested area. Natural wilderness, densely wooded with dry leaves and trees Trees, branches, underbrush, forest floor covered with dry leaves",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "Clear, no precipitation visible",
         "date": "January 31, 2015 (according to timestamp)",
         "lighting": "Bright natural daylight, strong sunlight penetrating the trees",
@@ -3080,7 +3080,7 @@
     {
       "id": "bobcat_182",
       "metadata": {
-        "description": "Image depicts a forest environment with multiple trees and a small animal, likely a deer, walking away from the camera. Deciduous forest or wooded area with dense tree cover and leaf litter on the ground. Trees densely populate the background, leafless due to the season or weather.",
+        "description": "Bobcat. Image depicts a forest environment with multiple trees and a small animal, Bobcat, walking away from the camera. Deciduous Bobcat area with dense tree cover and leaf litter on the ground. Trees densely populate the background, leafless due to the Bobcat.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3097,7 +3097,7 @@
     {
       "id": "bobcat_183",
       "metadata": {
-        "description": "Small wild animal, possibly a fox, walking through a wooded area Forested area with trees, dense foliage, and open ground Dense woodland area with numerous trees and leafy vegetation",
+        "description": "Small Bobcat, walking through a wooded area Forested area with trees, dense foliage, and open ground Dense woodland area with numerous trees and leafy vegetation",
         "time": "day",
         "season": "unknown",
         "action": "walking",
@@ -3114,11 +3114,11 @@
     {
       "id": "bobcat_184",
       "metadata": {
-        "description": "Partially visible animal, possibly a raccoon, in a wooded area with fallen leaves Wooded natural environment, with many trees and leaf-covered ground Dense trees, branches, fallen logs, and leaf litter covering the forest floor",
+        "description": "Partially visible animal, Bobcat, in a wooded area with fallen leaves Wooded natural environment, with many trees and leaf-covered ground Dense trees, branches, fallen logs, and leaf litter covering the forest floor",
         "time": "dusk",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "January 21, 2015, based on clear timestamp",
         "lighting": "Low, likely evening or dusk with dim natural light",
@@ -3131,7 +3131,7 @@
     {
       "id": "bobcat_185",
       "metadata": {
-        "description": "Wild animal captured by a trail camera in a forest Woodland forest with tall trees and sparse ground vegetation Dense forest with trees and branches, leaf-covered forest floor",
+        "description": "Bobcat captured by a trail camera in a forest Woodland forest with tall trees and sparse ground vegetation Dense forest with trees and branches, leaf-covered forest floor",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -3148,7 +3148,7 @@
     {
       "id": "bobcat_186",
       "metadata": {
-        "description": "Animal (possibly a deer or another mid-sized mammal) moving along a forested trail at night Forested environment with a dirt trail Dense forest with trees and leaf litter",
+        "description": "Bobcat moving along a forested trail at night Forested environment with a dirt trail Dense forest with trees and leaf litter",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -3165,7 +3165,7 @@
     {
       "id": "bobcat_187",
       "metadata": {
-        "description": "Animal, possibly a deer or canine, walking through a wooded area Outdoor woodland or forest area Trees, branches, and dense vegetation",
+        "description": "Bobcat, walking through a wooded area Outdoor Bobcat area Trees, branches, and dense vegetation",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3182,7 +3182,7 @@
     {
       "id": "bobcat_188",
       "metadata": {
-        "description": "Two animals with brightly reflective eyes standing in a wooded area at night Forested area with dense vegetation Trees, dense bushes, and foliage",
+        "description": "Bobcat. Two animals with brightly reflective eyes standing in a wooded area at night Forested area with dense vegetation Trees, dense bushes, and foliage",
         "time": "night",
         "season": "unknown",
         "action": "moving",
@@ -3199,11 +3199,11 @@
     {
       "id": "bobcat_189",
       "metadata": {
-        "description": "Animal captured moving through natural area at night Natural, outdoor vegetation with bushes and grassy terrain Trees, bushes, and darkened landscape",
+        "description": "Bobcat, captured moving through natural area at night Natural, outdoor vegetation with bushes and grassy terrain Trees, bushes, and darkened landscape",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "Not visible",
         "date": "November 21, 2014",
         "lighting": "Low visibility, infrared or night vision illumination",
@@ -3216,7 +3216,7 @@
     {
       "id": "bobcat_190",
       "metadata": {
-        "description": "Animal visible in forest setting Wooded forest environment with dense trees and foliage Trees, bushes, and dense vegetation typical of a forest",
+        "description": "Bobcat, visible in forest setting Wooded forest environment with dense trees and foliage Trees, bushes, and dense vegetation typical of a forest",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3233,7 +3233,7 @@
     {
       "id": "bobcat_191",
       "metadata": {
-        "description": "A wild feline, likely a bobcat, moving swiftly through a forested area. Dense forest environment with leafy ground cover and vegetation Trees, leafy shrubbery, and forest floor",
+        "description": "A wild feline, Bobcat, moving swiftly through a forested area. Dense forest environment with leafy ground cover and vegetation Trees, leafy shrubbery, and forest floor",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
@@ -3250,7 +3250,7 @@
     {
       "id": "bobcat_192",
       "metadata": {
-        "description": "A wild feline, likely a bobcat, standing on moss-covered ground Forested area with dense vegetation and trees Dense green foliage, trees and forest undergrowth",
+        "description": "A wild feline, Bobcat, standing on moss-covered ground Forested area with dense vegetation and trees Dense green foliage, trees and forest undergrowth",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -3267,7 +3267,7 @@
     {
       "id": "bobcat_193",
       "metadata": {
-        "description": "A medium-sized animal, possibly a wild feline or bobcat, clearly visible standing still in a forested area. Forested outdoor area with scattered trees and ground vegetation. Trees, leafy vegetation, and rocky structures cover the background.",
+        "description": "A medium-sized animal, Bobcat, clearly visible standing still in a forested area. Forested outdoor area with scattered trees and ground vegetation. Trees, leafy vegetation, and rocky structures cover the background.",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -3284,7 +3284,7 @@
     {
       "id": "bobcat_194",
       "metadata": {
-        "description": "An animal, likely a wild cat or bobcat walking away from the camera through a forest Woodland area with dense trees and shrubbery Forest environment with many trees, sparse foliage and natural debris on ground",
+        "description": "An animal, Bobcat, sparse foliage and natural debris on ground",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3301,7 +3301,7 @@
     {
       "id": "bobcat_195",
       "metadata": {
-        "description": "Animal (likely a wildcat or similar animal) walking through a forest floor. Forested area with trees and leafy ground cover. Numerous trees, underbrush, and forest vegetation, partially obscured by haze or mist.",
+        "description": "Animal (Bobcat) walking through a forest floor. Forested area with trees and leafy ground cover. Numerous trees, underbrush, and forest vegetation, partially obscured by Bobcat.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3318,7 +3318,7 @@
     {
       "id": "bobcat_196",
       "metadata": {
-        "description": "Blurred animal presence partially obstructed by close object Dark forest environment Dense trees and bushes with dark backdrop",
+        "description": "Bobcat. Blurred animal presence partially obstructed by close object Dark forest environment Dense trees and bushes with dark backdrop",
         "time": "night",
         "season": "fall",
         "action": "alert",
@@ -3335,7 +3335,7 @@
     {
       "id": "bobcat_197",
       "metadata": {
-        "description": "Partial view of an animal moving quickly through a wooded area Outdoor natural environment, forested area with trees and vegetation Dense trees, foliage, and forest litter",
+        "description": "Bobcat. Partial view of an animal moving quickly through a wooded area Outdoor natural environment, forested area with trees and vegetation Dense trees, foliage, and forest litter",
         "time": "night",
         "season": "fall",
         "action": "walking",
@@ -3352,11 +3352,11 @@
     {
       "id": "bobcat_198",
       "metadata": {
-        "description": "Small animal likely a cat or similar sized mammal captured in natural environment Outdoor natural environment with lush greenery and ground vegetation Dense vegetation, bushes and trees surrounding a building structure",
+        "description": "Bobcat, bushes and trees surrounding a building structure",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "Clear, no precipitation visible",
         "date": "2015-08-25",
         "lighting": "Diffuse natural sunlight, moderately shaded areas",
@@ -3369,7 +3369,7 @@
     {
       "id": "bobcat_199",
       "metadata": {
-        "description": "A nighttime image capturing a wild animal, likely a bobcat, with eyes reflecting the camera flash, standing alert in a natural wooded environment. Forested natural area, likely remote with sparse vegetation. Dense trees and sparse vegetation with relatively open forest floor.",
+        "description": "A nighttime image capturing A Bobcat, with eyes reflecting the camera flash, standing alert in a natural wooded environment. Forested natural area, Bobcat. Dense trees and sparse vegetation with relatively open forest floor.",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -3386,11 +3386,11 @@
     {
       "id": "bobcat_200",
       "metadata": {
-        "description": "Animal partially visible standing near bushes at night Grassy outdoor area near thick bushes or small trees Dark dense vegetation and faint lights of possibly distant buildings",
+        "description": "Bobcat, partially visible standing near bushes at night Grassy outdoor area near thick Bobcat trees Dark dense vegetation and faint lights of Bobcat",
         "time": "night",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "03-10-2015",
         "lighting": "Low visibility, illuminated by infrared trail camera flash",
@@ -3403,7 +3403,7 @@
     {
       "id": "bobcat_201",
       "metadata": {
-        "description": "A small animal, possibly a bobcat, sitting or standing alertly in a wooded area Forest or woodland environment with trees Trees, forest vegetation and fallen leaves covering the ground",
+        "description": "A small animal, Bobcat alertly in a wooded area Bobcat environment with trees Trees, forest vegetation and fallen leaves covering the ground",
         "time": "dawn",
         "season": "fall",
         "action": "moving",
@@ -3420,7 +3420,7 @@
     {
       "id": "bobcat_202",
       "metadata": {
-        "description": "A focused view of a wooded area showing a small animal, possibly a bird or a squirrel, within dense foliage Wooded forest environment with dense greenery Dense vegetation and foliage, trees, leaves, and some rocky terrain",
+        "description": "Bobcat. A focused view of a wooded area showing a small animal, Bobcat, within dense foliage Wooded forest environment with dense greenery Dense vegetation and foliage, trees, leaves, and some rocky terrain",
         "time": "dawn",
         "season": "summer",
         "action": "moving",
@@ -3437,7 +3437,7 @@
     {
       "id": "bobcat_203",
       "metadata": {
-        "description": "An animal, possibly a deer, moving through a wooded area Dense forest environment with fallen branches and trees Thick woods consisting of numerous trees, branches and leafy ground cover",
+        "description": "Bobcat, moving through a wooded area Dense forest environment with fallen branches and trees Thick woods consisting of numerous trees, branches and leafy ground cover",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3454,7 +3454,7 @@
     {
       "id": "bobcat_204",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, is visible amidst dense greenery in a forest Dense forest area with abundant green foliage Thick forest with trees, bushes, and tall grass",
+        "description": "A Bobcat, is visible amidst dense greenery in a forest Dense forest area with abundant green foliage Thick forest with trees, bushes, and tall grass",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -3471,11 +3471,11 @@
     {
       "id": "bobcat_205",
       "metadata": {
-        "description": "Animal, possibly a wild mammal, moving across a natural terrain Outdoor environment, natural wooded or vegetated area Vegetation, trees, and uneven terrain",
+        "description": "Bobcat, moving across a natural terrain Outdoor environment, natural Bobcat area Vegetation, trees, and uneven terrain",
         "time": "night",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-09-22",
         "lighting": "Dim lighting, nighttime with infrared or night-vision camera usage",
@@ -3488,7 +3488,7 @@
     {
       "id": "bobcat_206",
       "metadata": {
-        "description": "Dark, low-visibility environment showing an indistinct figure. Open outdoor area, possibly a field, with limited visibility due to darkness or fog. Scattered distant lights indicating possible buildings or structures far away.",
+        "description": "Bobcat. Dark, low-visibility environment showing an indistinct figure. Open outdoor area, Bobcat, with limited visibility due to Bobcat. Scattered distant lights indicating possible Bobcat far away.",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -3505,7 +3505,7 @@
     {
       "id": "bobcat_207",
       "metadata": {
-        "description": "A single animal, possibly a wild cat, standing on a forest trail surrounded by dense trees. Forested natural environment with dense vegetation. Dense greenery and multiple mature trees with leafy branches, creating a lush forest environment.",
+        "description": "A single animal, Bobcat, standing on a forest trail surrounded by dense trees. Forested natural environment with dense vegetation. Dense greenery and multiple mature trees with leafy branches, creating a lush forest environment.",
         "time": "dusk",
         "season": "unknown",
         "action": "alert",
@@ -3522,7 +3522,7 @@
     {
       "id": "bobcat_208",
       "metadata": {
-        "description": "Wild animal, likely a fox or similar mammal moving in forest area Natural forest environment with trees and undergrowth Dense tree trunks with leaves and sparse vegetation",
+        "description": "Bobcat",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3539,11 +3539,11 @@
     {
       "id": "bobcat_209",
       "metadata": {
-        "description": "Animal clearly visible from behind, possibly a wild animal, walking away along a natural trail. Outdoor natural woodland environment. Wooded area with trees, leaf-covered ground and clear dirt path.",
+        "description": "Bobcat, clearly visible from behind, Bobcat, walking away along a natural trail. Outdoor natural woodland environment. Wooded area with trees, leaf-covered ground and clear dirt path.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "Not visible",
         "date": "05-27-2015",
         "lighting": "Low-light nighttime conditions illuminated by infrared or trail camera features.",
@@ -3573,11 +3573,11 @@
     {
       "id": "bobcat_211",
       "metadata": {
-        "description": "A wildlife animal, likely a bobcat or similar medium-sized mammal, captured at night in a wilderness area. Wooded, natural environment with sparse vegetation and fallen branches. Sparse trees, branches, and grassy vegetation",
+        "description": "A wildlife animal, Bobcat, captured at night in a wilderness area. Wooded, natural environment with sparse vegetation and fallen branches. Sparse trees, branches, and grassy vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "01-10-2016, as indicated on timestamp",
         "lighting": "Infrared night-time illumination resulting in black-and-white appearance",
@@ -3590,7 +3590,7 @@
     {
       "id": "bobcat_212",
       "metadata": {
-        "description": "A night-time infrared photograph capturing a wild animal, likely a bobcat, walking across an outdoor area with tall grasses Wild, outdoor environment with grassy terrain Grass, a clear patch of ground pathway, a single vertical pole, and sparse vegetation",
+        "description": "Bobcat. A night-time infrared photograph capturing A Bobcat, walking across an outdoor area with tall grasses Wild, outdoor environment with grassy terrain Grass, a clear patch of ground pathway, a single vertical pole, and sparse vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -3607,11 +3607,11 @@
     {
       "id": "bobcat_213",
       "metadata": {
-        "description": "Animal walking away from the camera in a wooded area at night Natural outdoor woodland environment Trees, branches, sparse vegetation, and darkness",
+        "description": "Bobcat, walking away from the camera in a wooded area at night Natural outdoor woodland environment Trees, branches, sparse vegetation, and darkness",
         "time": "night",
         "season": "winter",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2016-01-19",
         "lighting": "Low lighting, illuminated by infrared or night vision",
@@ -3624,7 +3624,7 @@
     {
       "id": "bobcat_214",
       "metadata": {
-        "description": "A wild animal (likely a bobcat or similar feline) walking through a forested area. Forested outdoor area with vegetation and trees Trees, vegetation, undulating terrain, dark natural environment",
+        "description": "A Bobcat (Bobcat) walking through a forested area. Forested outdoor area with vegetation and trees Trees, vegetation, undulating terrain, dark natural environment",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -3641,7 +3641,7 @@
     {
       "id": "bobcat_215",
       "metadata": {
-        "description": "A nighttime wildlife image capturing an animal walking away through a woodland path. Forest or wooded area with trees and fallen leaves. Trees and dense vegetation, obscured by darkness.",
+        "description": "Bobcat. A nighttime wildlife image capturing an animal walking away through a woodland path. Bobcat area with trees and fallen leaves. Trees and dense vegetation, obscured by darkness.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -3658,7 +3658,7 @@
     {
       "id": "bobcat_216",
       "metadata": {
-        "description": "Two deer standing amongst sparse forest vegetation Forested wooded area with leaf-covered ground Numerous trees and bushes densely arranged in a forested area",
+        "description": "Bobcat. Two deer standing amongst sparse forest vegetation Forested wooded area with leaf-covered ground Numerous trees and bushes densely arranged in a forested area",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -3675,7 +3675,7 @@
     {
       "id": "bobcat_217",
       "metadata": {
-        "description": "A small animal, likely a fox or a similar-sized creature, standing quietly in a wooded area at night Forested area with sparse trees and ground covered with leaves Dense trees, some sparse leaf coverage on forest floor, darkness in the distance",
+        "description": "A small animal, Bobcat creature, standing quietly in a wooded area at night Forested area with sparse trees and ground covered with leaves Dense trees, some sparse leaf coverage on forest floor, darkness in the distance",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -3692,7 +3692,7 @@
     {
       "id": "bobcat_218",
       "metadata": {
-        "description": "A wild feline animal, possibly a bobcat, walking through a wooded area. Dense forest with abundant foliage and trees. Thick greenery, trees, and bushes filling the scene.",
+        "description": "A wild feline animal, Bobcat, walking through a wooded area. Dense forest with abundant foliage and trees. Thick greenery, trees, and bushes filling the scene.",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -3709,7 +3709,7 @@
     {
       "id": "bobcat_219",
       "metadata": {
-        "description": "A clear view of an animal (likely a wild feline, possibly a cougar or bobcat) at night, looking towards the camera, eyes reflecting the camera's flash. Outdoor wooded or forested area, natural environment with grass or leaf-covered ground. Dense trees and bushes, with some branches and faint tree outlines visible.",
+        "description": "A clear view of an animal (Bobcat) at night, looking towards the camera, eyes reflecting the camera's flash. Outdoor Bobcat area, natural environment with Bobcat-covered ground. Dense trees and bushes, with some branches and faint tree outlines visible.",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -3726,7 +3726,7 @@
     {
       "id": "bobcat_220",
       "metadata": {
-        "description": "Partial view of a wild animal appearing at the edge of the frame Wooded forest area with trees and fallen leaves Densely wooded area with tall trees and leafy ground cover",
+        "description": "Partial view of a Bobcat appearing at the edge of the frame Wooded forest area with trees and fallen leaves Densely wooded area with tall trees and leafy ground cover",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3743,7 +3743,7 @@
     {
       "id": "bobcat_221",
       "metadata": {
-        "description": "Animal, likely a wild mammal, standing in natural outdoor environment Natural, forest-like setting with sparse vegetation Dark wooded area with trees and sparse vegetation",
+        "description": "Bobcat, standing in natural outdoor environment Natural, forest-like setting with sparse vegetation Dark wooded area with trees and sparse vegetation",
         "time": "night",
         "season": "winter",
         "action": "alert",
@@ -3760,7 +3760,7 @@
     {
       "id": "bobcat_222",
       "metadata": {
-        "description": "Blurred image of a wild animal (appears to be a bobcat) walking through a wooded area Forest environment with dense trees and leaf litter Numerous trees, fallen branches and dried leaves on forest floor",
+        "description": "Blurred image of a Bobcat (Bobcat) walking through a wooded area Forest environment with dense trees and leaf litter Numerous trees, fallen branches and dried leaves on forest floor",
         "time": "dusk",
         "season": "fall",
         "action": "walking",
@@ -3777,11 +3777,11 @@
     {
       "id": "bobcat_223",
       "metadata": {
-        "description": "Wild animal, possibly a bobcat or similar mammal, moving within a wilderness or forested area at night. Natural woodland area with trees and uneven ground. Dark wooded area, trees, and natural ground cover.",
+        "description": "Bobcat, moving within a Bobcat area at night. Natural woodland area with trees and uneven ground. Dark wooded area, trees, and natural ground cover.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "July 26, 2015",
         "lighting": "Dim, infrared night-vision lighting.",
@@ -3794,7 +3794,7 @@
     {
       "id": "bobcat_224",
       "metadata": {
-        "description": "An animal, likely a large wild cat or similar mammal, walking through a forested area. Wooded area with sparse forest floor vegetation. Dense trees and minimal vegetation forming the forest environment.",
+        "description": "Bobcat, walking through a forested area. Wooded area with sparse forest floor vegetation. Dense trees and minimal vegetation forming the forest environment.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -3811,7 +3811,7 @@
     {
       "id": "bobcat_225",
       "metadata": {
-        "description": "A wildlife animal, possibly a bobcat or lynx, walking through a wooded area Natural forest environment with leaf-strewn ground Forest trees and leaf-covered terrain",
+        "description": "A wildlife animal, Bobcat, walking through a wooded area Natural forest environment with leaf-strewn ground Forest trees and leaf-covered terrain",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -3828,7 +3828,7 @@
     {
       "id": "bobcat_226",
       "metadata": {
-        "description": "Deer walking through a forested area Dense forest environment, natural habitat Trees, undergrowth, large rocks, fallen branches",
+        "description": "Bobcat. Deer walking through a forested area Dense forest environment, natural habitat Trees, undergrowth, large rocks, fallen branches",
         "time": "dusk",
         "season": "unknown",
         "action": "alert",
@@ -3845,7 +3845,7 @@
     {
       "id": "bobcat_227",
       "metadata": {
-        "description": "Animal appearing to be a small mammal visible in a forest setting Forest or wooded natural environment, ground covered with leaves Dense trees and foliage, some rocks and fallen branches covering the forest ground",
+        "description": "Bobcat, appearing to be a small mammal visible in a forest setting Bobcat natural environment, ground covered with leaves Dense trees and foliage, some rocks and fallen branches covering the forest ground",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -3862,7 +3862,7 @@
     {
       "id": "bobcat_228",
       "metadata": {
-        "description": "A wild feline animal, likely a bobcat, carrying prey in a wooded environment. A wooded forest with ground covered in fallen leaves. Trees, leaf litter and sparse vegetation creating a natural woodland backdrop.",
+        "description": "A wild feline animal, Bobcat, carrying prey in a wooded environment. A wooded forest with ground covered in fallen leaves. Trees, leaf litter and sparse vegetation creating a natural woodland backdrop.",
         "time": "dawn",
         "season": "winter",
         "action": "moving",
@@ -3883,7 +3883,7 @@
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "October 13, 2014",
         "lighting": "Dim and diffuse, possibly early morning or foggy conditions",
@@ -3896,7 +3896,7 @@
     {
       "id": "bobcat_230",
       "metadata": {
-        "description": "A small animal, possibly a wildcat or fox, partially visible amidst dense forest vegetation Forested area with abundant leafy vegetation and trees Trees, thick green foliage, and leaf-covered ground",
+        "description": "A small animal, Bobcat, partially visible amidst dense forest vegetation Forested area with abundant leafy vegetation and trees Trees, thick green foliage, and leaf-covered ground",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -3913,7 +3913,7 @@
     {
       "id": "bobcat_231",
       "metadata": {
-        "description": "Wild animal, possibly a coyote or similar, walking away from camera Natural forest environment Dense trees and forest floor with scattered leaves, branches, and underbrush",
+        "description": "Bobcat, walking away from camera Natural forest environment Dense trees and forest floor with scattered leaves, branches, and underbrush",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -3930,7 +3930,7 @@
     {
       "id": "bobcat_232",
       "metadata": {
-        "description": "A blurred image of an animal, likely a wildcat or bobcat, walking through an open field. An outdoor field, likely rural or wild, with forest or tree-lined area in the distance. Tree-lined horizon with cloudy or partially clear sky.",
+        "description": "A blurred image of an animal, Bobcat, walking through an open field. An outdoor field, Bobcat, with Bobcat-lined area in the distance. Tree-lined horizon with Bobcat clear sky.",
         "time": "dusk",
         "season": "fall",
         "action": "walking",
@@ -3947,7 +3947,7 @@
     {
       "id": "bobcat_233",
       "metadata": {
-        "description": "Primary object appears to be a small mammal, likely a wild animal, in a forest setting Forest environment with dense leafless trees and scattered greenery on the forest floor Forest trees, leafless branches, and distant mountains visible through trees",
+        "description": "Primary object Bobcat, in a forest setting Forest environment with dense leafless trees and scattered greenery on the forest floor Forest trees, leafless branches, and distant mountains visible through trees",
         "time": "dusk",
         "season": "unknown",
         "action": "alert",
@@ -3964,7 +3964,7 @@
     {
       "id": "bobcat_234",
       "metadata": {
-        "description": "The image primarily focuses on a small animal, possibly a wild feline, with reflective eyes clearly visible in a dark outdoor setting. Outdoor natural environment, presumably a forested or wooded area. Dense vegetation, bushes, and trees.",
+        "description": "Bobcat. The image primarily focuses on a small animal, Bobcat, with reflective eyes clearly visible in a dark outdoor setting. Outdoor natural environment, presumably a Bobcat area. Dense vegetation, bushes, and trees.",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -3981,7 +3981,7 @@
     {
       "id": "bobcat_235",
       "metadata": {
-        "description": "Animal, possibly a wild mammal, walking through a wooded area Natural forest environment Trees, dense foliage, and rocky formation",
+        "description": "Bobcat, walking through a wooded area Natural forest environment Trees, dense foliage, and rocky formation",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -3998,7 +3998,7 @@
     {
       "id": "bobcat_236",
       "metadata": {
-        "description": "A small to medium-sized animal with reflective eyes walking through a wooded area Forest or heavily wooded area Trees, branches, undergrowth, and dense forest vegetation",
+        "description": "Bobcat. A small to medium-sized animal with reflective eyes walking through a wooded area Bobcat wooded area Trees, branches, undergrowth, and dense forest vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4015,7 +4015,7 @@
     {
       "id": "bobcat_237",
       "metadata": {
-        "description": "A wild animal, possibly a medium-sized mammal such as a fox or coyote, walking through a natural outdoor area at night. Rural or wilderness area with vegetation, rocks, and bushes. Dark sky, bushes and natural vegetation",
+        "description": "A Bobcat such as A Bobcat, walking through a natural outdoor area at night. Bobcat area with vegetation, rocks, and bushes. Dark sky, bushes and natural vegetation",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4032,7 +4032,7 @@
     {
       "id": "bobcat_238",
       "metadata": {
-        "description": "A nighttime wildlife photograph with a small animal having reflective eyes in a forest setting Wooded forest area with leaf-covered ground Sparse trees and branches in a wooded area",
+        "description": "Bobcat. A nighttime wildlife photograph with a small animal having reflective eyes in a forest setting Wooded forest area with leaf-covered ground Sparse trees and branches in a wooded area",
         "time": "night",
         "season": "unknown",
         "action": "moving",
@@ -4049,7 +4049,7 @@
     {
       "id": "bobcat_239",
       "metadata": {
-        "description": "A blurred animal, likely a wildcat or small predator, moving across a forest floor. Dense forest with leafy ground cover. Numerous tree trunks, branches, and greenery typical of a forest setting.",
+        "description": "A blurred animal, Bobcat, moving across a forest floor. Dense forest with leafy ground cover. Numerous tree trunks, branches, and greenery typical of a forest setting.",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -4066,7 +4066,7 @@
     {
       "id": "bobcat_240",
       "metadata": {
-        "description": "A small animal, possibly a wildcat or bobcat, sitting in a forested area Forested or woodland setting with leafy ground cover Trees and dense vegetation, with scattered rocks on the ground",
+        "description": "A small animal, Bobcat, sitting in a forested area Bobcat setting with leafy ground cover Trees and dense vegetation, with scattered rocks on the ground",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -4083,7 +4083,7 @@
     {
       "id": "bobcat_241",
       "metadata": {
-        "description": "Blurred image of a wild animal passing through a wooded area Forested woodland with trees and ground covered by fallen leaves and possible snow Trees and wooded area extending into depth, predominantly leafless or sparsely leafed",
+        "description": "Blurred image of a Bobcat passing through a wooded area Forested woodland with trees and ground covered by fallen leaves and possible snow Trees and wooded area extending into depth, predominantly Bobcat leafed",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4104,7 +4104,7 @@
         "time": "dawn",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-09-19 as indicated on the timestamp",
         "lighting": "Diffused lighting, possibly indicating shaded or overcast conditions",
@@ -4117,7 +4117,7 @@
     {
       "id": "bobcat_243",
       "metadata": {
-        "description": "A nocturnal image showing a wild animal, possibly a raccoon, moving away through a natural setting Outdoor natural environment with forest ground and sparse tree branches Dense vegetation and dark trees, with no clearly defined distant elements",
+        "description": "A nocturnal image showing A Bobcat, moving away through a natural setting Outdoor natural environment with forest ground and sparse tree branches Dense vegetation and dark trees, with no clearly defined distant elements",
         "time": "night",
         "season": "winter",
         "action": "walking",
@@ -4134,11 +4134,11 @@
     {
       "id": "bobcat_244",
       "metadata": {
-        "description": "A wild feline, possibly a bobcat, walking through a forested area Wooded area with leaf-covered ground and sparse underbrush Dense woodland with multiple trees and shrubs, fallen leaves and branches",
+        "description": "A wild feline, Bobcat, walking through a forested area Wooded area with leaf-covered ground and sparse underbrush Dense woodland with multiple trees and shrubs, fallen leaves and branches",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "12-08-2014",
         "lighting": "Natural, moderately lit",
@@ -4151,7 +4151,7 @@
     {
       "id": "bobcat_245",
       "metadata": {
-        "description": "Close-up of an animal with visible ears positioned at the bottom forefront, surrounded by natural forest ground cover. Forested environment with trees and leaf-covered ground. Dense tree trunks, branches and leaves forming a forest backdrop.",
+        "description": "Bobcat. Close-up of an animal with visible ears positioned at the bottom forefront, surrounded by natural forest ground cover. Forested environment with trees and leaf-covered ground. Dense tree trunks, branches and leaves forming a forest backdrop.",
         "time": "dusk",
         "season": "unknown",
         "action": "alert",
@@ -4168,7 +4168,7 @@
     {
       "id": "bobcat_246",
       "metadata": {
-        "description": "The primary focus appears to be a wild animal, most likely a feline species, captured by a night vision trail camera in a forested area. Forested natural environment with dense undergrowth Trees, foliage, and dense vegetation",
+        "description": "The primary focus Bobcat, most Bobcat, captured by a night vision trail camera in a forested area. Forested natural environment with dense undergrowth Trees, foliage, and dense vegetation",
         "time": "night",
         "season": "fall",
         "action": "walking",
@@ -4185,7 +4185,7 @@
     {
       "id": "bobcat_247",
       "metadata": {
-        "description": "Focus on animal (likely a bobcat or similar feline) partially visible in bottom right region surrounded by woodland environment Forest environment with trees and fallen leaves covering the ground Dense forest with mostly bare deciduous trees and leafy ground",
+        "description": "Focus on animal (Bobcat) partially visible in bottom right region surrounded by woodland environment Forest environment with trees and fallen leaves covering the ground Dense forest with mostly bare deciduous trees and leafy ground",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4202,7 +4202,7 @@
     {
       "id": "bobcat_248",
       "metadata": {
-        "description": "A small deer walking through a forested area Natural, wooded forest environment Densely wooded area with leafless trees, dried leaves, and underbrush",
+        "description": "Bobcat. A small deer walking through a forested area Natural, wooded forest environment Densely wooded area with leafless trees, dried leaves, and underbrush",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4219,7 +4219,7 @@
     {
       "id": "bobcat_249",
       "metadata": {
-        "description": "Small animal leg visible on leafy forest floor. Dense natural forest environment, leafy ground cover. Trees, greenery, foliage, fallen leaves.",
+        "description": "Bobcat, leg visible on leafy forest floor. Dense natural forest environment, leafy ground cover. Trees, greenery, foliage, fallen leaves.",
         "time": "dawn",
         "season": "summer",
         "action": "alert",
@@ -4236,7 +4236,7 @@
     {
       "id": "bobcat_250",
       "metadata": {
-        "description": "Animal, possibly a deer, walking along a forest trail at night Wooded area, forest trail Trees and natural forest vegetation",
+        "description": "Bobcat, walking along a forest trail at night Wooded area, forest trail Trees and natural forest vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4253,11 +4253,11 @@
     {
       "id": "bobcat_251",
       "metadata": {
-        "description": "A wild animal, likely a bobcat or similar feline species, standing in tall grass in a wooded area A natural wooded area with dense vegetation Dense trees, vegetation, and greenery",
+        "description": "A Bobcat, standing in tall grass in a wooded area A natural wooded area with dense vegetation Dense trees, vegetation, and greenery",
         "time": "dawn",
         "season": "fall",
         "action": "moving",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-09-23",
         "lighting": "Natural daylight with slightly diffused lighting",
@@ -4270,7 +4270,7 @@
     {
       "id": "bobcat_252",
       "metadata": {
-        "description": "Partial view of an animal (likely a wild mammal) moving through the frame Open grassy field or plain Dark horizon with distant scattered lights",
+        "description": "Partial view of an animal (Bobcat) moving through the frame Open grassy Bobcat Dark horizon with distant scattered lights",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4287,7 +4287,7 @@
     {
       "id": "bobcat_253",
       "metadata": {
-        "description": "Blurred animal figure running or moving quickly through a wooded area Forest or woodland area with trees and leaf-covered ground Dense wooded vegetation and trees",
+        "description": "Blurred animal figure Bobcat quickly through a wooded area Bobcat area with trees and leaf-covered ground Dense wooded vegetation and trees",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4304,11 +4304,11 @@
     {
       "id": "bobcat_254",
       "metadata": {
-        "description": "A wildlife animal, likely a small mammal, clearly visible at night in a natural outdoor environment. Wooded outdoor setting with sparse vegetation and trees. Woodland area with trees and sparse underbrush vegetation.",
+        "description": "A wildlife animal, Bobcat, clearly visible at night in a natural outdoor environment. Wooded outdoor setting with sparse vegetation and trees. Woodland area with trees and sparse underbrush vegetation.",
         "time": "night",
         "season": "winter",
         "action": "foraging",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2016-01-19",
         "lighting": "Low-light conditions with illumination provided by infrared or trail camera flash.",
@@ -4325,7 +4325,7 @@
         "time": "day",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-09-16",
         "lighting": "Natural daylight with filtered sunlight",
@@ -4338,7 +4338,7 @@
     {
       "id": "bobcat_256",
       "metadata": {
-        "description": "Partial view of a small animal, possibly a fox or coyote, moving through a wooded area. Forested area covered in dried leaves, trees with sparse foliage. Wooded environment with trees, fallen branches and leaves scattered on the ground.",
+        "description": "Partial view of a small animal, Bobcat, moving through a wooded area. Forested area covered in dried leaves, trees with sparse foliage. Wooded environment with trees, fallen branches and leaves scattered on the ground.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4355,7 +4355,7 @@
     {
       "id": "bobcat_257",
       "metadata": {
-        "description": "Image showing the rear view of a wild animal, likely a bobcat, moving toward a forested area at night. Forested area with leaf litter and scattered vegetation Dense, dark vegetation and forest, some scattered trees",
+        "description": "Image showing the rear view of A Bobcat, moving toward a forested area at night. Forested area with leaf litter and scattered vegetation Dense, dark vegetation and forest, some scattered trees",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4372,7 +4372,7 @@
     {
       "id": "bobcat_258",
       "metadata": {
-        "description": "Partial view of a wild animal, possibly a feline species, captured by a wildlife monitoring camera in a forest setting Natural forest environment with dense vegetation and fallen branches Dense foliage, fallen branches, and trees",
+        "description": "Partial view of A Bobcat, captured by a wildlife monitoring camera in a forest setting Natural forest environment with dense vegetation and fallen branches Dense foliage, fallen branches, and trees",
         "time": "day",
         "season": "fall",
         "action": "walking",
@@ -4389,7 +4389,7 @@
     {
       "id": "bobcat_259",
       "metadata": {
-        "description": "Small animal with glowing eyes in dense undergrowth Natural forest environment with dense vegetation Trees and dense plants typical of a forest",
+        "description": "Bobcat, with glowing eyes in dense undergrowth Natural forest environment with dense vegetation Trees and dense plants typical of a forest",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -4406,7 +4406,7 @@
     {
       "id": "bobcat_260",
       "metadata": {
-        "description": "A single wild cat (likely a bobcat) moving through a wooded forest area. A natural forested environment with leaf-covered ground. Trees, scattered branches, and dry leaves dominate the background, suggestive of a natural forest.",
+        "description": "A single wild cat (Bobcat) moving through a wooded forest area. A natural forested environment with leaf-covered ground. Trees, scattered branches, and dry leaves dominate the background, suggestive of a natural forest.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4423,7 +4423,7 @@
     {
       "id": "bobcat_261",
       "metadata": {
-        "description": "Close-up foreground object with woodland floor covered in leaves Wooded natural area, forest setting Dense forest with trees and leaf-covered ground",
+        "description": "Bobcat. Close-up foreground object with woodland floor covered in leaves Wooded natural area, forest setting Dense forest with trees and leaf-covered ground",
         "time": "dusk",
         "season": "unknown",
         "action": "moving",
@@ -4440,11 +4440,11 @@
     {
       "id": "bobcat_262",
       "metadata": {
-        "description": "A wild animal, possibly a bobcat, walking through a wooded area Outdoor woodland environment Dark woodland background with trees, bushes, and leaf litter",
+        "description": "A Bobcat, walking through a wooded area Outdoor woodland environment Dark woodland background with trees, bushes, and leaf litter",
         "time": "dawn",
         "season": "winter",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2016-01-19",
         "lighting": "Low-light conditions, nighttime, infrared or trail camera illumination",
@@ -4457,7 +4457,7 @@
     {
       "id": "bobcat_263",
       "metadata": {
-        "description": "Nighttime wildlife scene featuring small animals in a forested environment Forested area with dense tree coverage Trees and bushes, largely obscured by darkness",
+        "description": "Bobcat. Nighttime wildlife scene featuring small animals in a forested environment Forested area with dense tree coverage Trees and bushes, largely obscured by darkness",
         "time": "dawn",
         "season": "unknown",
         "action": "moving",
@@ -4474,7 +4474,7 @@
     {
       "id": "bobcat_264",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, walking through a forest area. Forest environment with dense trees and leaf-covered ground. Several trees and dense vegetation, with a forest floor covered by fallen leaves.",
+        "description": "A Bobcat, walking through a forest area. Forest environment with dense trees and leaf-covered ground. Several trees and dense vegetation, with a forest floor covered by fallen leaves.",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -4491,7 +4491,7 @@
     {
       "id": "bobcat_265",
       "metadata": {
-        "description": "Animal, possibly a fox or coyote, walking away from camera in forest Wooded forest area with dense tree coverage Numerous tall trees, leaf-covered forest floor and sparse shrubs",
+        "description": "Bobcat, walking away from camera in forest Wooded forest area with dense tree coverage Numerous tall trees, leaf-covered forest floor and sparse shrubs",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4508,7 +4508,7 @@
     {
       "id": "bobcat_266",
       "metadata": {
-        "description": "Image showing a wild animal with glowing eyes identified by a nocturnal trail camera Forest area with dense vegetation and trees Dense trees and foliage visible behind the animal",
+        "description": "Image showing a Bobcat with glowing eyes identified by a nocturnal trail camera Forest area with dense vegetation and trees Dense trees and foliage visible behind the animal",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -4525,11 +4525,11 @@
     {
       "id": "bobcat_267",
       "metadata": {
-        "description": "An animal, possibly a wild mammal, is the primary focus located within a forested area. Woodland environment with trees and scattered leaves on the ground. Trees, leaves, and a partially constructed stone wall.",
+        "description": "Bobcat, is the primary focus located within a forested area. Woodland environment with trees and scattered leaves on the ground. Trees, leaves, and a partially constructed stone wall.",
         "time": "dawn",
         "season": "fall",
         "action": "sleeping",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-09-19",
         "lighting": "Soft, diffuse lighting conditions, possibly early morning or late afternoon.",
@@ -4542,7 +4542,7 @@
     {
       "id": "bobcat_268",
       "metadata": {
-        "description": "A wild animal, likely a bobcat or similar medium-sized mammal, moving through a forest area at night Forest or woodland area Trees and branches in a dense forest",
+        "description": "A Bobcat, moving through a forest area at night Bobcat area Trees and branches in a dense forest",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4576,7 +4576,7 @@
     {
       "id": "bobcat_270",
       "metadata": {
-        "description": "Image captured by trail camera showing blurred animal figure moving through grassy outdoor area at night Open grassy field in a rural or natural environment Distant scattered sources of small lights possibly indicating distant structures or reflective surfaces",
+        "description": "Bobcat. Image captured by trail camera showing blurred animal figure moving through grassy outdoor area at night Open grassy field in a Bobcat environment Distant scattered sources of small lights Bobcat",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4593,7 +4593,7 @@
     {
       "id": "bobcat_271",
       "metadata": {
-        "description": "A small mammal, possibly a fox or similar animal, clearly visible in the foreground vegetation Forested or heavily vegetated natural environment Dense forested area with trees and ferns",
+        "description": "A small mammal, Bobcat, clearly visible in the foreground vegetation Bobcat vegetated natural environment Dense forested area with trees and ferns",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -4610,7 +4610,7 @@
     {
       "id": "bobcat_272",
       "metadata": {
-        "description": "A nocturnal wildlife scene capturing an animal (likely a mammal) moving through dense vegetation Dense forested area with foliage and undergrowth Dense forest vegetation, tall trees and leafy plants",
+        "description": "Bobcat. A nocturnal wildlife scene capturing an animal (Bobcat) moving through dense vegetation Dense forested area with foliage and undergrowth Dense forest vegetation, tall trees and leafy plants",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -4627,7 +4627,7 @@
     {
       "id": "bobcat_273",
       "metadata": {
-        "description": "Wild animal, likely a bobcat, walking along a forest trail Dense, wooded forest with a cleared walking trail Trees, leafy undergrowth, forest vegetation",
+        "description": "Bobcat, walking along a forest trail Dense, wooded forest with a cleared walking trail Trees, leafy undergrowth, forest vegetation",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -4644,7 +4644,7 @@
     {
       "id": "bobcat_274",
       "metadata": {
-        "description": "Small animal with reflective eye visible in tall grass and bushes Outdoor natural environment with dense vegetation and grassy area Trees and dense shrubs are prominently visible",
+        "description": "Bobcat, with reflective eye visible in tall grass and bushes Outdoor natural environment with dense vegetation and grassy area Trees and dense shrubs are prominently visible",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -4661,7 +4661,7 @@
     {
       "id": "bobcat_275",
       "metadata": {
-        "description": "A small wild animal, possibly a bobcat or lynx, walking through a forested area. Dense forest with tall trees and thick leaf litter covering the ground. Dense arrangement of leafy trees and wooded undergrowth.",
+        "description": "A small Bobcat, walking through a forested area. Dense forest with tall trees and thick leaf litter covering the ground. Dense arrangement of leafy trees and wooded undergrowth.",
         "time": "day",
         "season": "unknown",
         "action": "walking",
@@ -4678,7 +4678,7 @@
     {
       "id": "bobcat_276",
       "metadata": {
-        "description": "Animal appearing to be a wild cat moving through a wooded area Forested environment with leaf litter on the ground Sparse trees, thin trunks, and underbrush",
+        "description": "Bobcat, appearing to be a wild cat moving through a wooded area Forested environment with leaf litter on the ground Sparse trees, thin trunks, and underbrush",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4695,7 +4695,7 @@
     {
       "id": "bobcat_277",
       "metadata": {
-        "description": "Animal eyeshine visible in a wooded area at night Outdoor wooded or forested area Dense vegetation, trees, and underbrush",
+        "description": "Bobcat, eyeshine visible in a wooded area at night Outdoor Bobcat area Dense vegetation, trees, and underbrush",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -4712,7 +4712,7 @@
     {
       "id": "bobcat_278",
       "metadata": {
-        "description": "Wild animal, possibly a bobcat, moving through a forest area at night Dense forest area with trees and vegetation Dense trees and foliage",
+        "description": "Bobcat, moving through a forest area at night Dense forest area with trees and vegetation Dense trees and foliage",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4729,11 +4729,11 @@
     {
       "id": "bobcat_279",
       "metadata": {
-        "description": "An animal, possibly a bobcat, moving through a forested area Dense woodland with significant leaf litter and trees Dense foliage and numerous trees, leafy forest floor",
+        "description": "Bobcat, moving through a forested area Dense woodland with significant leaf litter and trees Dense foliage and numerous trees, leafy forest floor",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "07-06-2015",
         "lighting": "Natural daylight with diffused lighting conditions under tree canopy",
@@ -4746,11 +4746,11 @@
     {
       "id": "bobcat_280",
       "metadata": {
-        "description": "Animal partially visible moving in front of camera, night-time outdoors Outdoor natural environment, likely wooded or bushy area Dense shrubbery, trees, distant structure with illuminated windows",
+        "description": "Bobcat, partially visible moving in front of camera, night-time outdoors Outdoor natural environment, Bobcat, trees, distant structure with illuminated windows",
         "time": "night",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-30-2014",
         "lighting": "Low-light conditions, infrared or night vision used",
@@ -4763,7 +4763,7 @@
     {
       "id": "bobcat_281",
       "metadata": {
-        "description": "A deer walking through a wooded area at night Wooded forest or rural environment Trees and wooded area with darkness beyond",
+        "description": "Bobcat. A deer walking through a wooded area at night Wooded Bobcat environment Trees and wooded area with darkness beyond",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4780,7 +4780,7 @@
     {
       "id": "bobcat_282",
       "metadata": {
-        "description": "A wild animal, likely a deer, walking on a forest path at night Forest area with trees and natural terrain Wooded area with trees and ground foliage",
+        "description": "A Bobcat, walking on a forest path at night Forest area with trees and natural terrain Wooded area with trees and ground foliage",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4797,7 +4797,7 @@
     {
       "id": "bobcat_283",
       "metadata": {
-        "description": "Wild animal (possibly a bobcat or similar feline) walking through forest area at night. Forested outdoor environment, natural woods setting. Dark silhouette of trees and dense vegetation.",
+        "description": "Bobcat (Bobcat) walking through forest area at night. Forested outdoor environment, natural woods setting. Dark silhouette of trees and dense vegetation.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4814,7 +4814,7 @@
     {
       "id": "bobcat_284",
       "metadata": {
-        "description": "An animal partially visible, possibly a mammal, in a nighttime forest setting Forested area with trees and leaf-covered ground Trees, branches, and forest floor with leaves and scattered vegetation",
+        "description": "Bobcat, partially visible, Bobcat, in a nighttime forest setting Forested area with trees and leaf-covered ground Trees, branches, and forest floor with leaves and scattered vegetation",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -4831,11 +4831,11 @@
     {
       "id": "bobcat_285",
       "metadata": {
-        "description": "Partial view of a wild animal, possibly a bobcat, showing only the rear portion as it moves away from the camera Natural wooded environment with dense leafy ground cover Forest ground covered in leaves, small branches, and some sparse vegetation",
+        "description": "Partial view of A Bobcat, showing only the rear portion as it moves away from the camera Natural wooded environment with dense leafy ground cover Forest ground covered in leaves, small branches, and some sparse vegetation",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "September 17, 2015, according to timestamp",
         "lighting": "Medium lighting with low contrast, typical of motion-sensing wildlife cameras",
@@ -4848,7 +4848,7 @@
     {
       "id": "bobcat_286",
       "metadata": {
-        "description": "A wild feline, possibly a bobcat, walking through a wooded area Dense forest with leafy ground cover and numerous trees Trees of various thickness, dense foliage, sloped terrain with leaf-covered ground",
+        "description": "A wild feline, Bobcat, walking through a wooded area Dense forest with leafy ground cover and numerous trees Trees of various thickness, dense foliage, sloped terrain with leaf-covered ground",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -4865,11 +4865,11 @@
     {
       "id": "bobcat_287",
       "metadata": {
-        "description": "A small animal, possibly a deer or similar mammal, moving through a forested area. Dense woodland area with trees, fallen branches, and leaves covering the ground. Thick foliage, trees, fallen logs, branches, and dense greenery.",
+        "description": "A small animal, Bobcat, moving through a forested area. Dense woodland area with trees, fallen branches, and leaves covering the ground. Thick foliage, trees, fallen logs, branches, and dense greenery.",
         "time": "day",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "06-22-2015",
         "lighting": "Diffuse natural light with some shadows, indicating a shady forest environment.",
@@ -4882,11 +4882,11 @@
     {
       "id": "bobcat_288",
       "metadata": {
-        "description": "Animal (possibly a wild feline or bobcat) walking through a forested area, image quality limits clear identification. Dense woodland with leafy ground cover and trees. Numerous trees, leaves covering the forest floor, fallen branches.",
+        "description": "Bobcat walking through a forested area, image quality limits clear identification. Dense woodland with leafy ground cover and trees. Numerous trees, leaves covering the forest floor, fallen branches.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "06-03-2015",
         "lighting": "Natural daylight, diffused through tree canopy.",
@@ -4899,11 +4899,11 @@
     {
       "id": "bobcat_289",
       "metadata": {
-        "description": "An animal, possibly a bobcat, partially visible in the foreground of a woodland environment Wooded area with dense leaf litter and fallen branches Trees and dense forest vegetation",
+        "description": "Bobcat, partially visible in the foreground of a woodland environment Wooded area with dense leaf litter and fallen branches Trees and dense forest vegetation",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "07-07-2015 clearly indicated",
         "lighting": "Natural daylight with shaded areas beneath the trees",
@@ -4916,7 +4916,7 @@
     {
       "id": "bobcat_290",
       "metadata": {
-        "description": "Animal moving at the bottom-right edge of the image Rural outdoor area, appears to be a field with vegetation and trees Agricultural field bordered by trees under cloudy or partly cloudy skies",
+        "description": "Bobcat, moving at the bottom-right edge of the image Rural outdoor area, Bobcat",
         "time": "dusk",
         "season": "fall",
         "action": "walking",
@@ -4933,7 +4933,7 @@
     {
       "id": "bobcat_291",
       "metadata": {
-        "description": "Image capturing an animal, possibly a bobcat, partially visible near the right edge Forested area or woodland Dense trees, bushes, and foliage primarily forming the background",
+        "description": "Image capturing an animal, Bobcat, partially visible near the right edge Forested Bobcat Dense trees, bushes, and foliage primarily forming the background",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -4950,7 +4950,7 @@
     {
       "id": "bobcat_292",
       "metadata": {
-        "description": "Nocturnal wildlife captured by a trail camera, highlighting an animal with reflective eyes Wooded forest area with trees and ground covered by leaves Dense woodland with trees and leaf cover on the ground, dark and indistinct background due to night conditions",
+        "description": "Bobcat. Nocturnal wildlife captured by a trail camera, highlighting an animal with reflective eyes Wooded forest area with trees and ground covered by leaves Dense woodland with trees and leaf cover on the ground, dark and indistinct background due to night conditions",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -4967,7 +4967,7 @@
     {
       "id": "bobcat_293",
       "metadata": {
-        "description": "A wild feline animal, likely a bobcat, walking through a forest environment. Forested area with dense trees and leaf litter ground. Dense woodland composed of trees, branches, and greenery.",
+        "description": "A wild feline animal, Bobcat, walking through a forest environment. Forested area with dense trees and leaf litter ground. Dense woodland composed of trees, branches, and greenery.",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -4984,7 +4984,7 @@
     {
       "id": "bobcat_294",
       "metadata": {
-        "description": "Animal (likely fox or coyote) captured by night vision camera walking through vegetation Natural outdoor area with dense vegetation Dense bushes and vegetation, mostly obscured beyond immediate foreground",
+        "description": "Bobcat captured by night vision camera walking through vegetation Natural outdoor area with dense vegetation Dense bushes and vegetation, mostly obscured beyond immediate foreground",
         "time": "dawn",
         "season": "summer",
         "action": "walking",
@@ -5001,11 +5001,11 @@
     {
       "id": "bobcat_295",
       "metadata": {
-        "description": "Animal (likely a wild cat such as a bobcat) moving across forest ground Wooded area with fallen leaves and trees Dense forest with trees and branches",
+        "description": "Bobcat moving across forest ground Wooded area with fallen leaves and trees Dense forest with trees and branches",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "01-21-2015",
         "lighting": "Moderate lighting, possibly late afternoon or early evening",
@@ -5018,7 +5018,7 @@
     {
       "id": "bobcat_296",
       "metadata": {
-        "description": "Two sets of glowing animal eyes visible in a nighttime forest scene Dense natural forest environment Forested area with trees and dense foliage visible",
+        "description": "Bobcat. Two sets of glowing animal eyes visible in a nighttime forest scene Dense natural forest environment Forested area with trees and dense foliage visible",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -5035,7 +5035,7 @@
     {
       "id": "bobcat_297",
       "metadata": {
-        "description": "Animal, possibly a deer, moving away along a forest path during nighttime. Forested area with trees and ground covered with leaves Dense trees and woodland environment visible behind the animal",
+        "description": "Bobcat, moving away along a forest path during nighttime. Forested area with trees and ground covered with leaves Dense trees and woodland environment visible behind the animal",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -5052,7 +5052,7 @@
     {
       "id": "bobcat_298",
       "metadata": {
-        "description": "A rear view of a wild cat walking away into a wooded area A dense forest with fallen leaves covering the forest floor Numerous trees, branches, and dense vegetation",
+        "description": "Bobcat. A rear view of a wild cat walking away into a wooded area A dense forest with fallen leaves covering the forest floor Numerous trees, branches, and dense vegetation",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -5069,7 +5069,7 @@
     {
       "id": "bobcat_299",
       "metadata": {
-        "description": "A wild feline animal (likely a bobcat or lynx) clearly visible facing left, standing still among forest foliage. Forested natural environment Trees, underbrush, plants and dense forest foliage",
+        "description": "A wild feline animal (Bobcat) clearly visible facing left, standing still among forest foliage. Forested natural environment Trees, underbrush, plants and dense forest foliage",
         "time": "night",
         "season": "fall",
         "action": "moving",
@@ -5086,7 +5086,7 @@
     {
       "id": "bobcat_300",
       "metadata": {
-        "description": "Animal moving through a forest area, possibly a bobcat given its shape and coloration Dense wooded forest, leafy ground Trees, branches, dense foliage",
+        "description": "Animal moving through a forest area, Bobcat, leafy ground Trees, branches, dense foliage",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -5103,7 +5103,7 @@
     {
       "id": "bobcat_301",
       "metadata": {
-        "description": "Night-time wildlife capture showing a wild animal. Forest or wooded natural area Sparse trees, low vegetation, and natural terrain",
+        "description": "Night-time wildlife capture showing a Bobcat. Bobcat natural area Sparse trees, low vegetation, and natural terrain",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -5120,7 +5120,7 @@
     {
       "id": "bobcat_302",
       "metadata": {
-        "description": "A wild feline animal, possibly a bobcat, in a forest environment Wooded outdoor area, forest with sparse ground vegetation and snow Trees and wooded scenery extending into the distance",
+        "description": "A wild feline animal, Bobcat, in a forest environment Wooded outdoor area, forest with sparse ground vegetation and snow Trees and wooded scenery extending into the distance",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -5137,7 +5137,7 @@
     {
       "id": "bobcat_303",
       "metadata": {
-        "description": "Partial view of an animal, likely a feline, in a forested area Forested area with dense leafy ground and fallen branches Forest with fallen logs, leafy trees, and ground vegetation",
+        "description": "Partial view of an animal, Bobcat, in a forested area Forested area with dense leafy ground and fallen branches Forest with fallen logs, leafy trees, and ground vegetation",
         "time": "day",
         "season": "unknown",
         "action": "moving",
@@ -5154,7 +5154,7 @@
     {
       "id": "bobcat_304",
       "metadata": {
-        "description": "A wild feline animal, likely a bobcat, visible in a forested area. A dense, wooded forest with many trees and leaf-covered ground. Numerous tree trunks and branches, leaf litter on the ground.",
+        "description": "A wild feline animal, Bobcat, visible in a forested area. A dense, wooded forest with many trees and leaf-covered ground. Numerous tree trunks and branches, leaf litter on the ground.",
         "time": "dawn",
         "season": "unknown",
         "action": "moving",
@@ -5171,11 +5171,11 @@
     {
       "id": "bobcat_305",
       "metadata": {
-        "description": "Blurred white shape, possibly an animal in motion Outdoor natural environment, wooded area Trees, shrubs and leafy forest ground",
+        "description": "Blurred white shape, Bobcat, wooded area Trees, shrubs and leafy forest ground",
         "time": "night",
         "season": "unknown",
         "action": "moving",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "11-25-2014",
         "lighting": "Low-light conditions, likely captured using infrared or night vision",
@@ -5188,7 +5188,7 @@
     {
       "id": "bobcat_306",
       "metadata": {
-        "description": "An animal, possibly a small mammal, observed in nighttime outdoor conditions Outdoor natural environment, rural or forested Forested area with trees and underbrush",
+        "description": "Bobcat, observed in nighttime outdoor conditions Outdoor natural environment, Bobcat Forested area with trees and underbrush",
         "time": "night",
         "season": "winter",
         "action": "walking",
@@ -5205,7 +5205,7 @@
     {
       "id": "bobcat_307",
       "metadata": {
-        "description": "An animal, likely a fox or coyote, partially visible walking away from the camera along a dark forest trail. Forested area with a dirt trail. Trees, leaf-covered ground and a dark wooded area.",
+        "description": "Bobcat, partially visible walking away from the camera along a dark forest trail. Forested area with a dirt trail. Trees, leaf-covered ground and a dark wooded area.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -5222,7 +5222,7 @@
     {
       "id": "bobcat_308",
       "metadata": {
-        "description": "A partial view of an animal, likely a mammal with fur and a tail, walking through a natural environment. A densely vegetated forest or woodland area. Thick foliage, trees, shrubs, and grasses covering the forest floor.",
+        "description": "A partial view of an animal, Bobcat, walking through a natural environment. A densely vegetated Bobcat area. Thick foliage, trees, shrubs, and grasses covering the forest floor.",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -5239,7 +5239,7 @@
     {
       "id": "bobcat_309",
       "metadata": {
-        "description": "An animal, possibly a wild feline, walking through a nighttime forest Dense wooded forest with natural terrain Trees and forest floor, dense foliage",
+        "description": "Bobcat, walking through a nighttime forest Dense wooded forest with natural terrain Trees and forest floor, dense foliage",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -5256,11 +5256,11 @@
     {
       "id": "bobcat_310",
       "metadata": {
-        "description": "A wild animal, resembling a cougar or mountain lion, standing within dense vegetation. A natural wooded environment with dense greenery and trees. Dense forest vegetation, trees, and underbrush.",
+        "description": "A Bobcat, resembling a Bobcat lion, standing within dense vegetation. A natural wooded environment with dense greenery and trees. Dense forest vegetation, trees, and underbrush.",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "September 23, 2015 (from timestamp)",
         "lighting": "Natural daylight, moderately lit with slight shade from trees.",
@@ -5273,11 +5273,11 @@
     {
       "id": "bobcat_311",
       "metadata": {
-        "description": "A deer partially visible among green foliage and trees. A natural, wooded area with dense vegetation and moss-covered ground. Trees, dense foliage, branches, and green moss.",
+        "description": "Bobcat. A deer partially visible among green foliage and trees. A natural, wooded area with dense vegetation and moss-covered ground. Trees, dense foliage, branches, and green moss.",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "Not visible",
         "date": "2015-09-16 (indicated by image timestamp)",
         "lighting": "Natural daylight, well-lit.",
@@ -5290,7 +5290,7 @@
     {
       "id": "bobcat_312",
       "metadata": {
-        "description": "Small animal, likely a mammal, moving through a wooded area Dense forest with trees and foliage Numerous trees, underbrush, and debris on the forest floor",
+        "description": "Bobcat, moving through a wooded area Dense forest with trees and foliage Numerous trees, underbrush, and debris on the forest floor",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -5307,7 +5307,7 @@
     {
       "id": "bobcat_313",
       "metadata": {
-        "description": "A wild animal, likely a bobcat, is moving through dense vegetation. Forested woodland area with many leafy plants and trees. Dense green foliage with various trees and underbrush",
+        "description": "A Bobcat, is moving through dense vegetation. Forested woodland area with many leafy plants and trees. Dense green foliage with various trees and underbrush",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -5324,7 +5324,7 @@
     {
       "id": "bobcat_314",
       "metadata": {
-        "description": "An animal, likely a deer, standing and facing away from the camera A forest environment with trees and forest floor vegetation Numerous tall, thin tree trunks and forest underbrush",
+        "description": "Bobcat, standing and facing away from the camera A forest environment with trees and forest floor vegetation Numerous tall, thin tree trunks and forest underbrush",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -5341,7 +5341,7 @@
     {
       "id": "bobcat_315",
       "metadata": {
-        "description": "Animal, possibly a bobcat, moving across an open field, captured by a wildlife camera at night Open grassy field Dark background with distant lights possibly indicating residential or urban area",
+        "description": "Bobcat, moving across an open field, captured by a wildlife camera at night Open grassy field Dark background with distant lights Bobcat",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -5358,7 +5358,7 @@
     {
       "id": "bobcat_316",
       "metadata": {
-        "description": "An animal (likely a bobcat or similar wild mammal) moving through a wooded area Dense forest or wooded environment Trees, branches, forest underbrush, fallen leaves",
+        "description": "An animal (Bobcat) moving through a wooded area Dense Bobcat environment Trees, branches, forest underbrush, fallen leaves",
         "time": "dawn",
         "season": "fall",
         "action": "running",
@@ -5375,11 +5375,11 @@
     {
       "id": "bobcat_317",
       "metadata": {
-        "description": "Animal walking within a forested environment Wooded area with numerous trees and fallen leaves Dense arrangement of trees and shrubs, scattered branches and leaf litter",
+        "description": "Bobcat, walking within a forested environment Wooded area with numerous trees and fallen leaves Dense arrangement of trees and shrubs, scattered branches and leaf litter",
         "time": "dawn",
         "season": "winter",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2016-01-21, clearly indicated by timestamp",
         "lighting": "Natural lighting, moderate illumination",
@@ -5392,7 +5392,7 @@
     {
       "id": "bobcat_318",
       "metadata": {
-        "description": "A nighttime wildlife photograph showing a cat-like animal with glowing eyes Wooded forest area with trees and fallen leaves Dense trees and foliage with leaf-covered ground",
+        "description": "Bobcat. A nighttime wildlife photograph showing a cat-like animal with glowing eyes Wooded forest area with trees and fallen leaves Dense trees and foliage with leaf-covered ground",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -5409,7 +5409,7 @@
     {
       "id": "bobcat_319",
       "metadata": {
-        "description": "Animal visible in the corner of the nighttime image with vegetation around it Outdoor nature landscape with grass and bushes Grassy area with dense bushes and trees",
+        "description": "Bobcat, visible in the corner of the nighttime image with vegetation around it Outdoor nature landscape with grass and bushes Grassy area with dense bushes and trees",
         "time": "dawn",
         "season": "unknown",
         "action": "alert",
@@ -5426,7 +5426,7 @@
     {
       "id": "bobcat_320",
       "metadata": {
-        "description": "Animal captured moving through a wooded area at night Forested area with trees and leaf-covered ground Trees, branches, and dark vegetation",
+        "description": "Bobcat, captured moving through a wooded area at night Forested area with trees and leaf-covered ground Trees, branches, and dark vegetation",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -5443,7 +5443,7 @@
     {
       "id": "bobcat_321",
       "metadata": {
-        "description": "Animal detected within dense vegetation Forest or wooded area with thick underbrush Trees, shrubs, dense vegetation, and tall grasses",
+        "description": "Bobcat, detected within dense vegetation Bobcat area with thick underbrush Trees, shrubs, dense vegetation, and tall grasses",
         "time": "dawn",
         "season": "fall",
         "action": "alert",
@@ -5460,11 +5460,11 @@
     {
       "id": "bobcat_322",
       "metadata": {
-        "description": "Small animal, likely a squirrel, positioned near rocks and vegetation. Wooded, natural area with dense vegetation and moss-covered ground. Trees, bushes, and partial view of a building structure.",
+        "description": "Bobcat, positioned near rocks and vegetation. Wooded, natural area with dense vegetation and moss-covered ground. Trees, bushes, and partial view of a building structure.",
         "time": "dawn",
         "season": "summer",
         "action": "alert",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "2015-08-25 as indicated by timestamp",
         "lighting": "Natural daylight, well-lit",
@@ -5477,7 +5477,7 @@
     {
       "id": "bobcat_323",
       "metadata": {
-        "description": "Blurred animal moving swiftly across the grassy area Outdoor natural area with tall grass and bushes Dense bushes and faint outline of buildings or artificial lights",
+        "description": "Bobcat. Blurred animal moving swiftly across the grassy area Outdoor natural area with tall grass and bushes Dense bushes and faint outline of Bobcat lights",
         "time": "dawn",
         "season": "unknown",
         "action": "walking",
@@ -5494,11 +5494,11 @@
     {
       "id": "bobcat_324",
       "metadata": {
-        "description": "Rear view of an animal making its way through a forested area with fallen leaves. Wooded area with trees and fallen leaves, natural environment Forest with trees, fallen logs, and thick accumulation of leaves on the ground",
+        "description": "Bobcat. Rear view of an animal making its way through a forested area with fallen leaves. Wooded area with trees and fallen leaves, natural environment Forest with trees, fallen logs, and thick accumulation of leaves on the ground",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
-        "scene": "meadow",
+        "scene": "forest",
         "weather": "unknown",
         "date": "01-21-2015",
         "lighting": "Dim natural lighting, possibly twilight",
@@ -5511,7 +5511,7 @@
     {
       "id": "bobcat_325",
       "metadata": {
-        "description": "A single animal, possibly a bobcat or lynx, walking through a natural environment at night. Outdoor natural setting, grassy area near a dirt trail or clearing. Sparse vegetation, tall grasses, and a solitary wooden post.",
+        "description": "A single animal, Bobcat, walking through a natural environment at night. Outdoor natural setting, grassy area near a dirt Bobcat. Sparse vegetation, tall grasses, and a solitary wooden post.",
         "time": "night",
         "season": "unknown",
         "action": "walking",
@@ -5528,7 +5528,7 @@
     {
       "id": "bobcat_326",
       "metadata": {
-        "description": "Wild animal (possibly a bobcat or similar small-medium mammal) walking away from camera Forested or wooded natural area Trees, leaf-covered ground, sticks, and branches",
+        "description": "Bobcat (Bobcat-medium mammal) walking away from camera Bobcat natural area Trees, leaf-covered ground, sticks, and branches",
         "time": "dusk",
         "season": "unknown",
         "action": "walking",
@@ -5545,7 +5545,7 @@
     {
       "id": "bobcat_327",
       "metadata": {
-        "description": "A wildlife image focusing on a small mammal, likely a wild cat, moving in a grassy woodland area Forested area with dense, lush greenery Dense woodland vegetation with trees and foliage",
+        "description": "Bobcat. A wildlife image focusing on a small mammal, Bobcat, moving in a grassy woodland area Forested area with dense, lush greenery Dense woodland vegetation with trees and foliage",
         "time": "dawn",
         "season": "fall",
         "action": "walking",
@@ -5562,7 +5562,7 @@
     {
       "id": "bobcat_328",
       "metadata": {
-        "description": "An animal, possibly a wild cat or a small mammal, is seen clearly in the forest environment. Wooded forest area with trees and undergrowth. Dense forest with tall trees and some smaller plants and shrubs",
+        "description": "Bobcat, is seen clearly in the forest environment. Wooded forest area with trees and undergrowth. Dense forest with tall trees and some smaller plants and shrubs",
         "time": "night",
         "season": "unknown",
         "action": "alert",
@@ -5576,5 +5576,30 @@
         "mcp_id": "bobcat_328"
       }
     }
-  ]
+  ],
+  "provenance": {
+    "dataset_name": "Idaho Camera Traps",
+    "dataset_url": "https://lila.science/datasets/idaho-camera-traps/",
+    "source_organization": "LILA (Labeled Information Library of Alexandria)",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Tabak, M. A., Norouzzadeh, M. S., Wolfson, D. W., Sweeney, S. J., Vercauteren, K. C., Snow, N. P., Halseth, J. M., Di Salvo, P. A., Lewis, J. S., White, M. D., Teton, B., Beasley, J. C., Schlichting, P. E., Boughton, R. K., Wight, B., Newkirk, E. S., Ivan, J. S., Odell, E. A., Brook, R. K., Lukacs, P. M., Moeller, A. K., Mandeville, E. G., Clune, J., & Miller, R. S. (2019). Machine learning to classify animal species in camera trap images: Applications in ecology. Methods in Ecology and Evolution, 10(4), 585-590. https://doi.org/10.1111/2041-210X.13120",
+    "description": "Camera trap images from Idaho, USA, containing various wildlife species captured in natural settings. Images are captured using motion-activated trail cameras in forest and meadow environments.",
+    "geographic_location": "Idaho, USA",
+    "data_collection_period": "2014-2016",
+    "image_types": [
+      "Daylight",
+      "Infrared/Night vision"
+    ],
+    "acknowledgment": "We acknowledge the use of images provided by the Idaho Department of Fish and Game"
+  },
+  "citation": "Tabak, M. A., Norouzzadeh, M. S., Wolfson, D. W., Sweeney, S. J., Vercauteren, K. C., Snow, N. P., Halseth, J. M., Di Salvo, P. A., Lewis, J. S., White, M. D., Teton, B., Beasley, J. C., Schlichting, P. E., Boughton, R. K., Wight, B., Newkirk, E. S., Ivan, J. S., Odell, E. A., Brook, R. K., Lukacs, P. M., Moeller, A. K., Mandeville, E. G., Clune, J., & Miller, R. S. (2019). Machine learning to classify animal species in camera trap images: Applications in ecology. Methods in Ecology and Evolution, 10(4), 585-590. https://doi.org/10.1111/2041-210X.13120",
+  "dataset_metadata": {
+    "source_url": "https://lila.science/datasets/idaho-camera-traps/",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "geographic_location": "Idaho, USA",
+    "collection_period": "2014-2016"
+  },
+  "acknowledgment": "We acknowledge the use of images provided by the Idaho Department of Fish and Game"
 }

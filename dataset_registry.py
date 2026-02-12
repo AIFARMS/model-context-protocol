@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional
 from dataclasses import dataclass, field
 from models import DatasetInfo, FilterOptions, DatasetType
-from config import BASE_DIR, DATASETS_DIR
+from config import BASE_DIR, DATASETS_DIR, MCP_JSON_DIR, SPECIES_SCIENTIFIC_NAMES
 from dataset_adapter import DatasetAdapterRegistry, DatasetAdapter
 
 @dataclass
@@ -33,14 +33,28 @@ class DatasetRegistry:
         self._discover_datasets()
     
     def _discover_datasets(self):
-        """Auto-discover datasets from the datasets directory"""
-        if not DATASETS_DIR.exists():
-            print(f"⚠️  Datasets directory not found: {DATASETS_DIR}")
-            return
-        
-        # Look for MCP data files in the BASE_DIR (where the server is running)
-        mcp_files = list(BASE_DIR.glob("*_mcp_data.json"))
-        print(f"🔍 Looking for MCP files in: {BASE_DIR}")
+        """Auto-discover datasets from MCP JSON data files (*_mcp_data.json)."""
+        # Search multiple candidate dirs so we find files whether in root, mcp_json/, or MCP_JSON_DIR
+        cwd = Path.cwd()
+        candidates = [
+            MCP_JSON_DIR,
+            BASE_DIR,
+            BASE_DIR / "mcp_json",
+            DATASETS_DIR,
+            cwd,
+            cwd / "mcp_json",
+        ]
+        seen = set()
+        mcp_files = []
+        for search_dir in candidates:
+            if not search_dir.exists():
+                continue
+            for path in search_dir.glob("*_mcp_data.json"):
+                if path.name not in seen:
+                    seen.add(path.name)
+                    mcp_files.append(path)
+        checked = [str(d) for d in candidates if d.exists()]
+        print(f"🔍 Looking for MCP files in: {checked}")
         print(f"🔍 Found {len(mcp_files)} MCP files: {[f.name for f in mcp_files]}")
         
         for mcp_file in mcp_files:
@@ -55,8 +69,18 @@ class DatasetRegistry:
         
         try:
             with open(file_path, 'r') as f:
-                data = json.load(f)
-            
+                raw = f.read()
+            try:
+                data = json.loads(raw)
+            except json.JSONDecodeError as e:
+                # Try to fix common issues: trailing commas before } or ]
+                import re
+                repaired = re.sub(r',(\s*[}\]])', r'\1', raw)
+                try:
+                    data = json.loads(repaired)
+                    print(f"📁 Loaded after removing trailing commas")
+                except json.JSONDecodeError:
+                    raise e
             # Extract dataset name from filename
             dataset_name = file_path.stem.replace('_mcp_data', '')
             print(f"📁 Dataset name: {dataset_name}")
@@ -74,6 +98,17 @@ class DatasetRegistry:
             
             # Normalize items using adapter
             normalized_items = [adapter.normalize_item(item) for item in items]
+            
+            # Inject scientific_name (and common_name if missing) from config so e.g. raspberry -> Rubus idaeus
+            if dataset_name in SPECIES_SCIENTIFIC_NAMES:
+                scientific = SPECIES_SCIENTIFIC_NAMES[dataset_name]
+                for item in normalized_items:
+                    meta = item.get("metadata") or {}
+                    if not meta.get("scientific_name"):
+                        meta["scientific_name"] = scientific
+                    if not meta.get("common_name") and meta.get("species"):
+                        meta["common_name"] = meta["species"]  # e.g. raspberry
+                    item["metadata"] = meta
             
             # Extract collections using adapter
             collections = adapter.get_collections(normalized_items)
@@ -134,7 +169,7 @@ class DatasetRegistry:
         name_lower = dataset_name.lower()
         if any(term in name_lower for term in ['bobcat', 'coyote', 'deer', 'wildlife', 'animal']):
             return DatasetType.WILDLIFE
-        elif any(term in name_lower for term in ['plant', 'tree', 'flower', 'strawberry']):
+        elif any(term in name_lower for term in ['plant', 'tree', 'flower', 'strawberry', 'raspberry', 'carrot', 'goat', 'chicken']):
             return DatasetType.PLANTS
         elif any(term in name_lower for term in ['pest', 'insect', 'disease']):
             return DatasetType.PESTS
@@ -187,7 +222,25 @@ class DatasetRegistry:
         
         # Apply filters if provided
         if filters:
+            original_count = len(items)
+            # Debug: show what filters are being applied
+            if filters.get("species"):
+                print(f"   🔍 Applying species filter: {filters['species']}")
+            if filters.get("time"):
+                print(f"   🔍 Applying time filter: {filters['time']}")
+            if filters.get("plant_state"):
+                print(f"   🔍 Applying plant_state filter: {filters['plant_state']}")
+            if filters.get("action"):
+                print(f"   🔍 Applying action filter: {filters['action']}")
+            
             items = [item for item in items if adapter.matches_filters(item, filters)]
+            filtered_count = len(items)
+            if original_count > 0:
+                print(f"   🔍 Filtered {original_count} items to {filtered_count} items using filters")
+                # Show sample of what passed the filter
+                if filtered_count > 0:
+                    sample = items[0]
+                    print(f"   🔍 Sample filtered result: collection='{sample.get('collection')}', species='{sample.get('species')}', metadata.species='{sample.get('metadata', {}).get('species')}'")
         
         # Apply search query if provided
         if query.strip():
